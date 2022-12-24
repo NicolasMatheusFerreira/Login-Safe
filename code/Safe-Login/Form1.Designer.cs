@@ -37,6 +37,8 @@
             this.labelUsuario = new System.Windows.Forms.Label();
             this.labelSenha = new System.Windows.Forms.Label();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
+            this.labelCadastra = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,11 +105,29 @@
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.UseSystemPasswordChar = true;
             // 
+            // labelCadastra
+            // 
+            resources.ApplyResources(this.labelCadastra, "labelCadastra");
+            this.labelCadastra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelCadastra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelCadastra.ForeColor = System.Drawing.Color.White;
+            this.labelCadastra.Name = "labelCadastra";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelCadastra);
             this.Controls.Add(this.labelSenha);
             this.Controls.Add(this.textBoxSenha);
             this.Controls.Add(this.labelUsuario);
@@ -138,5 +158,7 @@
         private System.Windows.Forms.Label labelUsuario;
         private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.TextBox textBoxSenha;
+        private System.Windows.Forms.Label labelCadastra;
+        private System.Windows.Forms.Label label1;
     }
 }
