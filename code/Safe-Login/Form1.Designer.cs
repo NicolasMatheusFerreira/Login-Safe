@@ -50,7 +50,6 @@
             this.buttonEntrar.ForeColor = System.Drawing.Color.White;
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.UseVisualStyleBackColor = false;
-            this.buttonEntrar.UseWaitCursor = true;
             this.buttonEntrar.Click += new System.EventHandler(this.buttonEntrar_Click);
             // 
             // checkBoxSenha
@@ -79,6 +78,23 @@
             // textBoxUsuario
             // 
             resources.ApplyResources(this.textBoxUsuario, "textBoxUsuario");
+            this.textBoxUsuario.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource1"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource2"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource3"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource4"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource5"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource6"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource7"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource8"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource9"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource10"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource11"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource12"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource13")});
+            this.textBoxUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxUsuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoxUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
             this.textBoxUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxUsuario.ForeColor = System.Drawing.Color.White;
