@@ -38,19 +38,23 @@
             this.labelSenha = new System.Windows.Forms.Label();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.labelCadastra = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelEsqueciSenha = new System.Windows.Forms.Label();
+            this.labelSaida = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonEntrar
             // 
             resources.ApplyResources(this.buttonEntrar, "buttonEntrar");
-            this.buttonEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(0)))), ((int)(((byte)(124)))));
+            this.buttonEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.buttonEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonEntrar.ForeColor = System.Drawing.Color.White;
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.UseVisualStyleBackColor = false;
             this.buttonEntrar.Click += new System.EventHandler(this.buttonEntrar_Click);
+            this.buttonEntrar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonEntrar_MouseDown);
+            this.buttonEntrar.MouseEnter += new System.EventHandler(this.buttonEntrar_MouseEnter);
+            this.buttonEntrar.MouseLeave += new System.EventHandler(this.buttonEntrar_MouseLeave);
             // 
             // checkBoxSenha
             // 
@@ -58,6 +62,7 @@
             this.checkBoxSenha.ForeColor = System.Drawing.Color.White;
             this.checkBoxSenha.Name = "checkBoxSenha";
             this.checkBoxSenha.UseVisualStyleBackColor = true;
+            this.checkBoxSenha.Click += new System.EventHandler(this.checkBoxSenha_Click);
             // 
             // pictureBoxBanner
             // 
@@ -68,7 +73,7 @@
             // comboBoxCargo
             // 
             resources.ApplyResources(this.comboBoxCargo, "comboBoxCargo");
-            this.comboBoxCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(0)))), ((int)(((byte)(124)))));
+            this.comboBoxCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.comboBoxCargo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxCargo.ForeColor = System.Drawing.Color.White;
             this.comboBoxCargo.FormattingEnabled = true;
@@ -99,6 +104,8 @@
             this.textBoxUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxUsuario.ForeColor = System.Drawing.Color.White;
             this.textBoxUsuario.Name = "textBoxUsuario";
+            this.textBoxUsuario.TextChanged += new System.EventHandler(this.textBoxUsuario_TextChanged_1);
+            this.textBoxUsuario.Enter += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // labelUsuario
             // 
@@ -120,6 +127,7 @@
             this.textBoxSenha.ForeColor = System.Drawing.Color.White;
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.UseSystemPasswordChar = true;
+            this.textBoxSenha.TextChanged += new System.EventHandler(this.textBoxSenha_TextChanged);
             // 
             // labelCadastra
             // 
@@ -128,21 +136,32 @@
             this.labelCadastra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelCadastra.ForeColor = System.Drawing.Color.White;
             this.labelCadastra.Name = "labelCadastra";
+            this.labelCadastra.MouseLeave += new System.EventHandler(this.labelCadastra_MouseLeave);
+            this.labelCadastra.MouseHover += new System.EventHandler(this.labelCadastra_MouseHover);
             // 
-            // label1
+            // labelEsqueciSenha
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.labelEsqueciSenha, "labelEsqueciSenha");
+            this.labelEsqueciSenha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelEsqueciSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelEsqueciSenha.ForeColor = System.Drawing.Color.White;
+            this.labelEsqueciSenha.Name = "labelEsqueciSenha";
+            this.labelEsqueciSenha.MouseLeave += new System.EventHandler(this.labelEsqueciSenha_MouseLeave);
+            this.labelEsqueciSenha.MouseHover += new System.EventHandler(this.labelEsqueciSenha_MouseHover);
+            // 
+            // labelSaida
+            // 
+            resources.ApplyResources(this.labelSaida, "labelSaida");
+            this.labelSaida.ForeColor = System.Drawing.Color.White;
+            this.labelSaida.Name = "labelSaida";
             // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelSaida);
+            this.Controls.Add(this.labelEsqueciSenha);
             this.Controls.Add(this.labelCadastra);
             this.Controls.Add(this.labelSenha);
             this.Controls.Add(this.textBoxSenha);
@@ -175,6 +194,7 @@
         private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.Label labelCadastra;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelEsqueciSenha;
+        private System.Windows.Forms.Label labelSaida;
     }
 }
