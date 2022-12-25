@@ -136,6 +136,7 @@
             this.labelCadastra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelCadastra.ForeColor = System.Drawing.Color.White;
             this.labelCadastra.Name = "labelCadastra";
+            this.labelCadastra.Click += new System.EventHandler(this.labelCadastra_Click);
             this.labelCadastra.MouseLeave += new System.EventHandler(this.labelCadastra_MouseLeave);
             this.labelCadastra.MouseHover += new System.EventHandler(this.labelCadastra_MouseHover);
             // 

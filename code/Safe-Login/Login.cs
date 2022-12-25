@@ -14,7 +14,7 @@ namespace Safe_Login
     {     
         public Login()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void buttonEntrar_Click(object sender, EventArgs e)
@@ -84,17 +84,50 @@ namespace Safe_Login
         private void textBoxUsuario_TextChanged_1(object sender, EventArgs e)
         {
             string texto = textBoxUsuario.Text;
-            if (texto.Equals("Nicolas"))
-                textBoxUsuario.BackColor = Color.FromArgb(34, 177, 76);
-            else textBoxUsuario.BackColor = Color.FromArgb(213, 17, 27);
+            if (texto.Length > 0)
+                if (texto.Equals("Nicolas"))
+                {
+                    textBoxUsuario.BackColor = Color.FromArgb(34, 177, 76);
+                    labelSaida.Visible = false;
+                }
+                else
+                {
+                    textBoxUsuario.BackColor = Color.FromArgb(213, 17, 27);
+                    labelSaida.Visible = true;
+                }
+            else
+            {
+                textBoxUsuario.BackColor = Color.FromArgb(1, 0, 9);
+                labelSaida.Visible = false;
+            }
         }
 
         private void textBoxSenha_TextChanged(object sender, EventArgs e)
         {
             string texto = textBoxSenha.Text;
-            if (texto.Equals("33900643"))
-                textBoxSenha.BackColor = Color.FromArgb(34,177,76);
-            else textBoxSenha.BackColor = Color.FromArgb(213, 17, 27);
+            
+            if (texto.Length > 0)
+                if (texto.Equals("33900643"))
+                {
+                    textBoxSenha.BackColor = Color.FromArgb(34, 177, 76);
+                    labelSaida.Visible = false;
+                }
+                else
+                {
+                    textBoxSenha.BackColor = Color.FromArgb(213, 17, 27);
+                    labelSaida.Visible = true;
+                }
+            else
+            {
+                textBoxSenha.BackColor = Color.FromArgb(1, 0, 9);
+                labelSaida.Visible = false;
+            }
+        }
+
+        private void labelCadastra_Click(object sender, EventArgs e)
+        {
+            Cadastro cadastro = new Cadastro();
+            cadastro.Show();
         }
     }
 }
