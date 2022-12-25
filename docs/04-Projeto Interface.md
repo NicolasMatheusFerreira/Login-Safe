@@ -15,10 +15,8 @@ Este é diagrama de uso do nosso site.
 
 ## Wireframes
 
-![Projeto interface](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2022-1-e1-proj-web-t2-clube/blob/dev/docs/img/P.%20Interface%201.jpeg)
-![Projeto interface](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2022-1-e1-proj-web-t2-clube/blob/dev/docs/img/P.%20Interface%202.jpeg)
-![Projeto interface](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2022-1-e1-proj-web-t2-clube/blob/dev/docs/img/P.%20Interface%203.jpeg)
-![Projeto interface](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2022-1-e1-proj-web-t2-clube/blob/dev/docs/img/P.%20Interface%204.jpeg)
-![Projeto interface](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2022-1-e1-proj-web-t2-clube/blob/dev/docs/img/P.%20Interface%205.jpeg)
-![Projeto interface](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2022-1-e1-proj-web-t2-clube/blob/dev/docs/img/P.%20Interface%206.jpeg)
-![Projeto interface](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2022-1-e1-proj-web-t2-clube/blob/dev/docs/img/P.%20Interface%207.jpeg)
+### Tela 1: 
+Tela de login. Tela constituida pelo campo de usuário ou nome de usuário, senha, controles para entrar, para recuperação de senha, selectionar tipo de usuário e para cadastrar novo registro.
+
+![Tela 1](https://user-images.githubusercontent.com/71523671/209479348-0fc1e090-ed31-4e63-bd69-8b9d17d2153b.png)
+
