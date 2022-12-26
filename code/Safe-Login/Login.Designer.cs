@@ -173,6 +173,7 @@
             this.Controls.Add(this.checkBoxSenha);
             this.Controls.Add(this.buttonEntrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

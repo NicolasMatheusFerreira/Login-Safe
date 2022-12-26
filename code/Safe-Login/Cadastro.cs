@@ -16,5 +16,15 @@ namespace Safe_Login
         {
             InitializeComponent();
         }
+
+        private void Cadastro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

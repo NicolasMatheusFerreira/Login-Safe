@@ -14,12 +14,22 @@ namespace Safe_Login
     {     
         public Login()
         {
-            InitializeComponent();            
+            InitializeComponent();           
         }
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            if (false)
+            {
+                this.Dispose();
+            }
+            else
+            {
+                labelSaida.Visible = true;
+                labelSaida.Text = "Nome de usuário ou senha incorretos.\n\nTente novamente!";
+                Console.Beep();
+                textBoxUsuario.Focus();
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,7 +60,7 @@ namespace Safe_Login
 
         private void buttonEntrar_MouseDown(object sender, MouseEventArgs e)
         {
-            var cor = Color.FromArgb(234, 0, 152);
+            var cor = Color.FromArgb(235, 103, 27);
             buttonEntrar.BackColor = cor;
         }
 
@@ -93,6 +103,7 @@ namespace Safe_Login
                 else
                 {
                     textBoxUsuario.BackColor = Color.FromArgb(213, 17, 27);
+                    labelSaida.Text = "Campo ou campos de entrada inválidos!";
                     labelSaida.Visible = true;
                 }
             else
@@ -115,6 +126,7 @@ namespace Safe_Login
                 else
                 {
                     textBoxSenha.BackColor = Color.FromArgb(213, 17, 27);
+                    labelSaida.Text = "Campo ou campos de entrada inválidos!";
                     labelSaida.Visible = true;
                 }
             else
