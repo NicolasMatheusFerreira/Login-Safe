@@ -84,6 +84,9 @@
   <data name="labelSenha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 235</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelSenha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -95,10 +98,10 @@
     <value>Dados do usuário</value>
   </data>
   <data name="textBoxNome.AccessibleDescription" xml:space="preserve">
-    <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
+    <value>Informe seu nome completo</value>
   </data>
   <data name="textBoxNome.AccessibleName" xml:space="preserve">
-    <value>Caixa de usuário</value>
+    <value>Caixa de nome</value>
   </data>
   <data name="textBoxNome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -181,6 +184,9 @@
   <data name="buttonEntrar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="buttonEntrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 511</value>
+  </data>
   <data name="buttonEntrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -193,13 +199,31 @@
   <data name="iconPictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 148</value>
   </data>
+  <data name="textBoxSenhaAdm.AccessibleDescription" xml:space="preserve">
+    <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
+  </data>
+  <data name="textBoxSenhaAdm.AccessibleName" xml:space="preserve">
+    <value>Caixa de usuário</value>
+  </data>
+  <data name="textBoxSenhaAdm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxSenhaAdm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxSenhaAdm.PlaceholderText" xml:space="preserve">
+    <value>Senha Administrador</value>
+  </data>
+  <data name="textBoxSenhaAdm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 29</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>414, 551</value>
+    <value>414, 591</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>630, 590</value>
+    <value>630, 630</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
+    <value>CenterScreen</value>
   </data>
 </root>

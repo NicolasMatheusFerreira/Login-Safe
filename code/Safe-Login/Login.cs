@@ -28,6 +28,7 @@ namespace Safe_Login
                 labelSaida.Visible = true;
                 labelSaida.Text = "Nome de usuário ou senha incorretos.\n\nTente novamente!";
                 Console.Beep();
+                Console.Beep();
                 textBoxUsuario.Focus();
             }
         }
@@ -140,6 +141,12 @@ namespace Safe_Login
         {
             Cadastro cadastro = new Cadastro();
             cadastro.Show();
+        }
+
+        private void labelEsqueciSenha_Click(object sender, EventArgs e)
+        {
+            EsqueciSenha esqueciSenha = new EsqueciSenha();
+            esqueciSenha.Show();
         }
     }
 }

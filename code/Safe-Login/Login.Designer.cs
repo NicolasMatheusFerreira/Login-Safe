@@ -147,6 +147,7 @@
             this.labelEsqueciSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelEsqueciSenha.ForeColor = System.Drawing.Color.White;
             this.labelEsqueciSenha.Name = "labelEsqueciSenha";
+            this.labelEsqueciSenha.Click += new System.EventHandler(this.labelEsqueciSenha_Click);
             this.labelEsqueciSenha.MouseLeave += new System.EventHandler(this.labelEsqueciSenha_MouseLeave);
             this.labelEsqueciSenha.MouseHover += new System.EventHandler(this.labelEsqueciSenha_MouseHover);
             // 

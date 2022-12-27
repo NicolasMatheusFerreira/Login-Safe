@@ -6154,7 +6154,7 @@
     <value>True</value>
   </data>
   <data name="labelUsuario.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="labelUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>318, 32</value>
@@ -6163,7 +6163,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="labelUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 25</value>
+    <value>65, 21</value>
   </data>
   <data name="labelUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6175,7 +6175,7 @@
     <value>True</value>
   </data>
   <data name="labelSenha.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="labelSenha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -6187,7 +6187,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="labelSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 25</value>
+    <value>54, 21</value>
   </data>
   <data name="labelSenha.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

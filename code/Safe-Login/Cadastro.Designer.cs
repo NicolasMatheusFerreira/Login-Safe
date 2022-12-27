@@ -37,6 +37,7 @@
             this.textBoxConfirmeSenha = new System.Windows.Forms.TextBox();
             this.buttonEntrar = new System.Windows.Forms.Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.textBoxSenhaAdm = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,11 +173,37 @@
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.TabStop = false;
             // 
+            // textBoxSenhaAdm
+            // 
+            resources.ApplyResources(this.textBoxSenhaAdm, "textBoxSenhaAdm");
+            this.textBoxSenhaAdm.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource1"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource2"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource3"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource4"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource5"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource6"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource7"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource8"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource9"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource10"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource11"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource12"),
+            resources.GetString("textBoxSenhaAdm.AutoCompleteCustomSource13")});
+            this.textBoxSenhaAdm.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxSenhaAdm.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxSenhaAdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.textBoxSenhaAdm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxSenhaAdm.ForeColor = System.Drawing.Color.White;
+            this.textBoxSenhaAdm.Name = "textBoxSenhaAdm";
+            // 
             // Cadastro
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.textBoxSenhaAdm);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.buttonEntrar);
             this.Controls.Add(this.textBoxConfirmeSenha);
@@ -202,5 +229,6 @@
         private System.Windows.Forms.TextBox textBoxConfirmeSenha;
         private System.Windows.Forms.Button buttonEntrar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.TextBox textBoxSenhaAdm;
     }
 }

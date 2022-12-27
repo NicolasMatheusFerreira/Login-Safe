@@ -1,0 +1,272 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonRedefinir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelUsuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxUsuario.Name" xml:space="preserve">
+    <value>textBoxUsuario</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 198</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Name" xml:space="preserve">
+    <value>labelSenha</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EsqueciSenha</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox2.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="buttonEntrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 348</value>
+  </data>
+  <data name="&gt;&gt;labelUsuario.Name" xml:space="preserve">
+    <value>labelUsuario</value>
+  </data>
+  <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 272</value>
+  </data>
+  <data name="textBoxUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 296</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="iconPictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>EsqueciSenha</value>
+  </data>
+  <data name="&gt;&gt;textBoxUsuario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="iconPictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonRedefinir.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="buttonRedefinir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 347</value>
+  </data>
+  <data name="&gt;&gt;labelUsuario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonRedefinir.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="labelUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="buttonEntrar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox1.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox1.Name" xml:space="preserve">
+    <value>iconPictureBox1</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.Name" xml:space="preserve">
+    <value>buttonEntrar</value>
+  </data>
+  <data name="iconPictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 12</value>
+  </data>
+  <data name="&gt;&gt;textBoxUsuario.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonRedefinir.Name" xml:space="preserve">
+    <value>buttonRedefinir</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="iconPictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 296</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>630, 470</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox2.Name" xml:space="preserve">
+    <value>iconPictureBox2</value>
+  </data>
+  <data name="textBoxUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxUsuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonRedefinir.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 148</value>
+  </data>
+  <data name="&gt;&gt;labelUsuario.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>pt-BR</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
