@@ -26,5 +26,15 @@ namespace Safe_Login
         {
 
         }
+
+        private void textBoxConfirmeSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxSenhaAdm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

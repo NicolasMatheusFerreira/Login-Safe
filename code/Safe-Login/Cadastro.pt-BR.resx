@@ -66,7 +66,7 @@
     <value>Segoe UI, 20.25pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 44</value>
+    <value>262, 9</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 37</value>
@@ -78,21 +78,21 @@
     <value>True</value>
   </data>
   <data name="labelSenha.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelSenha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 235</value>
+    <value>52, 186</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelSenha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="labelSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 25</value>
+    <value>137, 21</value>
   </data>
   <data name="labelSenha.Text" xml:space="preserve">
     <value>Dados do usuário</value>
@@ -109,29 +109,80 @@
   <data name="textBoxNome.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="textBoxNome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 226</value>
+  </data>
   <data name="textBoxNome.PlaceholderText" xml:space="preserve">
     <value>Nome Completo</value>
   </data>
   <data name="textBoxNome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 29</value>
+    <value>298, 29</value>
   </data>
-  <data name="textBox1.AccessibleDescription" xml:space="preserve">
+  <data name="textBoxUsuario.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
   </data>
-  <data name="textBox1.AccessibleName" xml:space="preserve">
+  <data name="textBoxUsuario.AccessibleName" xml:space="preserve">
     <value>Caixa de usuário</value>
   </data>
-  <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="textBoxUsuario.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="textBoxUsuario.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="textBoxUsuario.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="textBox1.PlaceholderText" xml:space="preserve">
+  <data name="textBoxUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 226</value>
+  </data>
+  <data name="textBoxUsuario.PlaceholderText" xml:space="preserve">
     <value>Usuário</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 29</value>
+  <data name="textBoxUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 29</value>
+  </data>
+  <data name="textBoxUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="textBoxSenha.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
@@ -145,11 +196,14 @@
   <data name="textBoxSenha.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="textBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 345</value>
+  </data>
   <data name="textBoxSenha.PlaceholderText" xml:space="preserve">
     <value>Senha</value>
   </data>
   <data name="textBoxSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 29</value>
+    <value>298, 29</value>
   </data>
   <data name="textBoxConfirmeSenha.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
@@ -163,11 +217,14 @@
   <data name="textBoxConfirmeSenha.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="textBoxConfirmeSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 345</value>
+  </data>
   <data name="textBoxConfirmeSenha.PlaceholderText" xml:space="preserve">
     <value>Confirme Senha</value>
   </data>
   <data name="textBoxConfirmeSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 29</value>
+    <value>298, 29</value>
   </data>
   <data name="buttonEntrar.AccessibleDescription" xml:space="preserve">
     <value>Entrar para acessar o sistema</value>
@@ -185,7 +242,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonEntrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 511</value>
+    <value>51, 495</value>
   </data>
   <data name="buttonEntrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -196,8 +253,14 @@
   <data name="buttonEntrar.Text" xml:space="preserve">
     <value>Registrar</value>
   </data>
+  <data name="iconPictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 49</value>
+  </data>
   <data name="iconPictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 148</value>
+    <value>109, 102</value>
+  </data>
+  <data name="iconPictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="textBoxSenhaAdm.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
@@ -211,17 +274,86 @@
   <data name="textBoxSenhaAdm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="textBoxSenhaAdm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 406</value>
+  </data>
   <data name="textBoxSenhaAdm.PlaceholderText" xml:space="preserve">
     <value>Senha Administrador</value>
   </data>
   <data name="textBoxSenhaAdm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 29</value>
+    <value>297, 29</value>
+  </data>
+  <data name="textBoxEmail.AccessibleDescription" xml:space="preserve">
+    <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
+  </data>
+  <data name="textBoxEmail.AccessibleName" xml:space="preserve">
+    <value>Caixa de usuário</value>
+  </data>
+  <data name="textBoxEmail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="textBoxEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 285</value>
+  </data>
+  <data name="textBoxEmail.PlaceholderText" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="textBoxEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 29</value>
+  </data>
+  <data name="textBoxEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>414, 591</value>
+    <value>714, 576</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>630, 630</value>
+    <value>930, 930</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

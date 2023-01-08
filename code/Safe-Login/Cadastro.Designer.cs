@@ -32,12 +32,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelSenha = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxConfirmeSenha = new System.Windows.Forms.TextBox();
             this.buttonEntrar = new System.Windows.Forms.Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.textBoxSenhaAdm = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,30 +79,30 @@
             this.textBoxNome.ForeColor = System.Drawing.Color.White;
             this.textBoxNome.Name = "textBoxNome";
             // 
-            // textBox1
+            // textBoxUsuario
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.AutoCompleteCustomSource.AddRange(new string[] {
-            resources.GetString("textBox1.AutoCompleteCustomSource"),
-            resources.GetString("textBox1.AutoCompleteCustomSource1"),
-            resources.GetString("textBox1.AutoCompleteCustomSource2"),
-            resources.GetString("textBox1.AutoCompleteCustomSource3"),
-            resources.GetString("textBox1.AutoCompleteCustomSource4"),
-            resources.GetString("textBox1.AutoCompleteCustomSource5"),
-            resources.GetString("textBox1.AutoCompleteCustomSource6"),
-            resources.GetString("textBox1.AutoCompleteCustomSource7"),
-            resources.GetString("textBox1.AutoCompleteCustomSource8"),
-            resources.GetString("textBox1.AutoCompleteCustomSource9"),
-            resources.GetString("textBox1.AutoCompleteCustomSource10"),
-            resources.GetString("textBox1.AutoCompleteCustomSource11"),
-            resources.GetString("textBox1.AutoCompleteCustomSource12"),
-            resources.GetString("textBox1.AutoCompleteCustomSource13")});
-            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.textBoxUsuario, "textBoxUsuario");
+            this.textBoxUsuario.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource1"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource2"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource3"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource4"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource5"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource6"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource7"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource8"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource9"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource10"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource11"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource12"),
+            resources.GetString("textBoxUsuario.AutoCompleteCustomSource13")});
+            this.textBoxUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxUsuario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.textBoxUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxUsuario.ForeColor = System.Drawing.Color.White;
+            this.textBoxUsuario.Name = "textBoxUsuario";
             // 
             // textBoxSenha
             // 
@@ -152,6 +153,7 @@
             this.textBoxConfirmeSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxConfirmeSenha.ForeColor = System.Drawing.Color.White;
             this.textBoxConfirmeSenha.Name = "textBoxConfirmeSenha";
+            this.textBoxConfirmeSenha.TextChanged += new System.EventHandler(this.textBoxConfirmeSenha_TextChanged);
             // 
             // buttonEntrar
             // 
@@ -169,7 +171,7 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 148;
+            this.iconPictureBox1.IconSize = 102;
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.TabStop = false;
             // 
@@ -197,18 +199,45 @@
             this.textBoxSenhaAdm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSenhaAdm.ForeColor = System.Drawing.Color.White;
             this.textBoxSenhaAdm.Name = "textBoxSenhaAdm";
+            this.textBoxSenhaAdm.TextChanged += new System.EventHandler(this.textBoxSenhaAdm_TextChanged);
+            // 
+            // textBoxEmail
+            // 
+            resources.ApplyResources(this.textBoxEmail, "textBoxEmail");
+            this.textBoxEmail.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource1"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource2"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource3"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource4"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource5"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource6"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource7"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource8"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource9"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource10"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource11"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource12"),
+            resources.GetString("textBoxEmail.AutoCompleteCustomSource13")});
+            this.textBoxEmail.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxEmail.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxEmail.ForeColor = System.Drawing.Color.White;
+            this.textBoxEmail.Name = "textBoxEmail";
             // 
             // Cadastro
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxSenhaAdm);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.buttonEntrar);
             this.Controls.Add(this.textBoxConfirmeSenha);
             this.Controls.Add(this.textBoxSenha);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxUsuario);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelSenha);
             this.Controls.Add(this.label1);
@@ -224,11 +253,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.TextBox textBoxNome;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.TextBox textBoxConfirmeSenha;
         private System.Windows.Forms.Button buttonEntrar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.TextBox textBoxSenhaAdm;
+        private System.Windows.Forms.TextBox textBoxEmail;
     }
 }
