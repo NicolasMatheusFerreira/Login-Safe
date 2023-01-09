@@ -1,6 +1,6 @@
 ﻿namespace Safe_Login
 {
-    partial class Login
+    partial class TelaLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
             this.buttonEntrar = new System.Windows.Forms.Button();
             this.checkBoxSenha = new System.Windows.Forms.CheckBox();
             this.pictureBoxBanner = new System.Windows.Forms.PictureBox();

@@ -1,6 +1,6 @@
 ﻿namespace Safe_Login
 {
-    partial class EsqueciSenha
+    partial class TelaEsqueciSenha
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EsqueciSenha));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaEsqueciSenha));
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();

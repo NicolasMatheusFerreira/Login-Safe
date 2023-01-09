@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Safe_Login
 {
-    public partial class EsqueciSenha : Form
+    public partial class TelaEsqueciSenha : Form
     {
-        public EsqueciSenha()
+        public TelaEsqueciSenha()
         {
             InitializeComponent();
         }

@@ -1,152 +1,133 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System;
+using System.IO;
 
-namespace Safe_Login
-{
-    public partial class Login : Form
-    {     
-        public Login()
-        {
-            InitializeComponent();           
+public class Login {
+
+    Celula inicio;
+    public static string caminho = "users.txt";
+    public Login() {
+        inicio = null;
+        ImportaCadastro(caminho);
+    }
+    
+    public void Listar() {        
+        Celula aux = inicio;
+        while(aux!=null) {
+            Console.WriteLine(aux.atual.NomeCompleto+"|"+aux.atual.Email+"|"+aux.atual.NomeUsuario+"|"+aux.atual.Senha);
+            aux = aux.prox;
         }
+    }
 
-        private void buttonEntrar_Click(object sender, EventArgs e)
-        {
-            if (false)
-            {
-                this.Dispose();
+    public bool Entra(string nomeUsuario, string senha) {
+
+        if (nomeUsuario.Equals("Admin") && senha.Equals("Admin"))
+            return true;
+        else {
+            Celula aux = inicio;
+            while(aux!=null) {
+                if (nomeUsuario.Equals(aux.atual.NomeUsuario) && (senha.Equals(aux.atual.Senha)))
+                    return true;            
+                aux = aux.prox;
             }
-            else
-            {
-                labelSaida.Visible = true;
-                labelSaida.Text = "Nome de usuário ou senha incorretos.\n\nTente novamente!";
-                Console.Beep();
-                Console.Beep();
-                textBoxUsuario.Focus();
+            return false;
+        }        
+    }
+
+    public Conta Pop(string nomeUsuario) {
+
+        Celula aux = inicio;   
+        Conta j = new Conta(); 
+        if (inicio!=null) {                        
+            if (nomeUsuario.Equals(aux.atual.NomeUsuario)) {
+                j = aux.atual;
+                aux = aux.prox;                    
+                inicio = aux;
+            } else {
+                while(aux.prox!=null) {
+                    Celula aux2 = new Celula(); 
+                    if (nomeUsuario.Equals(aux.prox.atual.NomeUsuario)) {
+                        aux2 = aux.prox.prox;
+                        j = aux.prox.atual;
+                        aux.prox = aux2;                    
+                        return j;                    
+                    }
+                    aux = aux.prox;
+                }
+                Console.WriteLine("Registro nao encontrado!");
+            }               
+        } else Console.WriteLine("Registro nao encontrado!");        
+        return j;
+    }    
+
+    public Conta RemoverCadastro(string nomeUsuario) {
+        Conta aux = Pop(nomeUsuario);
+        ExportaCadastro(caminho, false);
+        return aux;
+    }
+    public Conta FormatoLeitura(StreamReader sr) {
+        Conta aux = new Conta();
+        aux.NomeCompleto = sr.ReadLine();
+        aux.Email = sr.ReadLine();
+        aux.NomeUsuario = sr.ReadLine();
+        aux.Senha = sr.ReadLine();
+        aux.Cargo = sr.ReadLine();
+        sr.ReadLine();
+        return aux;
+    }
+    public void ImportaCadastro(string caminho) {
+
+        if (!File.Exists(caminho)) {
+            Console.WriteLine("Erro! Diretorio inexistente!");
+        } else {
+            StreamReader sr = new StreamReader(caminho);
+            while(!sr.EndOfStream) {
+                Push(FormatoLeitura(sr));
             }
+            sr.Close();
         }
+    }
+    public void FormatoCadastro(Celula aux, StreamWriter sw) {
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
+        sw.WriteLine(aux.atual.NomeCompleto);
+        sw.WriteLine(aux.atual.Email);
+        sw.WriteLine(aux.atual.NomeUsuario);
+        sw.WriteLine(aux.atual.Senha);
+        sw.WriteLine(aux.atual.Cargo);
+        sw.WriteLine();
+    }
+    public void ExportaCadastro(string caminho, bool permissao) {
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxUsuario_TextChanged(object sender, EventArgs e)
-        {
-            textBoxUsuario.BackColor = Color.Green;
-        }
-
-        private void buttonEntrar_MouseLeave(object sender, EventArgs e)
-        {
-            var cor = Color.FromArgb(0, 0, 21);
-            buttonEntrar.BackColor = cor;
-        }
-
-        private void buttonEntrar_MouseEnter(object sender, EventArgs e)
-        {
-            buttonEntrar.BackColor = Color.Black;           
-        }
-
-        private void buttonEntrar_MouseDown(object sender, MouseEventArgs e)
-        {
-            var cor = Color.FromArgb(235, 103, 27);
-            buttonEntrar.BackColor = cor;
-        }
-
-        private void checkBoxSenha_Click(object sender, EventArgs e)
-        {
-            if (checkBoxSenha.Checked == true)
-                textBoxSenha.UseSystemPasswordChar = false;
-            else textBoxSenha.UseSystemPasswordChar = true;
-        }
-
-        private void labelCadastra_MouseHover(object sender, EventArgs e)
-        {
-            labelCadastra.ForeColor = Color.FromArgb(234, 0, 152);
-        }
-
-        private void labelCadastra_MouseLeave(object sender, EventArgs e)
-        {
-            labelCadastra.ForeColor = Color.White;
-        }
-      
-        private void labelEsqueciSenha_MouseHover(object sender, EventArgs e)
-        {
-            labelEsqueciSenha.ForeColor = Color.FromArgb(234, 0, 152);
-        }
-
-        private void labelEsqueciSenha_MouseLeave(object sender, EventArgs e)
-        {
-            labelEsqueciSenha.ForeColor = Color.White;
-        }
-
-        private void textBoxUsuario_TextChanged_1(object sender, EventArgs e)
-        {
-            string texto = textBoxUsuario.Text;
-            if (texto.Length > 0)
-                if (texto.Equals("Nicolas"))
-                {
-                    textBoxUsuario.BackColor = Color.FromArgb(34, 177, 76);
-                    labelSaida.Visible = false;
-                }
-                else
-                {
-                    textBoxUsuario.BackColor = Color.FromArgb(213, 17, 27);
-                    labelSaida.Text = "Campo ou campos de entrada inválidos!";
-                    labelSaida.Visible = true;
-                }
-            else
-            {
-                textBoxUsuario.BackColor = Color.FromArgb(1, 0, 9);
-                labelSaida.Visible = false;
+        StreamWriter sw = new StreamWriter(caminho, permissao);
+        if (inicio!=null) {
+            Celula aux = inicio;
+            while(aux!=null) {
+                FormatoCadastro(aux, sw);
+                aux = aux.prox;
             }
+            sw.Close();
         }
-
-        private void textBoxSenha_TextChanged(object sender, EventArgs e)
-        {
-            string texto = textBoxSenha.Text;
-            
-            if (texto.Length > 0)
-                if (texto.Equals("33900643"))
-                {
-                    textBoxSenha.BackColor = Color.FromArgb(34, 177, 76);
-                    labelSaida.Visible = false;
-                }
-                else
-                {
-                    textBoxSenha.BackColor = Color.FromArgb(213, 17, 27);
-                    labelSaida.Text = "Campo ou campos de entrada inválidos!";
-                    labelSaida.Visible = true;
-                }
-            else
-            {
-                textBoxSenha.BackColor = Color.FromArgb(1, 0, 9);
-                labelSaida.Visible = false;
-            }
+    }
+    public bool ValidaSenha(string x, string aux) {
+        if (x.Equals(aux))
+            return true;
+        return false;    
+    }
+    public void Push(Conta obj) {
+        if (inicio==null) {
+            inicio = new Celula();
+            inicio.atual = obj;
+            inicio.prox = null;             
+        } else {
+            Celula aux = new Celula();
+            aux.atual = obj;
+            aux.prox = inicio;
+            inicio = aux;
         }
-
-        private void labelCadastra_Click(object sender, EventArgs e)
-        {
-            Cadastro cadastro = new Cadastro();
-            cadastro.Show();
-        }
-
-        private void labelEsqueciSenha_Click(object sender, EventArgs e)
-        {
-            EsqueciSenha esqueciSenha = new EsqueciSenha();
-            esqueciSenha.Show();
-        }
+    }    
+    public bool Cadastra(Conta conta) {
+        
+        Push(conta);
+        ExportaCadastro(caminho, false);
+        return true;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Safe_Login
 {
-    partial class Cadastro
+    partial class TelaCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastro));
             this.label1 = new System.Windows.Forms.Label();
             this.labelSenha = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxConfirmeSenha = new System.Windows.Forms.TextBox();
-            this.buttonEntrar = new System.Windows.Forms.Button();
+            this.buttonRegistrar = new System.Windows.Forms.Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.textBoxSenhaAdm = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.comboBoxCargo = new System.Windows.Forms.ComboBox();
+            this.buttonLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,16 +155,16 @@
             this.textBoxConfirmeSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxConfirmeSenha.ForeColor = System.Drawing.Color.White;
             this.textBoxConfirmeSenha.Name = "textBoxConfirmeSenha";
-            this.textBoxConfirmeSenha.TextChanged += new System.EventHandler(this.textBoxConfirmeSenha_TextChanged);
             // 
-            // buttonEntrar
+            // buttonRegistrar
             // 
-            resources.ApplyResources(this.buttonEntrar, "buttonEntrar");
-            this.buttonEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.buttonEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonEntrar.ForeColor = System.Drawing.Color.White;
-            this.buttonEntrar.Name = "buttonEntrar";
-            this.buttonEntrar.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.buttonRegistrar, "buttonRegistrar");
+            this.buttonRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.buttonRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonRegistrar.ForeColor = System.Drawing.Color.White;
+            this.buttonRegistrar.Name = "buttonRegistrar";
+            this.buttonRegistrar.UseVisualStyleBackColor = false;
+            this.buttonRegistrar.Click += new System.EventHandler(this.buttonRegistrar_Click);
             // 
             // iconPictureBox1
             // 
@@ -199,7 +201,6 @@
             this.textBoxSenhaAdm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSenhaAdm.ForeColor = System.Drawing.Color.White;
             this.textBoxSenhaAdm.Name = "textBoxSenhaAdm";
-            this.textBoxSenhaAdm.TextChanged += new System.EventHandler(this.textBoxSenhaAdm_TextChanged);
             // 
             // textBoxEmail
             // 
@@ -226,22 +227,43 @@
             this.textBoxEmail.ForeColor = System.Drawing.Color.White;
             this.textBoxEmail.Name = "textBoxEmail";
             // 
-            // Cadastro
+            // comboBoxCargo
+            // 
+            resources.ApplyResources(this.comboBoxCargo, "comboBoxCargo");
+            this.comboBoxCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.comboBoxCargo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxCargo.ForeColor = System.Drawing.Color.White;
+            this.comboBoxCargo.FormattingEnabled = true;
+            this.comboBoxCargo.Name = "comboBoxCargo";
+            // 
+            // buttonLimpar
+            // 
+            resources.ApplyResources(this.buttonLimpar, "buttonLimpar");
+            this.buttonLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.buttonLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLimpar.ForeColor = System.Drawing.Color.White;
+            this.buttonLimpar.Name = "buttonLimpar";
+            this.buttonLimpar.UseVisualStyleBackColor = false;
+            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
+            // 
+            // TelaCadastro
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.buttonLimpar);
+            this.Controls.Add(this.comboBoxCargo);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxSenhaAdm);
             this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.buttonEntrar);
+            this.Controls.Add(this.buttonRegistrar);
             this.Controls.Add(this.textBoxConfirmeSenha);
             this.Controls.Add(this.textBoxSenha);
             this.Controls.Add(this.textBoxUsuario);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelSenha);
             this.Controls.Add(this.label1);
-            this.Name = "Cadastro";
+            this.Name = "TelaCadastro";
             this.Load += new System.EventHandler(this.Cadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -256,9 +278,11 @@
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.TextBox textBoxConfirmeSenha;
-        private System.Windows.Forms.Button buttonEntrar;
+        private System.Windows.Forms.Button buttonRegistrar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.TextBox textBoxSenhaAdm;
         private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.ComboBox comboBoxCargo;
+        private System.Windows.Forms.Button buttonLimpar;
     }
 }

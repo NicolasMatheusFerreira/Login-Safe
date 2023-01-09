@@ -6,8 +6,6 @@ C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\bin\Debug\net5.0-wind
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\bin\Debug\net5.0-windows\Safe-Login.pdb
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\bin\Debug\net5.0-windows\pt-BR\Safe-Login.resources.dll
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.csproj.AssemblyReference.cache
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.Login.resources
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.Login.pt-BR.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.csproj.GenerateResource.cache
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.AssemblyInfoInputs.cache
@@ -20,9 +18,11 @@ C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-wind
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.genruntimeconfig.cache
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\ref\Safe-Login.dll
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.Properties.Resources.resources
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.Cadastro.resources
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.Cadastro.pt-BR.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.csproj.CopyComplete
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.EsqueciSenha.resources
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.EsqueciSenha.pt-BR.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaCadastro.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaEsqueciSenha.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaLogin.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaCadastro.pt-BR.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaEsqueciSenha.pt-BR.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaLogin.pt-BR.resources
