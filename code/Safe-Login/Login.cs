@@ -18,6 +18,46 @@ public class Login {
         }
     }
 
+    public bool CheckMaiuscula(string senha)
+    {
+        for (int i = 0; i < senha.Length; i++)
+            if (senha[i] > 65 && senha[i] < 90)
+                return true;
+        return false;
+    }
+    public bool CheckCaracterEspecial(string senha)
+    {
+        for (int i = 0; i < senha.Length; i++)
+            if (senha[i] >= 33 && senha[i] <= 47 || senha[i] >= 58 && senha[i] <= 64 || senha[i] >= 91 && senha[i] <= 96 || senha[i] >= 123 && senha[i] < 243)
+                return true;
+        return false;
+    }
+    public bool CheckNumeros(string senha)
+    {
+        for (int i = 0; i < senha.Length; i++)
+            if (senha[i] >= '0' && senha[i] <= '9')
+                return true;
+        return false;
+    }
+    public bool CheckLetras(string senha)
+    {
+        for (int i = 0; i < senha.Length; i++)
+            if (senha[i] >= 'a' && senha[i] <= 'z' || senha[i] >= 'A' && senha[i] <= 'Z')
+                return true;
+        return false;
+    }
+
+    public int CheckSenha(string senha)
+    {
+        if (senha.Length > 8 && CheckLetras(senha) && CheckNumeros(senha) && CheckCaracterEspecial(senha) && CheckMaiuscula(senha))
+            return 3;
+        else if (senha.Length > 8 && CheckLetras(senha) && CheckNumeros(senha) && CheckCaracterEspecial(senha))
+            return 2;
+        if (senha.Length > 8 && CheckLetras(senha))
+            return 1;
+        else return 0;
+    }
+
     public bool Entra(string nomeUsuario, string senha) {
 
         if (nomeUsuario.Equals("Admin") && senha.Equals("Admin"))

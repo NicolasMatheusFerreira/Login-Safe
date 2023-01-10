@@ -13,9 +13,11 @@ namespace Safe_Login
 {
     public partial class TelaCadastro : Form
     {
+        Login login = new Login();
         public TelaCadastro()
         {
             InitializeComponent();
+
         }
 
         private void Cadastro_Load(object sender, EventArgs e)
@@ -23,6 +25,16 @@ namespace Safe_Login
 
         }
         
+        private bool VerificaCampos(Conta obj)
+        {
+            if (obj.NomeCompleto.Length > 0)
+                if (obj.Email.Length > 0)
+                    if (obj.Cargo.Length > 0)
+                        if (obj.Senha.Length > 0)
+                            return true;                        
+            return false;
+        }
+
         private void LimparCampos()
         {
             textBoxNome.Clear();
@@ -32,12 +44,13 @@ namespace Safe_Login
             textBoxConfirmeSenha.Clear();
             textBoxSenhaAdm.Clear();
             comboBoxCargo.Text = "Selecione";
+
+            textBoxNome.Focus();
         }
 
         private void buttonRegistrar_Click(object sender, EventArgs e)
         {
-            Conta conta = new Conta();
-            Login login = new Login();
+            Conta conta = new Conta();         
 
             string aux, senhaAdm;
 
@@ -49,30 +62,115 @@ namespace Safe_Login
             aux = textBoxConfirmeSenha.Text;
             senhaAdm = textBoxSenhaAdm.Text;
 
+            if (!VerificaCampos(conta))
+                MessageBox.Show("Campos vazios!");
+            
+
             if (login.ValidaSenha(conta.Senha, aux))
             {
-                if (senhaAdm.Equals("12345678"))
+                if (senhaAdm.Length > 0)
                 {
-                    login.Cadastra(conta);
-                    LimparCampos();                    
+                    if (senhaAdm.Equals("12345678"))
+                    {
+                        login.Cadastra(conta);
+                        LimparCampos();
+                    }
+                    else
+                    {
+                        // Mostrar mensagem senha administrador inválida!
+                        MessageBox.Show("Senha Administrador inválida!");
+                    }
                 }
                 else
                 {
-                    // Mostrar mensagem senha administrador inválida!
-                    MessageBox.Show("Senha Administrador inválida!");
+                    MessageBox.Show("Campo de senha de administrador inválido!");
+                    textBoxSenhaAdm.Focus();
                 }
+
             }
             else
             {
                 // Mostrar mensagem de senhas não correspondente
                 MessageBox.Show("Senhas não correspondem!");
-            }
-            textBoxNome.Focus();
+            }            
         }
 
         private void buttonLimpar_Click(object sender, EventArgs e)
         {
             LimparCampos();
+        }
+
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+            string email = textBoxEmail.Text;
+
+            if (email.Length>0)
+                for(int i = 0; i<email.Length; i++)
+                {
+                    if (email[i]=='@')
+                    {
+                        if (email[email.Length-1]=='m' && email[email.Length - 2] == 'o' && email[email.Length - 3] == 'c' && email[email.Length - 4] == '.')
+                        {
+                            textBoxEmail.BackColor = Color.FromArgb(34, 177, 76);
+                        } else textBoxEmail.BackColor = Color.FromArgb(1, 0, 9);
+                    }
+                }
+            else textBoxEmail.BackColor = Color.FromArgb(1, 0, 9);
+        }
+
+        private void textBoxConfirmeSenha_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxSenha.Text.Length > 0 && textBoxConfirmeSenha.Text.Length > 0) { 
+                if (!login.ValidaSenha(textBoxSenha.Text, textBoxConfirmeSenha.Text))
+                {
+                    textBoxSenha.BackColor = Color.FromArgb(213, 17, 27);
+                    textBoxConfirmeSenha.BackColor = Color.FromArgb(213, 17, 27);
+                    labelCadastroSenha.Text = "Senhas não se correspondem. Digite novamente!";
+                    labelCadastroSenha.Visible = true;
+                } else
+                {
+                    textBoxSenha.BackColor = Color.FromArgb(1, 0, 9);
+                    textBoxConfirmeSenha.BackColor = Color.FromArgb(1, 0, 9);
+                    labelCadastroSenha.Visible = false;
+                }
+            } else {
+                    textBoxSenha.BackColor = Color.FromArgb(1, 0, 9);
+                    textBoxConfirmeSenha.BackColor = Color.FromArgb(1, 0, 9);
+                    labelCadastroSenha.Visible = false;
+            }                
+        }
+
+        private void labelCadastroSenha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxSenha_TextChanged(object sender, EventArgs e)
+        {
+            labelCadastroSenha.Visible = true;
+            if (login.CheckSenha(textBoxSenha.Text)==3)
+            {
+                labelCadastroSenha.Text = "Senha forte";
+            } else if (login.CheckSenha(textBoxSenha.Text) == 2)
+            {
+                labelCadastroSenha.Text = "Senha boa";
+            } else if (login.CheckSenha(textBoxSenha.Text) == 1)
+            {
+                labelCadastroSenha.Text = "Senha média";
+            } else labelCadastroSenha.Text = "Senha fraca";
+        }
+
+        private void checkBoxSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxSenha.Checked==true)
+            {
+                textBoxSenha.UseSystemPasswordChar = false;
+                textBoxConfirmeSenha.UseSystemPasswordChar = false;
+            } else
+            {
+                textBoxSenha.UseSystemPasswordChar = true;
+                textBoxConfirmeSenha.UseSystemPasswordChar = true;
+            }
         }
     }
 }
