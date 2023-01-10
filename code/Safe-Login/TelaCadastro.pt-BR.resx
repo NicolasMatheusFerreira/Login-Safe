@@ -224,7 +224,7 @@
     <value>298, 29</value>
   </data>
   <data name="textBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="textBoxEmail.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
@@ -355,8 +355,11 @@
   <data name="ButtonRegistrar.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 56</value>
   </data>
+  <data name="ButtonRegistrar.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
   <data name="ButtonRegistrar.Text" xml:space="preserve">
-    <value>Registrar</value>
+    <value>Criar</value>
   </data>
   <data name="buttonLimpar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -371,7 +374,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonLimpar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 554</value>
+    <value>52, 554</value>
   </data>
   <data name="buttonLimpar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -380,7 +383,7 @@
     <value>240, 56</value>
   </data>
   <data name="buttonLimpar.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="buttonLimpar.Text" xml:space="preserve">
     <value>Limpar</value>
@@ -400,14 +403,38 @@
   <data name="checkBoxSenha.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 19</value>
   </data>
+  <data name="checkBoxSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="checkBoxSenha.Text" xml:space="preserve">
+    <value>Mostrar Senha</value>
+  </data>
+  <data name="checkBoxSenhaAdm.AccessibleDescription" xml:space="preserve">
+    <value>Deseja exibir sua senha?</value>
+  </data>
+  <data name="checkBoxSenhaAdm.AccessibleName" xml:space="preserve">
+    <value>Mostrar senha</value>
+  </data>
+  <data name="checkBoxSenhaAdm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxSenhaAdm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxSenhaAdm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 19</value>
+  </data>
+  <data name="checkBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="checkBoxSenhaAdm.Text" xml:space="preserve">
     <value>Mostrar Senha</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>714, 619</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>930, 930</value>
+    <value>750, 670</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

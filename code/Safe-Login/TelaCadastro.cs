@@ -57,7 +57,7 @@ namespace Safe_Login
             conta.NomeCompleto = textBoxNome.Text;
             conta.Email = textBoxEmail.Text;
             conta.Cargo = comboBoxCargo.Text;
-            conta.NomeUsuario = textBoxNome.Text;
+            conta.NomeUsuario = textBoxUsuario.Text;
             conta.Senha = textBoxSenha.Text;
             aux = textBoxConfirmeSenha.Text;
             senhaAdm = textBoxSenhaAdm.Text;
@@ -70,9 +70,10 @@ namespace Safe_Login
             {
                 if (senhaAdm.Length > 0)
                 {
-                    if (senhaAdm.Equals("12345678"))
+                    if (senhaAdm.Equals("Admin"))
                     {
                         login.Cadastra(conta);
+                        MessageBox.Show("Usuário cadastrado com sucesso!");
                         LimparCampos();
                     }
                     else
@@ -86,7 +87,6 @@ namespace Safe_Login
                     MessageBox.Show("Campo de senha de administrador inválido!");
                     textBoxSenhaAdm.Focus();
                 }
-
             }
             else
             {
@@ -171,6 +171,13 @@ namespace Safe_Login
                 textBoxSenha.UseSystemPasswordChar = true;
                 textBoxConfirmeSenha.UseSystemPasswordChar = true;
             }
+        }
+
+        private void checkBoxSenhaAdm_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxSenhaAdm.Checked == true)
+                textBoxSenhaAdm.UseSystemPasswordChar = false;
+            else textBoxSenhaAdm.UseSystemPasswordChar = true;
         }
     }
 }

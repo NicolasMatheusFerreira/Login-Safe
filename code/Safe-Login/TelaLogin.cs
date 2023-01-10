@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Safe_Login
 {
     public partial class TelaLogin : Form
-    {     
+    {        
         public TelaLogin()
         {
             InitializeComponent();           
@@ -140,8 +140,8 @@ namespace Safe_Login
 
         private void labelCadastra_Click(object sender, EventArgs e)
         {
-            TelaCadastro cadastro = new TelaCadastro();
-            cadastro.Show();
+            TelaCadastro cadastro = new TelaCadastro();            
+            cadastro.Show();            
         }
 
         private void labelEsqueciSenha_Click(object sender, EventArgs e)
