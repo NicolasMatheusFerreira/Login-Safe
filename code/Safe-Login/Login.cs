@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 public class Login {
 
     Celula inicio;
-    public static string caminho = "users.txt";    
+    public string caminho = "users.txt";
 
     public Login() {
         inicio = null;
@@ -19,7 +20,21 @@ public class Login {
             aux = aux.prox;
         }
     }
-    
+
+    public string SugereSenha()
+    {
+
+        Random aleatorio = new Random();
+        int tamSenha = aleatorio.Next(8, 8);        
+        string senha = "";
+
+        for (int i = 1; i <= tamSenha; i++)
+        {
+            senha += aleatorio.Next(0, 50);
+        }
+        return senha;
+    }
+
     public bool CheckMaiuscula(string senha)
     {
         for (int i = 0; i < senha.Length; i++)
@@ -60,14 +75,14 @@ public class Login {
         else return 0;
     }
 
-    public bool Entra(string nomeUsuario, string senha) {
-
+    public bool Entra(string nomeUsuario, string senha, string cargo) {
+        
         if (nomeUsuario.Equals("Admin") && senha.Equals("Admin"))
             return true;
         else {
-            Celula aux = inicio;
-            while(aux!=null) {
-                if (nomeUsuario.Equals(aux.atual.NomeUsuario) && (senha.Equals(aux.atual.Senha)))
+            Celula aux = inicio;            
+            while (aux!=null) {        
+                if (nomeUsuario.Equals(aux.atual.NomeUsuario) && senha.Equals(aux.atual.Senha) && cargo.Equals(aux.atual.Cargo))
                     return true;            
                 aux = aux.prox;
             }

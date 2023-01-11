@@ -49,9 +49,11 @@
             this.checkBoxSenha = new System.Windows.Forms.CheckBox();
             this.checkBoxSenhaAdm = new System.Windows.Forms.CheckBox();
             this.iconButtonLogin = new FontAwesome.Sharp.IconButton();
+            this.iconButtonChave = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconButtonChave)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -144,6 +146,8 @@
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.UseSystemPasswordChar = true;
             this.textBoxSenha.TextChanged += new System.EventHandler(this.textBoxSenha_TextChanged);
+            this.textBoxSenha.Enter += new System.EventHandler(this.textBoxSenha_Enter);
+            this.textBoxSenha.Leave += new System.EventHandler(this.textBoxSenha_Leave);
             // 
             // textBoxConfirmeSenha
             // 
@@ -340,16 +344,30 @@
             this.iconButtonLogin.IconChar = FontAwesome.Sharp.IconChar.ClipboardUser;
             this.iconButtonLogin.IconColor = System.Drawing.Color.White;
             this.iconButtonLogin.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButtonLogin.IconSize = 40;
+            this.iconButtonLogin.IconSize = 30;
             this.iconButtonLogin.Name = "iconButtonLogin";
             this.iconButtonLogin.UseVisualStyleBackColor = false;
             this.iconButtonLogin.Click += new System.EventHandler(this.iconButtonLogar_Click);
+            // 
+            // iconButtonChave
+            // 
+            resources.ApplyResources(this.iconButtonChave, "iconButtonChave");
+            this.iconButtonChave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.iconButtonChave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButtonChave.IconChar = FontAwesome.Sharp.IconChar.Key;
+            this.iconButtonChave.IconColor = System.Drawing.Color.White;
+            this.iconButtonChave.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonChave.IconSize = 30;
+            this.iconButtonChave.Name = "iconButtonChave";
+            this.iconButtonChave.TabStop = false;
+            this.iconButtonChave.Click += new System.EventHandler(this.iconButtonChave_Click);
             // 
             // TelaCadastro
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.iconButtonChave);
             this.Controls.Add(this.iconButtonLogin);
             this.Controls.Add(this.checkBoxSenhaAdm);
             this.Controls.Add(this.checkBoxSenha);
@@ -375,6 +393,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconButtonChave)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,5 +420,6 @@
         private System.Windows.Forms.CheckBox checkBoxSenha;
         private System.Windows.Forms.CheckBox checkBoxSenhaAdm;
         private FontAwesome.Sharp.IconButton iconButtonLogin;
+        private FontAwesome.Sharp.IconPictureBox iconButtonChave;
     }
 }

@@ -209,5 +209,26 @@ namespace Safe_Login
                 comboBoxCargo.Items.Add(aux);
             }            
         }
+
+        private void textBoxSenha_Enter(object sender, EventArgs e)
+        {
+            iconButtonChave.Visible = true;
+        }
+
+        private void textBoxSenha_Leave(object sender, EventArgs e)
+        {
+            iconButtonChave.Visible = false;
+        }
+
+        private void iconButtonChave_Click(object sender, EventArgs e)
+        {
+            string senha = login.SugereSenha();
+
+            textBoxSenha.Text = senha;            
+            textBoxConfirmeSenha.Text = senha;
+
+            textBoxSenha.BackColor = Color.FromArgb(238, 227, 134);
+            textBoxConfirmeSenha.BackColor = Color.FromArgb(238, 227, 134);
+        }
     }
 }

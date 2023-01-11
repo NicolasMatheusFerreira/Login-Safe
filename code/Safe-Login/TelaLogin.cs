@@ -22,8 +22,9 @@ namespace Safe_Login
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            if (login.Entra(textBoxUsuario.Text, textBoxSenha.Text))
+            Login login = new Login();            
+            
+            if (login.Entra(textBoxUsuario.Text, textBoxSenha.Text, Convert.ToString(comboBoxCargo.SelectedItem)))
             {
                 this.Dispose();
             }
@@ -155,12 +156,16 @@ namespace Safe_Login
 
         private void comboBoxCargo_Click(object sender, EventArgs e)
         {            
-            comboBoxCargo.Items.Clear();
-
+            comboBoxCargo.Items.Clear();            
             foreach(string aux in config.cargo)
             {
                 comboBoxCargo.Items.Add(aux);
             }            
+        }
+
+        private void comboBoxCargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
