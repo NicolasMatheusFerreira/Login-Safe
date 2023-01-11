@@ -40,7 +40,11 @@
             this.labelCadastra = new System.Windows.Forms.Label();
             this.labelEsqueciSenha = new System.Windows.Forms.Label();
             this.labelSaida = new System.Windows.Forms.Label();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonEntrar
@@ -78,7 +82,7 @@
             this.comboBoxCargo.ForeColor = System.Drawing.Color.White;
             this.comboBoxCargo.FormattingEnabled = true;
             this.comboBoxCargo.Name = "comboBoxCargo";
-            this.comboBoxCargo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBoxCargo.Click += new System.EventHandler(this.comboBoxCargo_Click);
             // 
             // textBoxUsuario
             // 
@@ -157,11 +161,35 @@
             this.labelSaida.ForeColor = System.Drawing.Color.White;
             this.labelSaida.Name = "labelSaida";
             // 
-            // Login
+            // iconPictureBox1
+            // 
+            resources.ApplyResources(this.iconPictureBox1, "iconPictureBox1");
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserLock;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 27;
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // iconPictureBox2
+            // 
+            resources.ApplyResources(this.iconPictureBox2, "iconPictureBox2");
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.PuzzlePiece;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 24;
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // TelaLogin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.iconPictureBox2);
+            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.labelSaida);
             this.Controls.Add(this.labelEsqueciSenha);
             this.Controls.Add(this.labelCadastra);
@@ -178,9 +206,11 @@
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Login";
+            this.Name = "TelaLogin";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +229,7 @@
         private System.Windows.Forms.Label labelCadastra;
         private System.Windows.Forms.Label labelEsqueciSenha;
         private System.Windows.Forms.Label labelSaida;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
     }
 }

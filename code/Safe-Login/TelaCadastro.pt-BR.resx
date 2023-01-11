@@ -116,7 +116,7 @@
     <value>Nome Completo</value>
   </data>
   <data name="textBoxNome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 29</value>
+    <value>318, 29</value>
   </data>
   <data name="textBoxNome.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -134,13 +134,13 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 280</value>
+    <value>402, 280</value>
   </data>
   <data name="textBoxUsuario.PlaceholderText" xml:space="preserve">
     <value>Usuário</value>
   </data>
   <data name="textBoxUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 29</value>
+    <value>318, 29</value>
   </data>
   <data name="textBoxUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -164,7 +164,7 @@
     <value>Senha</value>
   </data>
   <data name="textBoxSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 29</value>
+    <value>318, 29</value>
   </data>
   <data name="textBoxSenha.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -182,13 +182,13 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxConfirmeSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 345</value>
+    <value>403, 345</value>
   </data>
   <data name="textBoxConfirmeSenha.PlaceholderText" xml:space="preserve">
     <value>Confirme Senha</value>
   </data>
   <data name="textBoxConfirmeSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 29</value>
+    <value>318, 29</value>
   </data>
   <data name="textBoxConfirmeSenha.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -221,7 +221,7 @@
     <value>Senha Administrador</value>
   </data>
   <data name="textBoxSenhaAdm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 29</value>
+    <value>318, 29</value>
   </data>
   <data name="textBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -239,13 +239,13 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 226</value>
+    <value>402, 226</value>
   </data>
   <data name="textBoxEmail.PlaceholderText" xml:space="preserve">
     <value>E-mail</value>
   </data>
   <data name="textBoxEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 29</value>
+    <value>317, 29</value>
   </data>
   <data name="textBoxEmail.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -263,7 +263,7 @@
     <value>51, 280</value>
   </data>
   <data name="comboBoxCargo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 29</value>
+    <value>318, 29</value>
   </data>
   <data name="comboBoxCargo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -347,13 +347,13 @@
     <value>MiddleLeft</value>
   </data>
   <data name="ButtonRegistrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>441, 554</value>
+    <value>402, 420</value>
   </data>
   <data name="ButtonRegistrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonRegistrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 56</value>
+    <value>155, 56</value>
   </data>
   <data name="ButtonRegistrar.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -374,13 +374,13 @@
     <value>NoControl</value>
   </data>
   <data name="buttonLimpar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 554</value>
+    <value>565, 420</value>
   </data>
   <data name="buttonLimpar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonLimpar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 56</value>
+    <value>155, 56</value>
   </data>
   <data name="buttonLimpar.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -430,8 +430,32 @@
   <data name="checkBoxSenhaAdm.Text" xml:space="preserve">
     <value>Mostrar Senha</value>
   </data>
+  <data name="iconButtonLogin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="iconButtonLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="iconButtonLogin.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="iconButtonLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="iconButtonLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="iconButtonLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 39</value>
+  </data>
+  <data name="iconButtonLogin.Text" xml:space="preserve">
+    <value>Logar</value>
+  </data>
+  <data name="iconButtonLogin.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>714, 619</value>
+    <value>734, 619</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>750, 670</value>

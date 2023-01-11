@@ -14,6 +14,8 @@ namespace Safe_Login
     public partial class TelaCadastro : Form
     {
         Login login = new Login();
+        Config config = new Config();
+
         public TelaCadastro()
         {
             InitializeComponent();
@@ -27,11 +29,8 @@ namespace Safe_Login
         
         private bool VerificaCampos(Conta obj)
         {
-            if (obj.NomeCompleto.Length > 0)
-                if (obj.Email.Length > 0)
-                    if (obj.Cargo.Length > 0)
-                        if (obj.Senha.Length > 0)
-                            return true;                        
+            if (obj.NomeCompleto.Length > 0 && obj.Email.Length > 0 && obj.Cargo.Length > 0 && obj.Senha.Length > 0)
+                return true;                        
             return false;
         }
 
@@ -56,7 +55,7 @@ namespace Safe_Login
 
             conta.NomeCompleto = textBoxNome.Text;
             conta.Email = textBoxEmail.Text;
-            conta.Cargo = comboBoxCargo.Text;
+            conta.Cargo = comboBoxCargo.SelectedItem.ToString();
             conta.NomeUsuario = textBoxUsuario.Text;
             conta.Senha = textBoxSenha.Text;
             aux = textBoxConfirmeSenha.Text;
@@ -64,35 +63,39 @@ namespace Safe_Login
 
             if (!VerificaCampos(conta))
                 MessageBox.Show("Campos vazios!");
-            
-
-            if (login.ValidaSenha(conta.Senha, aux))
+            else
             {
-                if (senhaAdm.Length > 0)
+                if (login.ValidaSenha(conta.Senha, aux))
                 {
-                    if (senhaAdm.Equals("Admin"))
+                    if (senhaAdm.Length > 0)
                     {
-                        login.Cadastra(conta);
-                        MessageBox.Show("Usuário cadastrado com sucesso!");
-                        LimparCampos();
+                        if (senhaAdm.Equals("Admin"))
+                        {
+                            if (!login.RegistrosDuplicados(conta))
+                            {
+                                login.Cadastra(conta);
+                                MessageBox.Show("Usuário cadastrado com sucesso!");
+                                LimparCampos();
+                            } else MessageBox.Show("Nome de usuário já cadastrado! Tente outro nome.");
+                        }
+                        else
+                        {
+                            // Mostrar mensagem senha administrador inválida!
+                            MessageBox.Show("Senha Administrador inválida!");
+                        }
                     }
                     else
                     {
-                        // Mostrar mensagem senha administrador inválida!
-                        MessageBox.Show("Senha Administrador inválida!");
+                        MessageBox.Show("Campo de senha de administrador inválido!");
+                        textBoxSenhaAdm.Focus();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Campo de senha de administrador inválido!");
-                    textBoxSenhaAdm.Focus();
+                    // Mostrar mensagem de senhas não correspondente
+                    MessageBox.Show("Senhas não correspondem!");
                 }
             }
-            else
-            {
-                // Mostrar mensagem de senhas não correspondente
-                MessageBox.Show("Senhas não correspondem!");
-            }            
         }
 
         private void buttonLimpar_Click(object sender, EventArgs e)
@@ -178,6 +181,33 @@ namespace Safe_Login
             if (checkBoxSenhaAdm.Checked == true)
                 textBoxSenhaAdm.UseSystemPasswordChar = false;
             else textBoxSenhaAdm.UseSystemPasswordChar = true;
+        }
+
+        private void textBoxNome_TextChanged(object sender, EventArgs e)
+        {
+            if (login.CheckNumeros(textBoxNome.Text))
+                textBoxNome.Text = "";
+        }        
+        
+        private void iconButtonLogar_Click(object sender, EventArgs e)
+        {
+            TelaLogin telaLogin = new TelaLogin();
+            this.Close();            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxCargo_Click(object sender, EventArgs e)
+        {
+            comboBoxCargo.Items.Clear();
+
+            foreach (string aux in config.cargo)
+            {
+                comboBoxCargo.Items.Add(aux);
+            }            
         }
     }
 }

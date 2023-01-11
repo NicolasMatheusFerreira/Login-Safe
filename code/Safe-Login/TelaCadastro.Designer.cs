@@ -48,6 +48,7 @@
             this.buttonLimpar = new FontAwesome.Sharp.IconButton();
             this.checkBoxSenha = new System.Windows.Forms.CheckBox();
             this.checkBoxSenhaAdm = new System.Windows.Forms.CheckBox();
+            this.iconButtonLogin = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -58,6 +59,7 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelSenha
             // 
@@ -89,6 +91,7 @@
             this.textBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNome.ForeColor = System.Drawing.Color.White;
             this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.TextChanged += new System.EventHandler(this.textBoxNome_TextChanged);
             // 
             // textBoxUsuario
             // 
@@ -240,6 +243,7 @@
             this.comboBoxCargo.ForeColor = System.Drawing.Color.White;
             this.comboBoxCargo.FormattingEnabled = true;
             this.comboBoxCargo.Name = "comboBoxCargo";
+            this.comboBoxCargo.Click += new System.EventHandler(this.comboBoxCargo_Click);
             // 
             // label2
             // 
@@ -327,11 +331,26 @@
             this.checkBoxSenhaAdm.UseVisualStyleBackColor = true;
             this.checkBoxSenhaAdm.CheckedChanged += new System.EventHandler(this.checkBoxSenhaAdm_CheckedChanged);
             // 
+            // iconButtonLogin
+            // 
+            resources.ApplyResources(this.iconButtonLogin, "iconButtonLogin");
+            this.iconButtonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.iconButtonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButtonLogin.ForeColor = System.Drawing.Color.White;
+            this.iconButtonLogin.IconChar = FontAwesome.Sharp.IconChar.ClipboardUser;
+            this.iconButtonLogin.IconColor = System.Drawing.Color.White;
+            this.iconButtonLogin.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButtonLogin.IconSize = 40;
+            this.iconButtonLogin.Name = "iconButtonLogin";
+            this.iconButtonLogin.UseVisualStyleBackColor = false;
+            this.iconButtonLogin.Click += new System.EventHandler(this.iconButtonLogar_Click);
+            // 
             // TelaCadastro
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.iconButtonLogin);
             this.Controls.Add(this.checkBoxSenhaAdm);
             this.Controls.Add(this.checkBoxSenha);
             this.Controls.Add(this.buttonLimpar);
@@ -381,5 +400,6 @@
         private FontAwesome.Sharp.IconButton buttonLimpar;
         private System.Windows.Forms.CheckBox checkBoxSenha;
         private System.Windows.Forms.CheckBox checkBoxSenhaAdm;
+        private FontAwesome.Sharp.IconButton iconButtonLogin;
     }
 }

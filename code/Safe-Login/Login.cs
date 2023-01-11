@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 
 public class Login {
 
     Celula inicio;
-    public static string caminho = "users.txt";
+    public static string caminho = "users.txt";    
+
     public Login() {
         inicio = null;
         ImportaCadastro(caminho);
@@ -17,7 +19,7 @@ public class Login {
             aux = aux.prox;
         }
     }
-
+    
     public bool CheckMaiuscula(string senha)
     {
         for (int i = 0; i < senha.Length; i++)
@@ -72,6 +74,17 @@ public class Login {
             return false;
         }        
     }
+    public bool RegistrosDuplicados(Conta obj)
+    {
+        Celula aux = inicio;
+        while (aux != null)
+        {
+            if (obj.NomeUsuario.Equals(aux.atual.NomeUsuario))
+                return true;
+            aux = aux.prox;
+        }
+        return false;
+    }
 
     public Conta Pop(string nomeUsuario) {
 
@@ -105,12 +118,23 @@ public class Login {
         return aux;
     }
     public Conta FormatoLeitura(StreamReader sr) {
+
         Conta aux = new Conta();
-        aux.NomeCompleto = sr.ReadLine();
-        aux.Email = sr.ReadLine();
-        aux.NomeUsuario = sr.ReadLine();
-        aux.Senha = sr.ReadLine();
-        aux.Cargo = sr.ReadLine();
+        string[] formatoLeitura = new string[5];
+        string conteudo = sr.ReadLine();
+        int j = 0;
+
+        for (int i = 0; i < conteudo.Length; i++)
+        {
+            if (conteudo[i] == '|')
+                j++;
+            else formatoLeitura[j] += conteudo[i];
+        }
+        aux.NomeCompleto = formatoLeitura[0];
+        aux.Email = formatoLeitura[1];
+        aux.NomeUsuario = formatoLeitura[2];
+        aux.Senha = formatoLeitura[3];
+        aux.Cargo = formatoLeitura[4];
         sr.ReadLine();
         return aux;
     }
@@ -128,12 +152,7 @@ public class Login {
     }
     public void FormatoCadastro(Celula aux, StreamWriter sw) {
 
-        sw.WriteLine(aux.atual.NomeCompleto);
-        sw.WriteLine(aux.atual.Email);
-        sw.WriteLine(aux.atual.NomeUsuario);
-        sw.WriteLine(aux.atual.Senha);
-        sw.WriteLine(aux.atual.Cargo);
-        sw.WriteLine();
+        sw.WriteLine(aux.atual.NomeCompleto + "|" + aux.atual.Email + "|" + aux.atual.NomeUsuario + "|" + aux.atual.Senha + "|" + aux.atual.Cargo);        
     }
     public void ExportaCadastro(string caminho, bool permissao) {
 

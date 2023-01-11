@@ -11,10 +11,13 @@ using System.Windows.Forms;
 namespace Safe_Login
 {
     public partial class TelaLogin : Form
-    {        
+    {
+        Login login = new Login();
+        Config config = new Config();
+
         public TelaLogin()
         {
-            InitializeComponent();           
+            InitializeComponent();            
         }
 
         private void buttonEntrar_Click(object sender, EventArgs e)
@@ -148,6 +151,16 @@ namespace Safe_Login
         {
             TelaEsqueciSenha esqueciSenha = new TelaEsqueciSenha();
             esqueciSenha.Show();
+        }        
+
+        private void comboBoxCargo_Click(object sender, EventArgs e)
+        {            
+            comboBoxCargo.Items.Clear();
+
+            foreach(string aux in config.cargo)
+            {
+                comboBoxCargo.Items.Add(aux);
+            }            
         }
     }
 }

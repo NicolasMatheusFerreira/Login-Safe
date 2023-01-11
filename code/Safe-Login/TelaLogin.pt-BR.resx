@@ -6157,7 +6157,7 @@
     <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="labelUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 32</value>
+    <value>350, 32</value>
   </data>
   <data name="labelUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -6181,7 +6181,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 112</value>
+    <value>350, 112</value>
   </data>
   <data name="labelSenha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -6272,6 +6272,15 @@
   </data>
   <data name="labelSaida.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="iconPictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 24</value>
+  </data>
+  <data name="iconPictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="iconPictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 24</value>
   </data>
   <data name="$this.AccessibleDescription" xml:space="preserve">
     <value>Tela de login - É uma tela que faz o controle de usuários</value>
