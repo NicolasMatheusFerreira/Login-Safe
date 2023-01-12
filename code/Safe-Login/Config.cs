@@ -5,11 +5,23 @@ using System.Collections.Generic;
 class Config {
 
     public List<string> cargo = new List<string>();
+    private string senhaAdministradorCadastro;
 
     public Config() {
+
         ImportarCargo("cargos.txt");
+        this.senhaAdministradorCadastro = "Admin";
     }
 
+    public string SenhaAdministradorCadastro
+    {
+        get { return this.senhaAdministradorCadastro; }
+        set { this.senhaAdministradorCadastro = value; }
+    }
+    public bool AdminCadastro(string i)
+    {
+        return this.senhaAdministradorCadastro.Equals(i) ? true : false;
+    }
     public void ImportarCargo(string caminho)
     {        
         StreamReader sr = new StreamReader(caminho);

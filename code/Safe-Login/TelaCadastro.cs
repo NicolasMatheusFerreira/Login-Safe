@@ -19,14 +19,23 @@ namespace Safe_Login
         public TelaCadastro()
         {
             InitializeComponent();
+            CarregaDados();
 
         }
-
         private void Cadastro_Load(object sender, EventArgs e)
         {
 
         }
         
+        private void CarregaDados()
+        {
+            comboBoxCargo.Items.Clear();
+            foreach (string aux in config.cargo)
+            {
+                comboBoxCargo.Items.Add(aux);
+            }
+        }
+
         private bool VerificaCampos(Conta obj)
         {
             if (obj.NomeCompleto.Length > 0 && obj.Email.Length > 0 && obj.Cargo.Length > 0 && obj.Senha.Length > 0)
@@ -38,11 +47,12 @@ namespace Safe_Login
         {
             textBoxNome.Clear();
             textBoxEmail.Clear();
+            comboBoxCargo.Text = "Selecione";
             textBoxUsuario.Clear();
             textBoxSenha.Clear();
             textBoxConfirmeSenha.Clear();
-            textBoxSenhaAdm.Clear();
-            comboBoxCargo.Text = "Selecione";
+            textBoxPalavraPasse.Clear();
+            textBoxSenhaAdm.Clear();            
 
             textBoxNome.Focus();
         }
@@ -55,10 +65,11 @@ namespace Safe_Login
 
             conta.NomeCompleto = textBoxNome.Text;
             conta.Email = textBoxEmail.Text;
-            conta.Cargo = comboBoxCargo.SelectedItem.ToString();
+            conta.Cargo = Convert.ToString(comboBoxCargo.SelectedItem);
             conta.NomeUsuario = textBoxUsuario.Text;
             conta.Senha = textBoxSenha.Text;
             aux = textBoxConfirmeSenha.Text;
+            conta.PalavraPasse = textBoxPalavraPasse.Text;
             senhaAdm = textBoxSenhaAdm.Text;
 
             if (!VerificaCampos(conta))
@@ -69,7 +80,7 @@ namespace Safe_Login
                 {
                     if (senhaAdm.Length > 0)
                     {
-                        if (senhaAdm.Equals("Admin"))
+                        if (config.AdminCadastro(senhaAdm))
                         {
                             if (!login.RegistrosDuplicados(conta))
                             {
@@ -195,19 +206,9 @@ namespace Safe_Login
             this.Close();            
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBoxCargo_Click(object sender, EventArgs e)
         {
-            comboBoxCargo.Items.Clear();
-
-            foreach (string aux in config.cargo)
-            {
-                comboBoxCargo.Items.Add(aux);
-            }            
+            //fefwefewfwefwe
         }
 
         private void textBoxSenha_Enter(object sender, EventArgs e)
@@ -222,13 +223,49 @@ namespace Safe_Login
 
         private void iconButtonChave_Click(object sender, EventArgs e)
         {
-            string senha = login.SugereSenha();
+            string senha = login.SugereSenha();            
 
             textBoxSenha.Text = senha;            
             textBoxConfirmeSenha.Text = senha;
 
             textBoxSenha.BackColor = Color.FromArgb(238, 227, 134);
             textBoxConfirmeSenha.BackColor = Color.FromArgb(238, 227, 134);
+
+            labelCadastroSenha.Visible = true;
+
+            if (login.CheckSenha(senha) == 3)
+            {
+                labelCadastroSenha.Text = "Senha forte";
+            }
+            else if (login.CheckSenha(senha) == 2)
+            {
+                labelCadastroSenha.Text = "Senha boa";
+            }
+            else if (login.CheckSenha(senha) == 1)
+            {
+                labelCadastroSenha.Text = "Senha média";
+            }
+            else labelCadastroSenha.Text = "Senha fraca";
+        }
+
+        private void comboBoxCargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButtonChave_MouseEnter(object sender, EventArgs e)
+        {
+            iconButtonChave.IconColor = Color.FromArgb(127, 127, 127);
+        }
+
+        private void iconButtonChave_MouseLeave(object sender, EventArgs e)
+        {
+            iconButtonChave.IconColor = Color.White;
+        }
+
+        private void textBoxPalavraPasse_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

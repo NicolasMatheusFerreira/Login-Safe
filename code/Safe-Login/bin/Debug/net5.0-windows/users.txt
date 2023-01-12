@@ -1,2 +1,2 @@
-Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmail.com|Nicolas|33900643|Operação
-André Luiz Mendes|andrezinho@gmail.com|André|1234|Administração
+True|Rosana Nunes|rosana@gmail.com|Operação|Rosana|123|Pet
+True|Margarethe Regina Da Silva Ferreira|margarethereginaferreira@gmail.com|Cordenação|Margarethe|#W11_46h>|Tóto

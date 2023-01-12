@@ -215,7 +215,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxSenhaAdm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 475</value>
+    <value>52, 549</value>
   </data>
   <data name="textBoxSenhaAdm.PlaceholderText" xml:space="preserve">
     <value>Senha Administrador</value>
@@ -224,7 +224,7 @@
     <value>318, 29</value>
   </data>
   <data name="textBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="textBoxEmail.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
@@ -260,16 +260,13 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="comboBoxCargo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 280</value>
+    <value>51, 286</value>
   </data>
   <data name="comboBoxCargo.Size" type="System.Drawing.Size, System.Drawing">
     <value>318, 29</value>
   </data>
   <data name="comboBoxCargo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="comboBoxCargo.Text" xml:space="preserve">
-    <value>Selecione</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -281,7 +278,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 439</value>
+    <value>73, 513</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -332,7 +329,7 @@
     <value>NoControl</value>
   </data>
   <data name="iconPictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 439</value>
+    <value>47, 513</value>
   </data>
   <data name="iconPictureBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 26</value>
@@ -347,16 +344,16 @@
     <value>MiddleLeft</value>
   </data>
   <data name="ButtonRegistrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>402, 420</value>
+    <value>402, 496</value>
   </data>
   <data name="ButtonRegistrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonRegistrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 56</value>
+    <value>155, 54</value>
   </data>
   <data name="ButtonRegistrar.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="ButtonRegistrar.Text" xml:space="preserve">
     <value>Criar</value>
@@ -374,16 +371,16 @@
     <value>NoControl</value>
   </data>
   <data name="buttonLimpar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 420</value>
+    <value>564, 496</value>
   </data>
   <data name="buttonLimpar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonLimpar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 56</value>
+    <value>155, 54</value>
   </data>
   <data name="buttonLimpar.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="buttonLimpar.Text" xml:space="preserve">
     <value>Limpar</value>
@@ -421,11 +418,14 @@
   <data name="checkBoxSenhaAdm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="checkBoxSenhaAdm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 584</value>
+  </data>
   <data name="checkBoxSenhaAdm.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 19</value>
   </data>
   <data name="checkBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="checkBoxSenhaAdm.Text" xml:space="preserve">
     <value>Mostrar Senha</value>
@@ -442,11 +442,17 @@
   <data name="iconButtonLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="iconButtonLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 564</value>
+  </data>
   <data name="iconButtonLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="iconButtonLogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>317, 39</value>
+  </data>
+  <data name="iconButtonLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="iconButtonLogin.Text" xml:space="preserve">
     <value>Logar</value>
@@ -466,8 +472,29 @@
   <data name="iconButtonChave.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="textBoxPalavraPasse.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxPalavraPasse.AccessibleName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxPalavraPasse.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxPalavraPasse.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxPalavraPasse.PlaceholderText" xml:space="preserve">
+    <value>Palavra passe</value>
+  </data>
+  <data name="textBoxPalavraPasse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 29</value>
+  </data>
+  <data name="textBoxPalavraPasse.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>734, 619</value>
+    <value>734, 631</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>750, 670</value>

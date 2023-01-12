@@ -6123,9 +6123,6 @@
   <data name="comboBoxCargo.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 29</value>
   </data>
-  <data name="comboBoxCargo.Text" xml:space="preserve">
-    <value>Selecione</value>
-  </data>
   <data name="textBoxUsuario.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
   </data>

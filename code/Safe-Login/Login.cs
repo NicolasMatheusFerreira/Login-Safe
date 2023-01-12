@@ -23,14 +23,56 @@ public class Login {
 
     public string SugereSenha()
     {
-
         Random aleatorio = new Random();
-        int tamSenha = aleatorio.Next(8, 8);        
+        int tamSenha = aleatorio.Next(7, 16);
+        int opcao, sugestao;
         string senha = "";
+        bool parada = true;
 
         for (int i = 1; i <= tamSenha; i++)
         {
-            senha += aleatorio.Next(0, 50);
+            opcao = aleatorio.Next(0, 4);
+
+            parada = true;
+            switch (opcao)
+            {
+                case 1: // Caracter especial
+                    while (parada)
+                    {
+                        sugestao = aleatorio.Next(33, 255);
+                        if (sugestao >= 33 && sugestao <= 47 || sugestao >= 58 && sugestao <= 64 || sugestao >= 91 && sugestao <= 96)
+                        {
+                            senha = senha + Convert.ToChar(sugestao);
+                            parada = false;
+                        }
+                    }
+
+                    break;
+
+                case 2: // Número
+                    while (parada)
+                    {
+                        sugestao = aleatorio.Next(33, 255);
+                        if (sugestao >= 48 && sugestao <= 57)
+                        {
+                            senha = senha + Convert.ToChar(sugestao);
+                            parada = false;
+                        }
+                    }
+                    break;
+
+                case 3: // Letra                    
+                    while (parada)
+                    {
+                        sugestao = aleatorio.Next(33, 255);
+                        if (sugestao >= 97 && sugestao <= 122 || sugestao >= 65 && sugestao <= 90)
+                        {
+                            senha = senha + Convert.ToChar(sugestao);
+                            parada = false;
+                        }
+                    }
+                    break;
+            }
         }
         return senha;
     }
@@ -82,7 +124,7 @@ public class Login {
         else {
             Celula aux = inicio;            
             while (aux!=null) {        
-                if (nomeUsuario.Equals(aux.atual.NomeUsuario) && senha.Equals(aux.atual.Senha) && cargo.Equals(aux.atual.Cargo))
+                if (aux.atual.Status==true && nomeUsuario.Equals(aux.atual.NomeUsuario) && senha.Equals(aux.atual.Senha) && cargo.Equals(aux.atual.Cargo))
                     return true;            
                 aux = aux.prox;
             }
@@ -135,7 +177,7 @@ public class Login {
     public Conta FormatoLeitura(StreamReader sr) {
 
         Conta aux = new Conta();
-        string[] formatoLeitura = new string[5];
+        string[] formatoLeitura = new string[7];
         string conteudo = sr.ReadLine();
         int j = 0;
 
@@ -145,11 +187,14 @@ public class Login {
                 j++;
             else formatoLeitura[j] += conteudo[i];
         }
-        aux.NomeCompleto = formatoLeitura[0];
-        aux.Email = formatoLeitura[1];
-        aux.NomeUsuario = formatoLeitura[2];
-        aux.Senha = formatoLeitura[3];
-        aux.Cargo = formatoLeitura[4];
+        aux.Status = Convert.ToBoolean(formatoLeitura[0]);
+        aux.NomeCompleto = formatoLeitura[1];
+        aux.Email = formatoLeitura[2];
+        aux.Cargo = formatoLeitura[3];
+        aux.NomeUsuario = formatoLeitura[4];
+        aux.Senha = formatoLeitura[5];
+        aux.PalavraPasse = formatoLeitura[6];
+
         sr.ReadLine();
         return aux;
     }
@@ -167,7 +212,7 @@ public class Login {
     }
     public void FormatoCadastro(Celula aux, StreamWriter sw) {
 
-        sw.WriteLine(aux.atual.NomeCompleto + "|" + aux.atual.Email + "|" + aux.atual.NomeUsuario + "|" + aux.atual.Senha + "|" + aux.atual.Cargo);        
+        sw.WriteLine(aux.atual.Status + "|" +aux.atual.NomeCompleto + "|" + aux.atual.Email + "|" + aux.atual.Cargo + "|" + aux.atual.NomeUsuario + "|" + aux.atual.Senha + "|" + aux.atual.PalavraPasse);
     }
     public void ExportaCadastro(string caminho, bool permissao) {
 

@@ -50,6 +50,7 @@
             this.checkBoxSenhaAdm = new System.Windows.Forms.CheckBox();
             this.iconButtonLogin = new FontAwesome.Sharp.IconButton();
             this.iconButtonChave = new FontAwesome.Sharp.IconPictureBox();
+            this.textBoxPalavraPasse = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -61,7 +62,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelSenha
             // 
@@ -244,10 +244,11 @@
             resources.ApplyResources(this.comboBoxCargo, "comboBoxCargo");
             this.comboBoxCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.comboBoxCargo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCargo.ForeColor = System.Drawing.Color.White;
             this.comboBoxCargo.FormattingEnabled = true;
             this.comboBoxCargo.Name = "comboBoxCargo";
-            this.comboBoxCargo.Click += new System.EventHandler(this.comboBoxCargo_Click);
+            this.comboBoxCargo.SelectedIndexChanged += new System.EventHandler(this.comboBoxCargo_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -361,12 +362,42 @@
             this.iconButtonChave.Name = "iconButtonChave";
             this.iconButtonChave.TabStop = false;
             this.iconButtonChave.Click += new System.EventHandler(this.iconButtonChave_Click);
+            this.iconButtonChave.MouseEnter += new System.EventHandler(this.iconButtonChave_MouseEnter);
+            this.iconButtonChave.MouseLeave += new System.EventHandler(this.iconButtonChave_MouseLeave);
+            // 
+            // textBoxPalavraPasse
+            // 
+            resources.ApplyResources(this.textBoxPalavraPasse, "textBoxPalavraPasse");
+            this.textBoxPalavraPasse.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource1"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource2"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource3"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource4"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource5"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource6"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource7"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource8"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource9"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource10"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource11"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource12"),
+            resources.GetString("textBoxPalavraPasse.AutoCompleteCustomSource13")});
+            this.textBoxPalavraPasse.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxPalavraPasse.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxPalavraPasse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.textBoxPalavraPasse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPalavraPasse.ForeColor = System.Drawing.Color.White;
+            this.textBoxPalavraPasse.Name = "textBoxPalavraPasse";
+            this.textBoxPalavraPasse.Tag = "";
+            this.textBoxPalavraPasse.TextChanged += new System.EventHandler(this.textBoxPalavraPasse_TextChanged);
             // 
             // TelaCadastro
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.textBoxPalavraPasse);
             this.Controls.Add(this.iconButtonChave);
             this.Controls.Add(this.iconButtonLogin);
             this.Controls.Add(this.checkBoxSenhaAdm);
@@ -421,5 +452,6 @@
         private System.Windows.Forms.CheckBox checkBoxSenhaAdm;
         private FontAwesome.Sharp.IconButton iconButtonLogin;
         private FontAwesome.Sharp.IconPictureBox iconButtonChave;
+        private System.Windows.Forms.TextBox textBoxPalavraPasse;
     }
 }

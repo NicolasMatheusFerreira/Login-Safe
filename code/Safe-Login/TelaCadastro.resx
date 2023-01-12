@@ -57,888 +57,948 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;iconButtonFechar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;iconButtonChave.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Silva</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource6" xml:space="preserve">
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource6" xml:space="preserve">
     <value>Samuel</value>
   </data>
-  <data name="&gt;&gt;textBoxSenha.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;buttonLimpar.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;iconPictureBox3.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TelaCadastro</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSenhaAdm.Name" xml:space="preserve">
-    <value>checkBoxSenhaAdm</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource" xml:space="preserve">
-    <value>Nicolas</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonEntrar.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBoxUsuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>430, 283</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Silva</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Geraldo</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Samuel</value>
-  </data>
-  <data name="&gt;&gt;labelCadastroSenha.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;labelCadastroSenha.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Luiz</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Geraldo</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Lorena</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="iconButtonChave.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBoxNome.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Silva</value>
-  </data>
-  <data name="&gt;&gt;iconButtonLogin.Name" xml:space="preserve">
-    <value>iconButtonLogin</value>
-  </data>
-  <data name="textBoxUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 226</value>
-  </data>
-  <data name="buttonLimpar.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="textBoxNome.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Italo</value>
-  </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 399</value>
-  </data>
-  <data name="labelSaida.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 377</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Lorena</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Silva</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 285</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Geraldo</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Samuel</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCargo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Luiz</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 370</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCargo.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Italo</value>
-  </data>
-  <data name="checkBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 377</value>
-  </data>
-  <data name="&gt;&gt;buttonLimpar.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Matheus</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCadastroSenha.Name" xml:space="preserve">
-    <value>labelCadastroSenha</value>
-  </data>
-  <data name="textBoxNome.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Matheus</value>
-  </data>
-  <data name="&gt;&gt;iconPictureBox1.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Samuel</value>
-  </data>
-  <data name="textBoxNome.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Lorena</value>
-  </data>
-  <data name="textBoxSenhaAdm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 465</value>
-  </data>
-  <data name="&gt;&gt;buttonRegistrar.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="iconButtonFechar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>402, 490</value>
-  </data>
-  <data name="iconPictureBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="&gt;&gt;ButtonRegistrar.Name" xml:space="preserve">
-    <value>ButtonRegistrar</value>
-  </data>
-  <data name="&gt;&gt;iconButtonLogin.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Margarethe</value>
-  </data>
-  <data name="&gt;&gt;textBoxNome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Margarethe</value>
-  </data>
-  <data name="&gt;&gt;textBoxEmail.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="buttonEntrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 479</value>
-  </data>
-  <data name="iconButtonFechar.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;textBoxConfirmeSenha.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Samuel</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelSaida.Name" xml:space="preserve">
-    <value>labelSaida</value>
-  </data>
-  <data name="&gt;&gt;buttonEntrar.Name" xml:space="preserve">
-    <value>buttonEntrar</value>
-  </data>
-  <data name="textBoxEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Lorena</value>
-  </data>
-  <data name="&gt;&gt;labelSaida.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="iconButtonChave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 381</value>
   </data>
   <data name="&gt;&gt;textBoxSenhaAdm.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBox2.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Magela</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>Ferreira</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>Ferreira</value>
-  </data>
-  <data name="&gt;&gt;textBoxSenha.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Luiz</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource" xml:space="preserve">
-    <value>Nicolas</value>
-  </data>
-  <data name="buttonRegistrar.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Italo</value>
-  </data>
-  <data name="&gt;&gt;labelSenha.Name" xml:space="preserve">
-    <value>labelSenha</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource" xml:space="preserve">
-    <value>Nicolas</value>
-  </data>
-  <data name="&gt;&gt;iconButtonLogin.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 235</value>
-  </data>
   <data name="&gt;&gt;buttonLimpar.Name" xml:space="preserve">
     <value>buttonLimpar</value>
   </data>
-  <data name="iconPictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Magela</value>
-  </data>
-  <data name="&gt;&gt;textBoxEmail.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Luiz</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 323</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSenha.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="iconButtonChave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 381</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Matheus</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSenhaAdm.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Italo</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Samuel</value>
-  </data>
-  <data name="buttonRegistrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 511</value>
-  </data>
-  <data name="labelCadastroSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 377</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Luiz</value>
-  </data>
-  <data name="&gt;&gt;iconPictureBox2.Name" xml:space="preserve">
-    <value>iconPictureBox2</value>
-  </data>
-  <data name="iconButtonLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>402, 490</value>
-  </data>
-  <data name="&gt;&gt;buttonLimpar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Margarethe</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Margarethe</value>
-  </data>
-  <data name="&gt;&gt;textBoxConfirmeSenha.Name" xml:space="preserve">
-    <value>textBoxConfirmeSenha</value>
-  </data>
-  <data name="&gt;&gt;textBoxConfirmeSenha.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="textBoxNome.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;textBoxEmail.Name" xml:space="preserve">
-    <value>textBoxEmail</value>
-  </data>
-  <data name="&gt;&gt;labelSaida.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="&gt;&gt;iconPictureBox1.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;labelSaida.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>Ferreira</value>
-  </data>
-  <data name="&gt;&gt;textBoxConfirmeSenha.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;textBoxSenha.Name" xml:space="preserve">
-    <value>textBoxSenha</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Cadastro</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Lorena</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Matheus</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 377</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="textBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 285</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCargo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Matheus</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Italo</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Regina</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSenha.Name" xml:space="preserve">
-    <value>checkBoxSenha</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Magela</value>
-  </data>
-  <data name="&gt;&gt;iconButtonFechar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxEmail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource" xml:space="preserve">
-    <value>Nicolas</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Margarethe</value>
-  </data>
-  <data name="labelSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Lorena</value>
-  </data>
-  <data name="&gt;&gt;ButtonRegistrar.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ButtonRegistrar.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;iconButtonFechar.Name" xml:space="preserve">
-    <value>iconButtonFechar</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Italo</value>
-  </data>
-  <data name="&gt;&gt;textBoxUsuario.Name" xml:space="preserve">
-    <value>textBoxUsuario</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
-    <value>progressBar1</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="&gt;&gt;textBoxNome.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBoxUsuario.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;checkBoxSenha.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox1.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
   </data>
-  <data name="&gt;&gt;buttonRegistrar.Name" xml:space="preserve">
-    <value>buttonRegistrar</value>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBoxSenhaAdm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBoxNome.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="&gt;&gt;iconPictureBox3.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Geraldo</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>Ferreira</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 413</value>
-  </data>
-  <data name="comboBoxCargo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 280</value>
-  </data>
-  <data name="&gt;&gt;labelSenha.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBoxPalavraPasse.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonRegistrar.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="iconPictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 413</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Magela</value>
-  </data>
-  <data name="&gt;&gt;iconPictureBox1.Name" xml:space="preserve">
-    <value>iconPictureBox1</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource" xml:space="preserve">
-    <value>Nicolas</value>
-  </data>
-  <data name="&gt;&gt;textBoxUsuario.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 25</value>
-  </data>
-  <data name="textBoxConfirmeSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Geraldo</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Italo</value>
-  </data>
-  <data name="textBoxNome.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Margarethe</value>
-  </data>
-  <data name="comboBoxCargo.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Silva</value>
-  </data>
-  <data name="textBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="textBoxNome.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Matheus</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Matheus</value>
-  </data>
-  <data name="&gt;&gt;iconPictureBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;buttonEntrar.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="iconButtonLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="labelCadastroSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSenha.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
   </data>
   <data name="textBoxConfirmeSenha.AutoCompleteCustomSource13" xml:space="preserve">
     <value>Luiz</value>
   </data>
-  <data name="&gt;&gt;iconButtonChave.Name" xml:space="preserve">
-    <value>iconButtonChave</value>
+  <data name="&gt;&gt;iconPictureBox3.Name" xml:space="preserve">
+    <value>iconPictureBox3</value>
   </data>
-  <data name="checkBoxSenhaAdm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 510</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonRegistrar.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
-  <data name="textBoxNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 272</value>
+  <data name="textBoxSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;iconPictureBox2.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  <data name="&gt;&gt;iconPictureBox2.Name" xml:space="preserve">
+    <value>iconPictureBox2</value>
   </data>
-  <data name="&gt;&gt;textBoxSenha.Type" xml:space="preserve">
+  <data name="textBoxNome.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="&gt;&gt;textBoxConfirmeSenha.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxUsuario.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource" xml:space="preserve">
-    <value>Nicolas</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Regina</value>
   </data>
   <data name="buttonLimpar.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 511</value>
   </data>
-  <data name="textBox1.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Lorena</value>
+  <data name="textBoxUsuario.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
   </data>
-  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="textBoxNome.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>Ferreira</value>
-  </data>
-  <data name="textBoxNome.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Samuel</value>
-  </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Silva</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Samuel</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Geraldo</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource" xml:space="preserve">
+  <data name="textBox1.AutoCompleteCustomSource" xml:space="preserve">
     <value>Nicolas</value>
   </data>
-  <data name="iconPictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="textBox1.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
   </data>
-  <data name="&gt;&gt;iconButtonChave.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="textBoxEmail.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
   </data>
-  <data name="textBoxNome.AutoCompleteCustomSource4" xml:space="preserve">
+  <data name="&gt;&gt;buttonRegistrar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource4" xml:space="preserve">
     <value>Regina</value>
   </data>
-  <data name="&gt;&gt;labelSenha.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
   </data>
-  <data name="&gt;&gt;textBoxSenhaAdm.Name" xml:space="preserve">
-    <value>textBoxSenhaAdm</value>
+  <data name="&gt;&gt;ButtonRegistrar.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="ButtonRegistrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 554</value>
+  <data name="&gt;&gt;checkBoxSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBoxSenhaAdm.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Geraldo</value>
+  <data name="&gt;&gt;comboBoxCargo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxNome.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;checkBoxSenha.Name" xml:space="preserve">
+    <value>checkBoxSenha</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="textBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 285</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
   </data>
   <data name="&gt;&gt;comboBoxCargo.Name" xml:space="preserve">
     <value>comboBoxCargo</value>
   </data>
-  <data name="&gt;&gt;labelSenha.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox1.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSenha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxConfirmeSenha.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSenhaAdm.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
   </data>
   <data name="&gt;&gt;buttonEntrar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource4" xml:space="preserve">
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="checkBoxSenhaAdm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 510</value>
+  </data>
+  <data name="&gt;&gt;buttonRegistrar.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;iconButtonChave.Name" xml:space="preserve">
+    <value>iconButtonChave</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource4" xml:space="preserve">
     <value>Regina</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
   </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Name" xml:space="preserve">
+    <value>textBoxSenha</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="&gt;&gt;labelSaida.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSenhaAdm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSaida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSenhaAdm.Name" xml:space="preserve">
+    <value>checkBoxSenhaAdm</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenhaAdm.Name" xml:space="preserve">
+    <value>textBoxSenhaAdm</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox1.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="textBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;iconButtonChave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Name" xml:space="preserve">
+    <value>labelSenha</value>
+  </data>
+  <data name="iconPictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonEntrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 479</value>
+  </data>
+  <data name="textBox1.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCargo.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;buttonLimpar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 399</value>
+  </data>
+  <data name="&gt;&gt;iconButtonLogin.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCargo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 235</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox2.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 377</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="labelSaida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 377</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="&gt;&gt;textBoxPalavraPasse.Name" xml:space="preserve">
+    <value>textBoxPalavraPasse</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 323</value>
+  </data>
+  <data name="textBox1.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="textBox1.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="checkBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="labelSaida.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="buttonLimpar.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;iconPictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="textBoxConfirmeSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 416</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="textBoxNome.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Luiz</value>
+  <data name="&gt;&gt;iconPictureBox1.Name" xml:space="preserve">
+    <value>iconPictureBox1</value>
   </data>
-  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>Italo</value>
+  <data name="textBox2.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
   </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Regina</value>
+  <data name="&gt;&gt;iconButtonChave.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>Lorena</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Margarethe</value>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
   </data>
   <data name="textBoxNome.AutoCompleteCustomSource" xml:space="preserve">
     <value>Nicolas</value>
   </data>
+  <data name="iconButtonLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 490</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenhaAdm.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="&gt;&gt;iconButtonFechar.Name" xml:space="preserve">
+    <value>iconButtonFechar</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxConfirmeSenha.Name" xml:space="preserve">
+    <value>textBoxConfirmeSenha</value>
+  </data>
+  <data name="buttonRegistrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 511</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="&gt;&gt;textBoxPalavraPasse.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelCadastroSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="&gt;&gt;labelSaida.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;labelCadastroSenha.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ButtonRegistrar.Name" xml:space="preserve">
+    <value>ButtonRegistrar</value>
+  </data>
+  <data name="&gt;&gt;labelCadastroSenha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSenhaAdm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="&gt;&gt;buttonLimpar.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textBoxConfirmeSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 416</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="textBox1.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="&gt;&gt;textBoxUsuario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="iconPictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 84</value>
+  </data>
+  <data name="&gt;&gt;labelCadastroSenha.Name" xml:space="preserve">
+    <value>labelCadastroSenha</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="comboBoxCargo.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="iconPictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="textBox1.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxConfirmeSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;textBoxEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="textBoxNome.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSenha.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="&gt;&gt;textBoxSenha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="textBoxPalavraPasse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 440</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="iconButtonFechar.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="checkBoxSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;textBoxConfirmeSenha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>430, 283</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="&gt;&gt;buttonRegistrar.Name" xml:space="preserve">
+    <value>buttonRegistrar</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="&gt;&gt;textBoxPalavraPasse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonRegistrar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;buttonLimpar.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;buttonEntrar.Name" xml:space="preserve">
+    <value>buttonEntrar</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="buttonEntrar.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="checkBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 377</value>
+  </data>
+  <data name="textBoxNome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 272</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Magela</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ButtonRegistrar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.Name" xml:space="preserve">
+    <value>textBoxNome</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="iconButtonLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;textBoxUsuario.Name" xml:space="preserve">
+    <value>textBoxUsuario</value>
+  </data>
+  <data name="textBoxUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 413</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="&gt;&gt;iconButtonLogin.Name" xml:space="preserve">
+    <value>iconButtonLogin</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="comboBoxCargo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 280</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
+    <value>progressBar1</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="iconPictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 413</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="iconButtonChave.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Nicolas</value>
+  </data>
+  <data name="textBoxSenhaAdm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 465</value>
+  </data>
+  <data name="&gt;&gt;iconButtonChave.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="textBoxNome.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Geraldo</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="&gt;&gt;iconPictureBox3.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="iconPictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 186</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TelaCadastro</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 370</value>
+  </data>
+  <data name="&gt;&gt;labelSaida.Name" xml:space="preserve">
+    <value>labelSaida</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Silva</value>
+  </data>
+  <data name="&gt;&gt;iconButtonFechar.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;iconButtonFechar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBox1.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="textBoxSenha.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="&gt;&gt;textBoxNome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxPalavraPasse.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="labelCadastroSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 377</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Italo</value>
+  </data>
+  <data name="&gt;&gt;iconButtonFechar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="iconButtonFechar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 490</value>
+  </data>
+  <data name="textBoxEmail.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="&gt;&gt;textBoxEmail.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="textBoxSenhaAdm.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 25</value>
+  </data>
+  <data name="textBoxNome.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Matheus</value>
+  </data>
+  <data name="ButtonRegistrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 554</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;iconButtonLogin.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="textBox1.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Ferreira</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource11" xml:space="preserve">
     <value>Geraldo</value>
   </data>
   <data name="&gt;&gt;iconButtonLogin.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;labelSenha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 5</value>
   </data>
-  <data name="&gt;&gt;checkBoxSenhaAdm.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>Matheus</value>
-  </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="checkBoxSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource12" xml:space="preserve">
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource12" xml:space="preserve">
     <value>Magela</value>
   </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Da</value>
+  <data name="iconPictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="textBoxPalavraPasse.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="&gt;&gt;textBoxEmail.Name" xml:space="preserve">
+    <value>textBoxEmail</value>
   </data>
   <data name="&gt;&gt;ButtonRegistrar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;iconPictureBox3.Name" xml:space="preserve">
-    <value>iconPictureBox3</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>Ferreira</value>
-  </data>
-  <data name="&gt;&gt;iconButtonFechar.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="textBoxSenhaAdm.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Magela</value>
-  </data>
-  <data name="&gt;&gt;buttonRegistrar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;textBoxSenhaAdm.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;textBoxNome.Name" xml:space="preserve">
-    <value>textBoxNome</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxEmail.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Silva</value>
-  </data>
-  <data name="textBoxUsuario.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Luiz</value>
-  </data>
-  <data name="&gt;&gt;textBoxUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonRegistrar.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="iconPictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 186</value>
-  </data>
-  <data name="textBox1.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Margarethe</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBox2.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="&gt;&gt;labelCadastroSenha.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;iconPictureBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBoxEmail.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="textBox1.AutoCompleteCustomSource2" xml:space="preserve">
     <value>Ferreira</value>
   </data>
-  <data name="textBoxNome.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Magela</value>
+  <data name="textBoxUsuario.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
   </data>
-  <data name="labelSaida.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="textBoxSenha.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Lorena</value>
   </data>
-  <data name="&gt;&gt;buttonEntrar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox2.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
   </data>
-  <data name="iconPictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 84</value>
-  </data>
-  <data name="textBoxUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;iconPictureBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBoxNome.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;iconButtonChave.Parent" xml:space="preserve">
+  <data name="textBox2.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Regina</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="textBoxNome.AutoCompleteCustomSource2" xml:space="preserve">
+  <data name="textBoxUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 226</value>
+  </data>
+  <data name="textBoxConfirmeSenha.AutoCompleteCustomSource2" xml:space="preserve">
     <value>Ferreira</value>
   </data>
-  <data name="checkBoxSenhaAdm.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="textBox1.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Margarethe</value>
   </data>
-  <data name="textBoxSenha.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Silva</value>
+  <data name="textBox1.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Regina</value>
   </data>
-  <data name="textBox1.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Magela</value>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 285</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>pt-BR</value>
-  </metadata>
+  <data name="labelCadastroSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="textBoxUsuario.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox2.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Luiz</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>pt-BR</value>
   </metadata>
 </root>

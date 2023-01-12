@@ -79,9 +79,11 @@
             resources.ApplyResources(this.comboBoxCargo, "comboBoxCargo");
             this.comboBoxCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.comboBoxCargo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCargo.ForeColor = System.Drawing.Color.White;
             this.comboBoxCargo.FormattingEnabled = true;
             this.comboBoxCargo.Name = "comboBoxCargo";
+            this.comboBoxCargo.SelectedIndexChanged += new System.EventHandler(this.comboBoxCargo_SelectedIndexChanged_1);
             this.comboBoxCargo.Click += new System.EventHandler(this.comboBoxCargo_Click);
             // 
             // textBoxUsuario

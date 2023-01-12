@@ -17,7 +17,17 @@ namespace Safe_Login
 
         public TelaLogin()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            CarregaDados();
+        }
+
+        private void CarregaDados()
+        {
+            comboBoxCargo.Items.Clear();
+            foreach (string aux in config.cargo)
+            {
+                comboBoxCargo.Items.Add(aux);
+            }
         }
 
         private void buttonEntrar_Click(object sender, EventArgs e)
@@ -155,15 +165,15 @@ namespace Safe_Login
         }        
 
         private void comboBoxCargo_Click(object sender, EventArgs e)
-        {            
-            comboBoxCargo.Items.Clear();            
-            foreach(string aux in config.cargo)
-            {
-                comboBoxCargo.Items.Add(aux);
-            }            
+        {                        
         }
 
         private void comboBoxCargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxCargo_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
