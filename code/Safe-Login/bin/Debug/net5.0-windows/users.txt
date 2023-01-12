@@ -1,2 +1,4 @@
-True|Rosana Nunes|rosana@gmail.com|Operação|Rosana|123|Pet
-True|Margarethe Regina Da Silva Ferreira|margarethereginaferreira@gmail.com|Cordenação|Margarethe|#W11_46h>|Tóto
+True|Margarethe|margarethe@gmail.com|Supervisão|Margo|12|
+True|Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmail.com|Gerencia|Nicolas|jj9](_Z>|Homem-Aranha
+True|Lorena Regina Ferreira|lorenareginaferreira@gmail.com|Cordenação|Lorena|40028922|Crepúsculo
+True|Italo Samuel Ferreira|italosamuelferreirea23@gmail.com|Supervisão|Italo|89254339|Rebelde

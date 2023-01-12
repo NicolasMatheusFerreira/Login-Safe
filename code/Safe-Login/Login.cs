@@ -17,8 +17,8 @@ public class Login {
         Celula aux = inicio;
         while(aux!=null) {
             Console.WriteLine(aux.atual.NomeCompleto+"|"+aux.atual.Email+"|"+aux.atual.NomeUsuario+"|"+aux.atual.Senha);
-            aux = aux.prox;
-        }
+            aux = aux.prox                ;
+        }        
     }
 
     public string SugereSenha()
@@ -174,11 +174,10 @@ public class Login {
         ExportaCadastro(caminho, false);
         return aux;
     }
-    public Conta FormatoLeitura(StreamReader sr) {
+    public Conta FormatoLeitura(string conteudo) {
 
         Conta aux = new Conta();
-        string[] formatoLeitura = new string[7];
-        string conteudo = sr.ReadLine();
+        string[] formatoLeitura = new string[7];        
         int j = 0;
 
         for (int i = 0; i < conteudo.Length; i++)
@@ -194,8 +193,7 @@ public class Login {
         aux.NomeUsuario = formatoLeitura[4];
         aux.Senha = formatoLeitura[5];
         aux.PalavraPasse = formatoLeitura[6];
-
-        sr.ReadLine();
+        
         return aux;
     }
     public void ImportaCadastro(string caminho) {
@@ -204,8 +202,11 @@ public class Login {
             Console.WriteLine("Erro! Diretorio inexistente!");
         } else {
             StreamReader sr = new StreamReader(caminho);
-            while(!sr.EndOfStream) {
-                Push(FormatoLeitura(sr));
+            string linha = "";
+            linha = sr.ReadLine();
+            while(linha!=null) {
+                Push(FormatoLeitura(linha));
+                linha = sr.ReadLine();
             }
             sr.Close();
         }

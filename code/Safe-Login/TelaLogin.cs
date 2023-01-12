@@ -32,20 +32,22 @@ namespace Safe_Login
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
-            Login login = new Login();            
-            
-            if (login.Entra(textBoxUsuario.Text, textBoxSenha.Text, Convert.ToString(comboBoxCargo.SelectedItem)))
+            Login login = new Login();
+
+            if (config.Admin(textBoxUsuario.Text, textBoxSenha.Text)) {
+                MessageBox.Show("Bem-vindo administrador");
+            } else if (login.Entra(textBoxUsuario.Text, textBoxSenha.Text, Convert.ToString(comboBoxCargo.SelectedItem)))
             {
                 this.Dispose();
             }
             else
             {
+                Console.Beep();
+                Console.Beep();
                 labelSaida.Visible = true;
-                labelSaida.Text = "Nome de usuário ou senha incorretos.\n\nTente novamente!";
-                Console.Beep();
-                Console.Beep();
+                labelSaida.Text = "Nome de usuário ou senha incorretos.\n\nTente novamente!";                
                 textBoxUsuario.Focus();
-            }
+            }            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

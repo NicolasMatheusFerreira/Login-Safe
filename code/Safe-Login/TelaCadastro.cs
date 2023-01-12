@@ -87,12 +87,12 @@ namespace Safe_Login
                                 login.Cadastra(conta);
                                 MessageBox.Show("Usuário cadastrado com sucesso!");
                                 LimparCampos();
-                            } else MessageBox.Show("Nome de usuário já cadastrado! Tente outro nome.");
+                            } else MessageBox.Show("Nome de usuário já cadastrado! Tente outro usuário.");
                         }
                         else
                         {
                             // Mostrar mensagem senha administrador inválida!
-                            MessageBox.Show("Senha Administrador inválida!");
+                            MessageBox.Show("Senha Administrador inválida. Tente novamente!");
                         }
                     }
                     else
