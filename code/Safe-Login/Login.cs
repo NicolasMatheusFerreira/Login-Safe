@@ -77,6 +77,16 @@ public class Login {
         return senha;
     }
 
+    public bool CheckEspacosBrancos(string senha)
+    {
+        for(int i = 0; i<senha.Length; i++)
+        {
+            if (senha[i] == ' ')
+                return true;
+        }
+        return false;
+    }
+
     public bool CheckMaiuscula(string senha)
     {
         for (int i = 0; i < senha.Length; i++)
@@ -118,18 +128,14 @@ public class Login {
     }
 
     public bool Entra(string nomeUsuario, string senha, string cargo) {
-        
-        if (nomeUsuario.Equals("Admin") && senha.Equals("Admin"))
-            return true;
-        else {
-            Celula aux = inicio;            
-            while (aux!=null) {        
-                if (aux.atual.Status==true && nomeUsuario.Equals(aux.atual.NomeUsuario) && senha.Equals(aux.atual.Senha) && cargo.Equals(aux.atual.Cargo))
-                    return true;            
+                
+        Celula aux = inicio;            
+        while (aux!=null) {        
+            if (aux.atual.Status==true && nomeUsuario.Equals(aux.atual.NomeUsuario) && senha.Equals(aux.atual.Senha) && cargo.Equals(aux.atual.Cargo))
+                return true;            
                 aux = aux.prox;
-            }
-            return false;
-        }        
+        }
+        return false;            
     }
     public bool RegistrosDuplicados(Conta obj)
     {

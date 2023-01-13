@@ -134,7 +134,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>402, 280</value>
+    <value>402, 286</value>
   </data>
   <data name="textBoxUsuario.PlaceholderText" xml:space="preserve">
     <value>Usuário</value>
@@ -182,7 +182,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="textBoxConfirmeSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 345</value>
+    <value>401, 345</value>
   </data>
   <data name="textBoxConfirmeSenha.PlaceholderText" xml:space="preserve">
     <value>Confirme Senha</value>
@@ -483,6 +483,9 @@
   </data>
   <data name="textBoxPalavraPasse.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxPalavraPasse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 432</value>
   </data>
   <data name="textBoxPalavraPasse.PlaceholderText" xml:space="preserve">
     <value>Palavra passe</value>

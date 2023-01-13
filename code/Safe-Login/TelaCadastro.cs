@@ -28,7 +28,7 @@ namespace Safe_Login
         }
         
         private void CarregaDados()
-        {
+        {            
             comboBoxCargo.Items.Clear();
             foreach (string aux in config.cargo)
             {
@@ -47,7 +47,7 @@ namespace Safe_Login
         {
             textBoxNome.Clear();
             textBoxEmail.Clear();
-            comboBoxCargo.Text = "Selecione";
+            comboBoxCargo.Items.Clear();
             textBoxUsuario.Clear();
             textBoxSenha.Clear();
             textBoxConfirmeSenha.Clear();
@@ -154,11 +154,6 @@ namespace Safe_Login
             }                
         }
 
-        private void labelCadastroSenha_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBoxSenha_TextChanged(object sender, EventArgs e)
         {
             labelCadastroSenha.Visible = true;
@@ -248,11 +243,6 @@ namespace Safe_Login
             else labelCadastroSenha.Text = "Senha fraca";
         }
 
-        private void comboBoxCargo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void iconButtonChave_MouseEnter(object sender, EventArgs e)
         {
             iconButtonChave.IconColor = Color.FromArgb(127, 127, 127);
@@ -266,6 +256,18 @@ namespace Safe_Login
         private void textBoxPalavraPasse_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void TelaCadastro_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                var result = MessageBox.Show(this, "Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo);
+                if (result != DialogResult.Yes)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
     }
 }

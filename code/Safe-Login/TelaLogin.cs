@@ -38,7 +38,8 @@ namespace Safe_Login
                 MessageBox.Show("Bem-vindo administrador");
             } else if (login.Entra(textBoxUsuario.Text, textBoxSenha.Text, Convert.ToString(comboBoxCargo.SelectedItem)))
             {
-                this.Dispose();
+                MessageBox.Show($"Bem-vindo {textBoxUsuario.Text}");
+                this.Dispose();                
             }
             else
             {
@@ -113,7 +114,7 @@ namespace Safe_Login
         {
             string texto = textBoxUsuario.Text;
             if (texto.Length > 0)
-                if (texto.Equals("Nicolas"))
+                if (!login.CheckEspacosBrancos(texto))
                 {
                     textBoxUsuario.BackColor = Color.FromArgb(34, 177, 76);
                     labelSaida.Visible = false;
@@ -136,7 +137,7 @@ namespace Safe_Login
             string texto = textBoxSenha.Text;
             
             if (texto.Length > 0)
-                if (texto.Equals("33900643"))
+                if (!login.CheckEspacosBrancos(texto))
                 {
                     textBoxSenha.BackColor = Color.FromArgb(34, 177, 76);
                     labelSaida.Visible = false;

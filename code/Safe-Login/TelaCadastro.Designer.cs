@@ -248,7 +248,6 @@
             this.comboBoxCargo.ForeColor = System.Drawing.Color.White;
             this.comboBoxCargo.FormattingEnabled = true;
             this.comboBoxCargo.Name = "comboBoxCargo";
-            this.comboBoxCargo.SelectedIndexChanged += new System.EventHandler(this.comboBoxCargo_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -420,6 +419,7 @@
             this.Controls.Add(this.labelSenha);
             this.Controls.Add(this.label1);
             this.Name = "TelaCadastro";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TelaCadastro_FormClosing);
             this.Load += new System.EventHandler(this.Cadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
