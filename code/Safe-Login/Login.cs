@@ -1,12 +1,16 @@
+using Microsoft.VisualBasic.Devices;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
+using System.Net.Mail;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 public class Login {
 
     Celula inicio;
-    public string caminho = "users.txt";
+    private string caminho = "users.txt";
+    private Conta usuario;
 
     public Login() {
         inicio = null;
@@ -19,7 +23,7 @@ public class Login {
             Console.WriteLine(aux.atual.NomeCompleto+"|"+aux.atual.Email+"|"+aux.atual.NomeUsuario+"|"+aux.atual.Senha);
             aux = aux.prox                ;
         }        
-    }
+    }       
 
     public string SugereSenha()
     {
@@ -126,13 +130,23 @@ public class Login {
             return 1;
         else return 0;
     }
-
+  
+    public Conta Usuario
+    {
+        get { return this.usuario; }
+        set { this.usuario = value; }
+    }
     public bool Entra(string nomeUsuario, string senha, string cargo) {
                 
         Celula aux = inicio;            
-        while (aux!=null) {        
-            if (aux.atual.Status==true && nomeUsuario.Equals(aux.atual.NomeUsuario) && senha.Equals(aux.atual.Senha) && cargo.Equals(aux.atual.Cargo))
-                return true;            
+        while (aux!=null) {
+            if (aux.atual.Status == true && nomeUsuario.Equals(aux.atual.NomeUsuario) && senha.Equals(aux.atual.Senha) && cargo.Equals(aux.atual.Cargo))
+            {
+                Usuario = aux.atual;
+                aux.atual.LogAcessosSystem = Usuario.NomeCompleto + " " + Usuario.NomeUsuario;
+
+                return true;
+            }
                 aux = aux.prox;
         }
         return false;            

@@ -13,6 +13,7 @@ namespace Safe_Login
 {
     public partial class TelaEsqueciSenha : Form
     {
+        Login login = new Login();
         public TelaEsqueciSenha()
         {
             InitializeComponent();
@@ -24,8 +25,7 @@ namespace Safe_Login
         }    
 
         private void buttonRedefinir_Click(object sender, EventArgs e)
-        {
-          
+        {            
         }   
     }
 }

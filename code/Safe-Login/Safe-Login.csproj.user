@@ -4,6 +4,9 @@
     <Compile Update="TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TelaConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TelaEsqueciSenha.cs">
       <SubType>Form</SubType>
     </Compile>

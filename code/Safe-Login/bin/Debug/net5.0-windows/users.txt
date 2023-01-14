@@ -1,6 +1,7 @@
-True|ddas|fff|Cordenação|ffwe|ew|
-True|Margarethe|margarethe@gmail.com|Supervisão|Margo|12|
-True|Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmail.com|Gerencia|Nicolas|jj9](_Z>|Homem-Aranha
-True|Lorena Regina Ferreira|lorenareginaferreira@gmail.com|Cordenação|Lorena|40028922|Crepúsculo
-True|Italo Samuel Ferreira|italosamuelferreirea23@gmail.com|Supervisão|Italo|89254339|Rebelde
+True|Geraldo Magela Luiz Ferreira|geraldomagela@gmail.com|Operação|Geraldo|4pDt/5-!g22s4|Construção
 True|Antônio José da Silva|toninholula@gmail.com|Operação|Toninho|4f8=`?5"|Elétrica
+True|Italo Samuel Ferreira|italosamuelferreirea23@gmail.com|Supervisão|Italo|89254339|Rebelde
+True|Lorena Regina Ferreira|lorenareginaferreira@gmail.com|Cordenação|Lorena|40028922|Crepúsculo
+True|Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmail.com|Gerencia|Nicolas|jj9](_Z>|Homem-Aranha
+True|Margarethe|margarethe@gmail.com|Supervisão|Margo|12|
+True|ddas|fff|Cordenação|ffwe|ew|

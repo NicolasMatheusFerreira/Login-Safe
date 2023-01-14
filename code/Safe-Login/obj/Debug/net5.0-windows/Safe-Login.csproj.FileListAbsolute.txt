@@ -9,9 +9,11 @@ C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\bin\Debug\net5.0-wind
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.csproj.AssemblyReference.cache
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.Properties.Resources.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaCadastro.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaConfig.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaEsqueciSenha.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaLogin.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaCadastro.pt-BR.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaConfig.pt-BR.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaEsqueciSenha.pt-BR.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaLogin.pt-BR.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.csproj.GenerateResource.cache

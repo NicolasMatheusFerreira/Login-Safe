@@ -395,6 +395,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
             this.Controls.Add(this.textBoxPalavraPasse);
             this.Controls.Add(this.iconButtonChave);
@@ -418,9 +419,11 @@
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelSenha);
             this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.Name = "TelaCadastro";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TelaCadastro_FormClosing);
             this.Load += new System.EventHandler(this.Cadastro_Load);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.TelaCadastro_PreviewKeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();

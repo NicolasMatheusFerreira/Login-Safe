@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 public class Conta {
 
@@ -9,9 +10,9 @@ public class Conta {
     private string nomeUsuario;
     private string senha;
     private string palavraPasse;
+
+    private Stack<string> logAcessosSystem = new Stack<string>();
     
-
-
     public Conta() {
 
         this.status = true;
@@ -22,7 +23,7 @@ public class Conta {
         this.senha = "N/A";
         this.palavraPasse = "N/A";
     }
-
+    
     public Boolean Status {
         get { return this.status;}
         set { this.status = value; }
@@ -57,5 +58,11 @@ public class Conta {
     {
         get { return this.palavraPasse; }
         set { this.palavraPasse = value; }
+    }
+
+    public string LogAcessosSystem
+    {
+        get { return this.logAcessosSystem.Pop(); }
+        set { this.logAcessosSystem.Push(value); }
     }
 }

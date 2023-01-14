@@ -14,7 +14,7 @@ namespace Safe_Login
     public partial class TelaCadastro : Form
     {
         Login login = new Login();
-        Config config = new Config();
+        global::Config config = new global::Config();
 
         public TelaCadastro()
         {
@@ -268,6 +268,11 @@ namespace Safe_Login
                     e.Cancel = true;
                 }
             }
+        }
+
+        private void TelaCadastro_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            
         }
     }
 }

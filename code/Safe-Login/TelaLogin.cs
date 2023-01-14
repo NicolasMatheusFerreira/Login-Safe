@@ -13,11 +13,15 @@ namespace Safe_Login
     public partial class TelaLogin : Form
     {
         Login login = new Login();
-        Config config = new Config();
+        global::Config config = new global::Config();
 
         public TelaLogin()
         {
-            InitializeComponent();
+            InitializeComponent();        
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
             CarregaDados();
         }
 
@@ -28,6 +32,13 @@ namespace Safe_Login
             {
                 comboBoxCargo.Items.Add(aux);
             }
+
+            AutoCompleteStringCollection dadosTextBoxUsuario = new AutoCompleteStringCollection();
+            foreach (string aux in config.nomesUsuario)
+            {
+                dadosTextBoxUsuario.Add(aux);
+            }
+            textBoxUsuario.AutoCompleteCustomSource = dadosTextBoxUsuario;
         }
 
         private void buttonEntrar_Click(object sender, EventArgs e)
@@ -35,9 +46,16 @@ namespace Safe_Login
             Login login = new Login();
 
             if (config.Admin(textBoxUsuario.Text, textBoxSenha.Text)) {
+                TelaConfig telaConfig = new TelaConfig();
+                                
                 MessageBox.Show("Bem-vindo administrador");
+                telaConfig.Show();
+                telaConfig.NomeTitulo(textBoxUsuario.Text);
+
             } else if (login.Entra(textBoxUsuario.Text, textBoxSenha.Text, Convert.ToString(comboBoxCargo.SelectedItem)))
             {
+                config.SetAcessosSystemLogs(login.Usuario.NomeCompleto + ";" + login.Usuario.NomeUsuario);
+
                 MessageBox.Show($"Bem-vindo {textBoxUsuario.Text}");
                 this.Dispose();                
             }
@@ -54,12 +72,7 @@ namespace Safe_Login
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
+        }        
 
         private void textBoxUsuario_TextChanged(object sender, EventArgs e)
         {
@@ -79,7 +92,7 @@ namespace Safe_Login
 
         private void buttonEntrar_MouseDown(object sender, MouseEventArgs e)
         {
-            var cor = Color.FromArgb(235, 103, 27);
+            var cor = Color.FromArgb(140, 19, 67);
             buttonEntrar.BackColor = cor;
         }
 
@@ -162,9 +175,7 @@ namespace Safe_Login
         }
 
         private void labelEsqueciSenha_Click(object sender, EventArgs e)
-        {
-            TelaEsqueciSenha esqueciSenha = new TelaEsqueciSenha();
-            esqueciSenha.Show();
+        {            
         }        
 
         private void comboBoxCargo_Click(object sender, EventArgs e)
