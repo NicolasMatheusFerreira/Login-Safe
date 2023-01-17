@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Safe_Login
 {
     public partial class TelaLogin : Form
-    {
+    {        
         Login login = new Login();
         global::Config config = new global::Config();
 

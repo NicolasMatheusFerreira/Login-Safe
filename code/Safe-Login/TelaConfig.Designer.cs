@@ -30,55 +30,80 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaConfig));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.iconButtonSobre = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButtonAparencia = new FontAwesome.Sharp.IconButton();
             this.labelTitulo = new System.Windows.Forms.Label();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButtonEstatisticas = new FontAwesome.Sharp.IconButton();
+            this.iconButtonUsuarios = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButtonGeral = new FontAwesome.Sharp.IconButton();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panelContentor = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panelContentor.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(19)))), ((int)(((byte)(67)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(11)))));
+            this.panel2.Controls.Add(this.iconButtonSobre);
             this.panel2.Controls.Add(this.iconPictureBox1);
-            this.panel2.Controls.Add(this.iconButton4);
+            this.panel2.Controls.Add(this.iconButtonAparencia);
             this.panel2.Controls.Add(this.labelTitulo);
-            this.panel2.Controls.Add(this.iconButton3);
-            this.panel2.Controls.Add(this.iconButton2);
+            this.panel2.Controls.Add(this.iconButtonEstatisticas);
+            this.panel2.Controls.Add(this.iconButtonUsuarios);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Controls.Add(this.iconButtonGeral);
             this.panel2.Name = "panel2";
+            // 
+            // iconButtonSobre
+            // 
+            resources.ApplyResources(this.iconButtonSobre, "iconButtonSobre");
+            this.iconButtonSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.iconButtonSobre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButtonSobre.ForeColor = System.Drawing.Color.White;
+            this.iconButtonSobre.IconChar = FontAwesome.Sharp.IconChar.Info;
+            this.iconButtonSobre.IconColor = System.Drawing.Color.White;
+            this.iconButtonSobre.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonSobre.IconSize = 42;
+            this.iconButtonSobre.Name = "iconButtonSobre";
+            this.iconButtonSobre.UseVisualStyleBackColor = false;
+            this.iconButtonSobre.MouseLeave += new System.EventHandler(this.iconButtonSobre_MouseLeave);
+            this.iconButtonSobre.MouseHover += new System.EventHandler(this.iconButtonSobre_MouseHover);
             // 
             // iconPictureBox1
             // 
             resources.ApplyResources(this.iconPictureBox1, "iconPictureBox1");
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(19)))), ((int)(((byte)(67)))));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserShield;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 67;
+            this.iconPictureBox1.IconSize = 109;
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.TabStop = false;
             // 
-            // iconButton4
+            // iconButtonAparencia
             // 
-            resources.ApplyResources(this.iconButton4, "iconButton4");
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.iconButtonAparencia, "iconButtonAparencia");
+            this.iconButtonAparencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.iconButtonAparencia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButtonAparencia.ForeColor = System.Drawing.Color.White;
+            this.iconButtonAparencia.IconChar = FontAwesome.Sharp.IconChar.Palette;
+            this.iconButtonAparencia.IconColor = System.Drawing.Color.White;
+            this.iconButtonAparencia.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonAparencia.Name = "iconButtonAparencia";
+            this.iconButtonAparencia.UseVisualStyleBackColor = false;
+            this.iconButtonAparencia.MouseLeave += new System.EventHandler(this.iconButtonAparencia_MouseLeave);
+            this.iconButtonAparencia.MouseHover += new System.EventHandler(this.iconButtonAparencia_MouseHover);
             // 
             // labelTitulo
             // 
@@ -86,29 +111,34 @@
             this.labelTitulo.ForeColor = System.Drawing.Color.White;
             this.labelTitulo.Name = "labelTitulo";
             // 
-            // iconButton3
+            // iconButtonEstatisticas
             // 
-            resources.ApplyResources(this.iconButton3, "iconButton3");
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.iconButtonEstatisticas, "iconButtonEstatisticas");
+            this.iconButtonEstatisticas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.iconButtonEstatisticas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButtonEstatisticas.ForeColor = System.Drawing.Color.White;
+            this.iconButtonEstatisticas.IconChar = FontAwesome.Sharp.IconChar.ArrowTrendUp;
+            this.iconButtonEstatisticas.IconColor = System.Drawing.Color.White;
+            this.iconButtonEstatisticas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonEstatisticas.Name = "iconButtonEstatisticas";
+            this.iconButtonEstatisticas.UseVisualStyleBackColor = false;
+            this.iconButtonEstatisticas.MouseLeave += new System.EventHandler(this.iconButtonEstatisticas_MouseLeave);
+            this.iconButtonEstatisticas.MouseHover += new System.EventHandler(this.iconButtonEstatisticas_MouseHover);
             // 
-            // iconButton2
+            // iconButtonUsuarios
             // 
-            resources.ApplyResources(this.iconButton2, "iconButton2");
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.iconButtonUsuarios, "iconButtonUsuarios");
+            this.iconButtonUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.iconButtonUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButtonUsuarios.ForeColor = System.Drawing.Color.White;
+            this.iconButtonUsuarios.IconChar = FontAwesome.Sharp.IconChar.UserCog;
+            this.iconButtonUsuarios.IconColor = System.Drawing.Color.White;
+            this.iconButtonUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonUsuarios.Name = "iconButtonUsuarios";
+            this.iconButtonUsuarios.UseVisualStyleBackColor = false;
+            this.iconButtonUsuarios.Click += new System.EventHandler(this.iconButtonUsuarios_Click);
+            this.iconButtonUsuarios.MouseLeave += new System.EventHandler(this.iconButtonUsuarios_MouseLeave);
+            this.iconButtonUsuarios.MouseHover += new System.EventHandler(this.iconButtonUsuarios_MouseHover);
             // 
             // label1
             // 
@@ -116,50 +146,101 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
-            // pictureBox1
+            // iconButtonGeral
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.iconButtonGeral, "iconButtonGeral");
+            this.iconButtonGeral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.iconButtonGeral.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButtonGeral.ForeColor = System.Drawing.Color.White;
+            this.iconButtonGeral.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.iconButtonGeral.IconColor = System.Drawing.Color.White;
+            this.iconButtonGeral.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonGeral.Name = "iconButtonGeral";
+            this.iconButtonGeral.UseVisualStyleBackColor = false;
+            this.iconButtonGeral.Click += new System.EventHandler(this.iconButtonGeral_Click);
+            this.iconButtonGeral.MouseLeave += new System.EventHandler(this.iconButtonGeral_MouseLeave);
+            this.iconButtonGeral.MouseHover += new System.EventHandler(this.iconButtonGeral_MouseHover);
             // 
-            // iconButton1
+            // pictureBoxLogo
             // 
-            resources.ApplyResources(this.iconButton1, "iconButton1");
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.pictureBoxLogo, "pictureBoxLogo");
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // panelContentor
+            // 
+            resources.ApplyResources(this.panelContentor, "panelContentor");
+            this.panelContentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.panelContentor.Controls.Add(this.pictureBoxLogo);
+            this.panelContentor.Controls.Add(this.menuStrip1);
+            this.panelContentor.Name = "panelContentor";
+            // 
+            // menuStrip1
+            // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inícioToolStripMenuItem,
+            this.ajudaToolStripMenuItem,
+            this.sobreToolStripMenuItem});
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // inícioToolStripMenuItem
+            // 
+            resources.ApplyResources(this.inícioToolStripMenuItem, "inícioToolStripMenuItem");
+            this.inícioToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
+            this.inícioToolStripMenuItem.Name = "inícioToolStripMenuItem";
+            // 
+            // ajudaToolStripMenuItem
+            // 
+            resources.ApplyResources(this.ajudaToolStripMenuItem, "ajudaToolStripMenuItem");
+            this.ajudaToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
+            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            // 
+            // sobreToolStripMenuItem
+            // 
+            resources.ApplyResources(this.sobreToolStripMenuItem, "sobreToolStripMenuItem");
+            this.sobreToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             // 
             // TelaConfig
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
+            this.Controls.Add(this.panelContentor);
             this.Controls.Add(this.panel2);
             this.HelpButton = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaConfig";
             this.Load += new System.EventHandler(this.TelaConfig_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panelContentor.ResumeLayout(false);
+            this.panelContentor.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton iconButtonGeral;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButtonAparencia;
         private System.Windows.Forms.Label labelTitulo;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButtonEstatisticas;
+        private FontAwesome.Sharp.IconButton iconButtonUsuarios;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconButton iconButtonSobre;
+        private System.Windows.Forms.Panel panelContentor;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem inícioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
     }
 }
