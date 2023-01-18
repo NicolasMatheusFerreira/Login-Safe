@@ -16,14 +16,24 @@ public class Login {
         inicio = null;
         ImportaCadastro(caminho);
     }
-    
-    public void Listar() {        
+
+    public Conta Usuario
+    {
+        get { return this.usuario; }
+        set { this.usuario = value; }
+    }
+
+    public Stack<Conta> GetListar()
+    {
+        Stack<Conta> pilha= new Stack<Conta>();        
         Celula aux = inicio;
-        while(aux!=null) {
-            Console.WriteLine(aux.atual.NomeCompleto+"|"+aux.atual.Email+"|"+aux.atual.NomeUsuario+"|"+aux.atual.Senha);
-            aux = aux.prox                ;
-        }        
-    }       
+        while(aux!=null)
+        {
+            pilha.Push(aux.atual);
+            aux = aux.prox;
+        }
+        return pilha;
+    }
 
     public string SugereSenha()
     {
@@ -129,13 +139,14 @@ public class Login {
         if (senha.Length > 8 && CheckLetras(senha))
             return 1;
         else return 0;
+    }     
+
+    public void AtualizaRegistros() {
+
+        inicio = null;
+        ImportaCadastro(caminho);
     }
-  
-    public Conta Usuario
-    {
-        get { return this.usuario; }
-        set { this.usuario = value; }
-    }
+
     public bool Entra(string nomeUsuario, string senha, string cargo) {
                 
         Celula aux = inicio;            

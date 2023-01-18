@@ -172,7 +172,6 @@
             resources.ApplyResources(this.panelContentor, "panelContentor");
             this.panelContentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.panelContentor.Controls.Add(this.pictureBoxLogo);
-            this.panelContentor.Controls.Add(this.menuStrip1);
             this.panelContentor.Name = "panelContentor";
             // 
             // menuStrip1
@@ -209,20 +208,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
             this.Controls.Add(this.panelContentor);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel2);
             this.HelpButton = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaConfig";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaConfig_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelContentor.ResumeLayout(false);
-            this.panelContentor.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
