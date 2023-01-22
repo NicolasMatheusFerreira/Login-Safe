@@ -83,8 +83,6 @@
             this.comboBoxCargo.ForeColor = System.Drawing.Color.White;
             this.comboBoxCargo.FormattingEnabled = true;
             this.comboBoxCargo.Name = "comboBoxCargo";
-            this.comboBoxCargo.SelectedIndexChanged += new System.EventHandler(this.comboBoxCargo_SelectedIndexChanged_1);
-            this.comboBoxCargo.Click += new System.EventHandler(this.comboBoxCargo_Click);
             // 
             // textBoxUsuario
             // 
@@ -96,7 +94,6 @@
             this.textBoxUsuario.ForeColor = System.Drawing.Color.White;
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.TextChanged += new System.EventHandler(this.textBoxUsuario_TextChanged_1);
-            this.textBoxUsuario.Enter += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // labelUsuario
             // 
@@ -138,7 +135,6 @@
             this.labelEsqueciSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelEsqueciSenha.ForeColor = System.Drawing.Color.White;
             this.labelEsqueciSenha.Name = "labelEsqueciSenha";
-            this.labelEsqueciSenha.Click += new System.EventHandler(this.labelEsqueciSenha_Click);
             this.labelEsqueciSenha.MouseLeave += new System.EventHandler(this.labelEsqueciSenha_MouseLeave);
             this.labelEsqueciSenha.MouseHover += new System.EventHandler(this.labelEsqueciSenha_MouseHover);
             // 

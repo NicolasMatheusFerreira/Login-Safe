@@ -1,38 +1,36 @@
-using Microsoft.VisualBasic.Devices;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net;
-using System.Net.Mail;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
-public class Login {
-
+public class Login
+{
     Celula inicio;
     private string caminho = "users.txt";
-    private Conta usuario;
+    private Conta sessao;
 
-    public Login() {
+    public Login()
+    {
         inicio = null;
         ImportaCadastro(caminho);
     }
 
-    public Conta Usuario
+    public Conta Sessao
     {
-        get { return this.usuario; }
-        set { this.usuario = value; }
-    }
+        get { return this.sessao; }
+        set { this.sessao = value; }
+    }    
 
-    public Stack<Conta> GetListar()
+    public Queue<Conta> GetListar()
     {
-        Stack<Conta> pilha= new Stack<Conta>();        
         Celula aux = inicio;
+        Queue<Conta> obj = new Queue<Conta>();
+
         while(aux!=null)
         {
-            pilha.Push(aux.atual);
+            obj.Enqueue(aux.atual);
             aux = aux.prox;
         }
-        return pilha;
+        return obj;
     }
 
     public string SugereSenha()
@@ -93,7 +91,7 @@ public class Login {
 
     public bool CheckEspacosBrancos(string senha)
     {
-        for(int i = 0; i<senha.Length; i++)
+        for (int i = 0; i < senha.Length; i++)
         {
             if (senha[i] == ' ')
                 return true;
@@ -139,28 +137,25 @@ public class Login {
         if (senha.Length > 8 && CheckLetras(senha))
             return 1;
         else return 0;
-    }     
-
-    public void AtualizaRegistros() {
-
-        inicio = null;
-        ImportaCadastro(caminho);
     }
 
-    public bool Entra(string nomeUsuario, string senha, string cargo) {
-                
-        Celula aux = inicio;            
-        while (aux!=null) {
+    public bool Entra(string nomeUsuario, string senha, string cargo)
+    {
+
+        Celula aux = inicio;
+        while (aux != null)
+        {
             if (aux.atual.Status == true && nomeUsuario.Equals(aux.atual.NomeUsuario) && senha.Equals(aux.atual.Senha) && cargo.Equals(aux.atual.Cargo))
             {
-                Usuario = aux.atual;
-                aux.atual.LogAcessosSystem = Usuario.NomeCompleto + " " + Usuario.NomeUsuario;
+                Sessao = aux.atual;
+
+                aux.atual.AcessosSystem = Sessao.NomeCompleto + " " + Sessao.NomeUsuario;
 
                 return true;
             }
-                aux = aux.prox;
+            aux = aux.prox;
         }
-        return false;            
+        return false;
     }
     public bool RegistrosDuplicados(Conta obj)
     {
@@ -174,41 +169,51 @@ public class Login {
         return false;
     }
 
-    public Conta Pop(string nomeUsuario) {
+    public Conta Pop(string nomeUsuario)
+    {
 
-        Celula aux = inicio;   
-        Conta j = new Conta(); 
-        if (inicio!=null) {                        
-            if (nomeUsuario.Equals(aux.atual.NomeUsuario)) {
+        Celula aux = inicio;
+        Conta j = new Conta();
+        if (inicio != null)
+        {
+            if (nomeUsuario.Equals(aux.atual.NomeUsuario))
+            {
                 j = aux.atual;
-                aux = aux.prox;                    
+                aux = aux.prox;
                 inicio = aux;
-            } else {
-                while(aux.prox!=null) {
-                    Celula aux2 = new Celula(); 
-                    if (nomeUsuario.Equals(aux.prox.atual.NomeUsuario)) {
+            }
+            else
+            {
+                while (aux.prox != null)
+                {
+                    Celula aux2 = new Celula();
+                    if (nomeUsuario.Equals(aux.prox.atual.NomeUsuario))
+                    {
                         aux2 = aux.prox.prox;
                         j = aux.prox.atual;
-                        aux.prox = aux2;                    
-                        return j;                    
+                        aux.prox = aux2;
+                        return j;
                     }
                     aux = aux.prox;
                 }
                 Console.WriteLine("Registro nao encontrado!");
-            }               
-        } else Console.WriteLine("Registro nao encontrado!");        
+            }
+        }
+        else Console.WriteLine("Registro nao encontrado!");
         return j;
-    }    
+    }
 
-    public Conta RemoverCadastro(string nomeUsuario) {
+    public Conta RemoverCadastro(string nomeUsuario)
+    {
         Conta aux = Pop(nomeUsuario);
         ExportaCadastro(caminho, false);
         return aux;
     }
-    public Conta FormatoLeitura(string conteudo) {
+    public Conta FormatoLeitura(string conteudo)
+    {
 
         Conta aux = new Conta();
-        string[] formatoLeitura = new string[7];        
+        string[] formatoLeitura = new string[8];
         int j = 0;
 
         for (int i = 0; i < conteudo.Length; i++)
@@ -224,59 +229,78 @@ public class Login {
         aux.NomeUsuario = formatoLeitura[4];
         aux.Senha = formatoLeitura[5];
         aux.PalavraPasse = formatoLeitura[6];
-        
+        aux.AcessosSystem = formatoLeitura[7];
+
         return aux;
     }
-    public void ImportaCadastro(string caminho) {
+    public void ImportaCadastro(string caminhoPath)
+    {
 
-        if (!File.Exists(caminho)) {
+        if (!File.Exists(caminhoPath))
+        {
             Console.WriteLine("Erro! Diretorio inexistente!");
-        } else {
-            StreamReader sr = new StreamReader(caminho);
+        }
+        else
+        {
+            StreamReader sr = new StreamReader(caminhoPath);
             string linha = "";
             linha = sr.ReadLine();
-            while(linha!=null) {
+            while (linha != null)
+            {
                 Push(FormatoLeitura(linha));
                 linha = sr.ReadLine();
             }
             sr.Close();
+
+            if (!caminho.Equals(caminhoPath))
+                ExportaCadastro(caminho, false);
         }
     }
-    public void FormatoCadastro(Celula aux, StreamWriter sw) {
+    public void FormatoCadastro(Celula aux, StreamWriter sw)
+    {
 
-        sw.WriteLine(aux.atual.Status + "|" +aux.atual.NomeCompleto + "|" + aux.atual.Email + "|" + aux.atual.Cargo + "|" + aux.atual.NomeUsuario + "|" + aux.atual.Senha + "|" + aux.atual.PalavraPasse);
+        sw.WriteLine(aux.atual.Status + "|" + aux.atual.NomeCompleto + "|" + aux.atual.Email + "|" + aux.atual.Cargo + "|" + aux.atual.NomeUsuario + "|" + aux.atual.Senha + "|" + aux.atual.PalavraPasse + "|" + aux.atual.AcessosSystem);
     }
-    public void ExportaCadastro(string caminho, bool permissao) {
+    public void ExportaCadastro(string caminho, bool permissao)
+    {
 
         StreamWriter sw = new StreamWriter(caminho, permissao);
-        if (inicio!=null) {
+        if (inicio != null)
+        {
             Celula aux = inicio;
-            while(aux!=null) {
+            while (aux != null)
+            {
                 FormatoCadastro(aux, sw);
                 aux = aux.prox;
             }
             sw.Close();
         }
     }
-    public bool ValidaSenha(string x, string aux) {
+    public bool ValidaSenha(string x, string aux)
+    {
         if (x.Equals(aux))
             return true;
-        return false;    
+        return false;
     }
-    public void Push(Conta obj) {
-        if (inicio==null) {
+    public void Push(Conta obj)
+    {
+        if (inicio == null)
+        {
             inicio = new Celula();
             inicio.atual = obj;
-            inicio.prox = null;             
-        } else {
+            inicio.prox = null;
+        }
+        else
+        {
             Celula aux = new Celula();
             aux.atual = obj;
             aux.prox = inicio;
             inicio = aux;
         }
-    }    
-    public bool Cadastra(Conta conta) {
-        
+    }
+    public bool Cadastra(Conta conta)
+    {
+
         Push(conta);
         ExportaCadastro(caminho, false);
         return true;

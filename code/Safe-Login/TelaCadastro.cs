@@ -1,34 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Interop;
 
 namespace Safe_Login
 {
     public partial class TelaCadastro : Form
     {
-        Login login = new Login();
+        Login login;
         global::Config config = new global::Config();
 
-        public TelaCadastro()
+        public TelaCadastro(Login obj)
         {
             InitializeComponent();
-            CarregaDados();
-
+            login = obj;
         }
+
         private void Cadastro_Load(object sender, EventArgs e)
         {
-
+            CarregaDados();
         }
-        
+
         private void CarregaDados()
-        {            
+        {
             comboBoxCargo.Items.Clear();
             foreach (string aux in config.cargo)
             {
@@ -39,27 +32,26 @@ namespace Safe_Login
         private bool VerificaCampos(Conta obj)
         {
             if (obj.NomeCompleto.Length > 0 && obj.Email.Length > 0 && obj.Cargo.Length > 0 && obj.Senha.Length > 0)
-                return true;                        
+                return true;
             return false;
         }
 
         private void LimparCampos()
         {
             textBoxNome.Clear();
-            textBoxEmail.Clear();
-            comboBoxCargo.Items.Clear();
+            textBoxEmail.Clear();            
             textBoxUsuario.Clear();
             textBoxSenha.Clear();
             textBoxConfirmeSenha.Clear();
             textBoxPalavraPasse.Clear();
-            textBoxSenhaAdm.Clear();            
+            textBoxSenhaAdm.Clear();
 
             textBoxNome.Focus();
         }
 
         private void buttonRegistrar_Click(object sender, EventArgs e)
         {
-            Conta conta = new Conta();         
+            Conta conta = new Conta();
 
             string aux, senhaAdm;
 
@@ -71,6 +63,7 @@ namespace Safe_Login
             aux = textBoxConfirmeSenha.Text;
             conta.PalavraPasse = textBoxPalavraPasse.Text;
             senhaAdm = textBoxSenhaAdm.Text;
+            conta.AcessosSystem = DateTime.Now.ToString();
 
             if (!VerificaCampos(conta))
                 MessageBox.Show("Campos vazios!");
@@ -87,7 +80,8 @@ namespace Safe_Login
                                 login.Cadastra(conta);
                                 MessageBox.Show("Usuário cadastrado com sucesso!");
                                 LimparCampos();
-                            } else MessageBox.Show("Nome de usuário já cadastrado! Tente outro usuário.");
+                            }
+                            else MessageBox.Show("Nome de usuário já cadastrado! Tente outro usuário.");
                         }
                         else
                         {
@@ -118,15 +112,16 @@ namespace Safe_Login
         {
             string email = textBoxEmail.Text;
 
-            if (email.Length>0)
-                for(int i = 0; i<email.Length; i++)
+            if (email.Length > 0)
+                for (int i = 0; i < email.Length; i++)
                 {
-                    if (email[i]=='@')
+                    if (email[i] == '@')
                     {
-                        if (email[email.Length-1]=='m' && email[email.Length - 2] == 'o' && email[email.Length - 3] == 'c' && email[email.Length - 4] == '.')
+                        if (email[email.Length - 1] == 'm' && email[email.Length - 2] == 'o' && email[email.Length - 3] == 'c' && email[email.Length - 4] == '.')
                         {
                             textBoxEmail.BackColor = Color.FromArgb(34, 177, 76);
-                        } else textBoxEmail.BackColor = Color.FromArgb(1, 0, 9);
+                        }
+                        else textBoxEmail.BackColor = Color.FromArgb(1, 0, 9);
                     }
                 }
             else textBoxEmail.BackColor = Color.FromArgb(1, 0, 9);
@@ -134,48 +129,56 @@ namespace Safe_Login
 
         private void textBoxConfirmeSenha_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxSenha.Text.Length > 0 && textBoxConfirmeSenha.Text.Length > 0) { 
+            if (textBoxSenha.Text.Length > 0 && textBoxConfirmeSenha.Text.Length > 0)
+            {
                 if (!login.ValidaSenha(textBoxSenha.Text, textBoxConfirmeSenha.Text))
                 {
                     textBoxSenha.BackColor = Color.FromArgb(213, 17, 27);
                     textBoxConfirmeSenha.BackColor = Color.FromArgb(213, 17, 27);
                     labelCadastroSenha.Text = "Senhas não se correspondem. Digite novamente!";
                     labelCadastroSenha.Visible = true;
-                } else
+                }
+                else
                 {
                     textBoxSenha.BackColor = Color.FromArgb(1, 0, 9);
                     textBoxConfirmeSenha.BackColor = Color.FromArgb(1, 0, 9);
                     labelCadastroSenha.Visible = false;
                 }
-            } else {
-                    textBoxSenha.BackColor = Color.FromArgb(1, 0, 9);
-                    textBoxConfirmeSenha.BackColor = Color.FromArgb(1, 0, 9);
-                    labelCadastroSenha.Visible = false;
-            }                
+            }
+            else
+            {
+                textBoxSenha.BackColor = Color.FromArgb(1, 0, 9);
+                textBoxConfirmeSenha.BackColor = Color.FromArgb(1, 0, 9);
+                labelCadastroSenha.Visible = false;
+            }
         }
 
         private void textBoxSenha_TextChanged(object sender, EventArgs e)
         {
             labelCadastroSenha.Visible = true;
-            if (login.CheckSenha(textBoxSenha.Text)==3)
+            if (login.CheckSenha(textBoxSenha.Text) == 3)
             {
                 labelCadastroSenha.Text = "Senha forte";
-            } else if (login.CheckSenha(textBoxSenha.Text) == 2)
+            }
+            else if (login.CheckSenha(textBoxSenha.Text) == 2)
             {
                 labelCadastroSenha.Text = "Senha boa";
-            } else if (login.CheckSenha(textBoxSenha.Text) == 1)
+            }
+            else if (login.CheckSenha(textBoxSenha.Text) == 1)
             {
                 labelCadastroSenha.Text = "Senha média";
-            } else labelCadastroSenha.Text = "Senha fraca";
+            }
+            else labelCadastroSenha.Text = "Senha fraca";
         }
 
         private void checkBoxSenha_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxSenha.Checked==true)
+            if (checkBoxSenha.Checked == true)
             {
                 textBoxSenha.UseSystemPasswordChar = false;
                 textBoxConfirmeSenha.UseSystemPasswordChar = false;
-            } else
+            }
+            else
             {
                 textBoxSenha.UseSystemPasswordChar = true;
                 textBoxConfirmeSenha.UseSystemPasswordChar = true;
@@ -193,17 +196,12 @@ namespace Safe_Login
         {
             if (login.CheckNumeros(textBoxNome.Text))
                 textBoxNome.Text = "";
-        }        
-        
+        }
+
         private void iconButtonLogar_Click(object sender, EventArgs e)
         {
             TelaLogin telaLogin = new TelaLogin();
-            this.Close();            
-        }
-
-        private void comboBoxCargo_Click(object sender, EventArgs e)
-        {
-            //fefwefewfwefwe
+            this.Close();
         }
 
         private void textBoxSenha_Enter(object sender, EventArgs e)
@@ -218,9 +216,9 @@ namespace Safe_Login
 
         private void iconButtonChave_Click(object sender, EventArgs e)
         {
-            string senha = login.SugereSenha();            
+            string senha = login.SugereSenha();
 
-            textBoxSenha.Text = senha;            
+            textBoxSenha.Text = senha;
             textBoxConfirmeSenha.Text = senha;
 
             textBoxSenha.BackColor = Color.FromArgb(238, 227, 134);
@@ -253,11 +251,6 @@ namespace Safe_Login
             iconButtonChave.IconColor = Color.White;
         }
 
-        private void textBoxPalavraPasse_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void TelaCadastro_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -268,11 +261,6 @@ namespace Safe_Login
                     e.Cancel = true;
                 }
             }
-        }
-
-        private void TelaCadastro_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            
         }
     }
 }

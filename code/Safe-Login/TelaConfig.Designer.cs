@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaConfig));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.iconPictureBoxNotificacao = new FontAwesome.Sharp.IconPictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.iconButtonSobre = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButtonAparencia = new FontAwesome.Sharp.IconButton();
@@ -42,9 +44,27 @@
             this.panelContentor = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarRegistrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.temaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarRelatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.geradorDeSenhasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verificadorDeSenhasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verificarAtualizaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialogImportar = new System.Windows.Forms.OpenFileDialog();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBoxNotificacao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelContentor.SuspendLayout();
@@ -55,6 +75,8 @@
             // 
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(11)))));
+            this.panel2.Controls.Add(this.iconPictureBoxNotificacao);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.iconButtonSobre);
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Controls.Add(this.iconButtonAparencia);
@@ -64,6 +86,25 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.iconButtonGeral);
             this.panel2.Name = "panel2";
+            // 
+            // iconPictureBoxNotificacao
+            // 
+            resources.ApplyResources(this.iconPictureBoxNotificacao, "iconPictureBoxNotificacao");
+            this.iconPictureBoxNotificacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(11)))));
+            this.iconPictureBoxNotificacao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPictureBoxNotificacao.ForeColor = System.Drawing.Color.Silver;
+            this.iconPictureBoxNotificacao.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.iconPictureBoxNotificacao.IconColor = System.Drawing.Color.Silver;
+            this.iconPictureBoxNotificacao.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBoxNotificacao.IconSize = 38;
+            this.iconPictureBoxNotificacao.Name = "iconPictureBoxNotificacao";
+            this.iconPictureBoxNotificacao.TabStop = false;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Name = "label2";
             // 
             // iconButtonSobre
             // 
@@ -173,6 +214,7 @@
             this.panelContentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.panelContentor.Controls.Add(this.pictureBoxLogo);
             this.panelContentor.Name = "panelContentor";
+            this.panelContentor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContentor_Paint);
             // 
             // menuStrip1
             // 
@@ -181,26 +223,141 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inícioToolStripMenuItem,
             this.ajudaToolStripMenuItem,
-            this.sobreToolStripMenuItem});
+            this.sobreToolStripMenuItem,
+            this.temaToolStripMenuItem,
+            this.relatórioToolStripMenuItem,
+            this.ferramentasToolStripMenuItem,
+            this.sobreToolStripMenuItem1,
+            this.ajudaToolStripMenuItem1});
             this.menuStrip1.Name = "menuStrip1";
             // 
             // inícioToolStripMenuItem
             // 
             resources.ApplyResources(this.inícioToolStripMenuItem, "inícioToolStripMenuItem");
+            this.inícioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importarToolStripMenuItem,
+            this.salvarToolStripMenuItem,
+            this.exportarRegistrosToolStripMenuItem,
+            this.sairToolStripMenuItem});
             this.inícioToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.inícioToolStripMenuItem.Name = "inícioToolStripMenuItem";
+            // 
+            // importarToolStripMenuItem
+            // 
+            resources.ApplyResources(this.importarToolStripMenuItem, "importarToolStripMenuItem");
+            this.importarToolStripMenuItem.Name = "importarToolStripMenuItem";
+            this.importarToolStripMenuItem.Click += new System.EventHandler(this.importarToolStripMenuItem_Click);
+            // 
+            // salvarToolStripMenuItem
+            // 
+            resources.ApplyResources(this.salvarToolStripMenuItem, "salvarToolStripMenuItem");
+            this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
+            // 
+            // exportarRegistrosToolStripMenuItem
+            // 
+            resources.ApplyResources(this.exportarRegistrosToolStripMenuItem, "exportarRegistrosToolStripMenuItem");
+            this.exportarRegistrosToolStripMenuItem.Name = "exportarRegistrosToolStripMenuItem";
+            // 
+            // sairToolStripMenuItem
+            // 
+            resources.ApplyResources(this.sairToolStripMenuItem, "sairToolStripMenuItem");
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
             resources.ApplyResources(this.ajudaToolStripMenuItem, "ajudaToolStripMenuItem");
+            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarUsuárioToolStripMenuItem});
             this.ajudaToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            // 
+            // cadastrarUsuárioToolStripMenuItem
+            // 
+            resources.ApplyResources(this.cadastrarUsuárioToolStripMenuItem, "cadastrarUsuárioToolStripMenuItem");
+            this.cadastrarUsuárioToolStripMenuItem.Name = "cadastrarUsuárioToolStripMenuItem";
+            this.cadastrarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarUsuárioToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
             resources.ApplyResources(this.sobreToolStripMenuItem, "sobreToolStripMenuItem");
+            this.sobreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarUsuárioToolStripMenuItem});
             this.sobreToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            // 
+            // editarUsuárioToolStripMenuItem
+            // 
+            resources.ApplyResources(this.editarUsuárioToolStripMenuItem, "editarUsuárioToolStripMenuItem");
+            this.editarUsuárioToolStripMenuItem.Name = "editarUsuárioToolStripMenuItem";
+            // 
+            // temaToolStripMenuItem
+            // 
+            resources.ApplyResources(this.temaToolStripMenuItem, "temaToolStripMenuItem");
+            this.temaToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
+            this.temaToolStripMenuItem.Name = "temaToolStripMenuItem";
+            // 
+            // relatórioToolStripMenuItem
+            // 
+            resources.ApplyResources(this.relatórioToolStripMenuItem, "relatórioToolStripMenuItem");
+            this.relatórioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportarRelatórioToolStripMenuItem});
+            this.relatórioToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
+            this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
+            // 
+            // exportarRelatórioToolStripMenuItem
+            // 
+            resources.ApplyResources(this.exportarRelatórioToolStripMenuItem, "exportarRelatórioToolStripMenuItem");
+            this.exportarRelatórioToolStripMenuItem.Name = "exportarRelatórioToolStripMenuItem";
+            // 
+            // ferramentasToolStripMenuItem
+            // 
+            resources.ApplyResources(this.ferramentasToolStripMenuItem, "ferramentasToolStripMenuItem");
+            this.ferramentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.geradorDeSenhasToolStripMenuItem,
+            this.verificadorDeSenhasToolStripMenuItem});
+            this.ferramentasToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
+            this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
+            // 
+            // geradorDeSenhasToolStripMenuItem
+            // 
+            resources.ApplyResources(this.geradorDeSenhasToolStripMenuItem, "geradorDeSenhasToolStripMenuItem");
+            this.geradorDeSenhasToolStripMenuItem.Name = "geradorDeSenhasToolStripMenuItem";
+            // 
+            // verificadorDeSenhasToolStripMenuItem
+            // 
+            resources.ApplyResources(this.verificadorDeSenhasToolStripMenuItem, "verificadorDeSenhasToolStripMenuItem");
+            this.verificadorDeSenhasToolStripMenuItem.Name = "verificadorDeSenhasToolStripMenuItem";
+            // 
+            // sobreToolStripMenuItem1
+            // 
+            resources.ApplyResources(this.sobreToolStripMenuItem1, "sobreToolStripMenuItem1");
+            this.sobreToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verificarAtualizaçõesToolStripMenuItem,
+            this.sobreToolStripMenuItem2});
+            this.sobreToolStripMenuItem1.ForeColor = System.Drawing.Color.Silver;
+            this.sobreToolStripMenuItem1.Name = "sobreToolStripMenuItem1";
+            // 
+            // verificarAtualizaçõesToolStripMenuItem
+            // 
+            resources.ApplyResources(this.verificarAtualizaçõesToolStripMenuItem, "verificarAtualizaçõesToolStripMenuItem");
+            this.verificarAtualizaçõesToolStripMenuItem.Name = "verificarAtualizaçõesToolStripMenuItem";
+            // 
+            // sobreToolStripMenuItem2
+            // 
+            resources.ApplyResources(this.sobreToolStripMenuItem2, "sobreToolStripMenuItem2");
+            this.sobreToolStripMenuItem2.Name = "sobreToolStripMenuItem2";
+            // 
+            // ajudaToolStripMenuItem1
+            // 
+            resources.ApplyResources(this.ajudaToolStripMenuItem1, "ajudaToolStripMenuItem1");
+            this.ajudaToolStripMenuItem1.ForeColor = System.Drawing.Color.Silver;
+            this.ajudaToolStripMenuItem1.Name = "ajudaToolStripMenuItem1";
+            // 
+            // openFileDialogImportar
+            // 
+            this.openFileDialogImportar.FileName = "openFileDialogImportar";
+            resources.ApplyResources(this.openFileDialogImportar, "openFileDialogImportar");
             // 
             // TelaConfig
             // 
@@ -217,6 +374,7 @@
             this.Load += new System.EventHandler(this.TelaConfig_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBoxNotificacao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelContentor.ResumeLayout(false);
@@ -243,5 +401,24 @@
         private System.Windows.Forms.ToolStripMenuItem inícioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBoxNotificacao;
+        private System.Windows.Forms.ToolStripMenuItem temaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportarRegistrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarUsuárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarUsuárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatórioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportarRelatórioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem verificarAtualizaçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem1;
+        private System.Windows.Forms.OpenFileDialog openFileDialogImportar;
+        private System.Windows.Forms.ToolStripMenuItem geradorDeSenhasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verificadorDeSenhasToolStripMenuItem;
     }
 }

@@ -1,8 +1,9 @@
 using System;
-using System.IO;
 using System.Collections.Generic;
+using System.IO;
 
-class Config {
+class Config
+{
 
     public List<string> cargo = new List<string>();
     public List<string> nomesUsuario = new List<string>();
@@ -13,13 +14,14 @@ class Config {
 
     private string caminhoAcessosSystemLogs;
 
-    public Config() {
+    public Config()
+    {
 
         ImportaCargo("cargos.txt");
         ImportaSugestoesUsuario("sugestoesNomesUsuarios.txt");
 
         this.usuarioAdministrador = "Admin123";
-        this.senhaAdministrador = "Admin123";        
+        this.senhaAdministrador = "Admin123";
         this.senhaAdministradorCadastro = "Admin";
 
         this.caminhoAcessosSystemLogs = "acessosSystem.log";
@@ -68,28 +70,28 @@ class Config {
     {
         get { return this.senhaAdministradorCadastro; }
         set { this.senhaAdministradorCadastro = value; }
-    }    
-    
+    }
+
     public void ImportaSugestoesUsuario(string caminhoSugestoesUsuario)
-    {        
-            StreamReader sr = new StreamReader(caminhoSugestoesUsuario);
-            string linha = sr.ReadLine();
-            while (linha != null)
-            {
-                nomesUsuario.Add(linha);
-                linha = sr.ReadLine();
-            }
-            sr.Close();        
+    {
+        StreamReader sr = new StreamReader(caminhoSugestoesUsuario);
+        string linha = sr.ReadLine();
+        while (linha != null)
+        {
+            nomesUsuario.Add(linha);
+            linha = sr.ReadLine();
+        }
+        sr.Close();
     }
     public void ImportaCargo(string caminhoSugestoesCargos)
-    {        
+    {
         StreamReader sr = new StreamReader(caminhoSugestoesCargos);
         string linha = sr.ReadLine();
-        while(linha!=null)
+        while (linha != null)
         {
             cargo.Add(linha);
-            linha = sr.ReadLine();                       
+            linha = sr.ReadLine();
         }
-        sr.Close();        
+        sr.Close();
     }
 }

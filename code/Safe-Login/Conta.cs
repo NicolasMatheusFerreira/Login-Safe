@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
-public class Conta {
+public class Conta
+{
 
     private Boolean status;
     private string nomeCompleto;
@@ -11,9 +13,10 @@ public class Conta {
     private string senha;
     private string palavraPasse;
 
-    private Stack<string> logAcessosSystem = new Stack<string>();
-    
-    public Conta() {
+    private Stack<string> acessosSystem = new Stack<string>();
+
+    public Conta()
+    {
 
         this.status = true;
         this.nomeCompleto = "N/A";
@@ -23,19 +26,22 @@ public class Conta {
         this.senha = "N/A";
         this.palavraPasse = "N/A";
     }
-    
-    public Boolean Status {
-        get { return this.status;}
+
+    public Boolean Status
+    {
+        get { return this.status; }
         set { this.status = value; }
     }
-    public string NomeCompleto {
-        get { return this.nomeCompleto;}
-        set { this.nomeCompleto = value;}
+    public string NomeCompleto
+    {
+        get { return this.nomeCompleto; }
+        set { this.nomeCompleto = value; }
     }
 
-    public string Email {
-        get { return this.email;}
-        set {this.email = value;}
+    public string Email
+    {
+        get { return this.email; }
+        set { this.email = value; }
     }
 
     public string Cargo
@@ -44,15 +50,17 @@ public class Conta {
         set { this.cargo = value; }
     }
 
-    public string NomeUsuario {
-        get { return this.nomeUsuario;}
-        set {this.nomeUsuario = value;}
+    public string NomeUsuario
+    {
+        get { return this.nomeUsuario; }
+        set { this.nomeUsuario = value; }
     }
 
-    public string Senha {
-        get { return this.senha;}
-        set {this.senha = value;}
-    }    
+    public string Senha
+    {
+        get { return this.senha; }
+        set { this.senha = value; }
+    }
 
     public string PalavraPasse
     {
@@ -60,9 +68,9 @@ public class Conta {
         set { this.palavraPasse = value; }
     }
 
-    public string LogAcessosSystem
+    public string AcessosSystem
     {
-        get { return this.logAcessosSystem.Pop(); }
-        set { this.logAcessosSystem.Push(value); }
+        get { return this.acessosSystem.Last(); }
+        set { this.acessosSystem.Push(value); }
     }
 }

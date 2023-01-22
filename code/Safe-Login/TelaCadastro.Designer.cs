@@ -389,7 +389,6 @@
             this.textBoxPalavraPasse.ForeColor = System.Drawing.Color.White;
             this.textBoxPalavraPasse.Name = "textBoxPalavraPasse";
             this.textBoxPalavraPasse.Tag = "";
-            this.textBoxPalavraPasse.TextChanged += new System.EventHandler(this.textBoxPalavraPasse_TextChanged);
             // 
             // TelaCadastro
             // 
@@ -423,7 +422,6 @@
             this.Name = "TelaCadastro";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TelaCadastro_FormClosing);
             this.Load += new System.EventHandler(this.Cadastro_Load);
-            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.TelaCadastro_PreviewKeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();

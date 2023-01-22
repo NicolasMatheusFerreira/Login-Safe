@@ -80,7 +80,7 @@
             this.toolStripFerramentas.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.toolStripFerramentas.Location = new System.Drawing.Point(0, 0);
             this.toolStripFerramentas.Name = "toolStripFerramentas";
-            this.toolStripFerramentas.Size = new System.Drawing.Size(662, 39);
+            this.toolStripFerramentas.Size = new System.Drawing.Size(631, 39);
             this.toolStripFerramentas.TabIndex = 0;
             this.toolStripFerramentas.Text = "toolStrip1";
             // 
@@ -159,7 +159,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
@@ -188,7 +187,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
             this.dataGridViewRegistro.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewRegistro.RowTemplate.Height = 25;
-            this.dataGridViewRegistro.Size = new System.Drawing.Size(776, 498);
+            this.dataGridViewRegistro.Size = new System.Drawing.Size(776, 280);
             this.dataGridViewRegistro.TabIndex = 1;
             // 
             // TelaRegistroUsuarios

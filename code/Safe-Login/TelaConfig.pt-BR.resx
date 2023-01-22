@@ -57,11 +57,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="iconPictureBoxNotificacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 180</value>
+  </data>
+  <data name="iconPictureBoxNotificacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 35</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 200</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 15</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Administrador</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="iconButtonSobre.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="iconButtonSobre.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
@@ -77,7 +99,6 @@
   <data name="iconButtonSobre.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 56</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="iconButtonSobre.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -85,7 +106,7 @@
     <value>Sobre</value>
   </data>
   <data name="iconPictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 153</value>
+    <value>64, 58</value>
   </data>
   <data name="iconPictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 109</value>
@@ -121,7 +142,7 @@
     <value>Segoe UI, 15.75pt, style=Bold</value>
   </data>
   <data name="labelTitulo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 265</value>
+    <value>27, 170</value>
   </data>
   <data name="labelTitulo.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 30</value>
@@ -2801,17 +2822,83 @@
   <data name="panelContentor.Size" type="System.Drawing.Size, System.Drawing">
     <value>817, 646</value>
   </data>
+  <data name="importarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="importarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="salvarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="salvarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="exportarRegistrosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="sairToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="sairToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sair</value>
+  </data>
   <data name="inícioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
   </data>
   <data name="inícioToolStripMenuItem.Text" xml:space="preserve">
     <value>Arquivo</value>
   </data>
+  <data name="cadastrarUsuárioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cadastrar usuário</value>
+  </data>
+  <data name="ajudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
   <data name="ajudaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ajuda</value>
+    <value>Novo</value>
+  </data>
+  <data name="editarUsuárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="editarUsuárioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Editar usuário</value>
   </data>
   <data name="sobreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="temaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="exportarRelatórioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="exportarRelatórioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exportar relatório</value>
+  </data>
+  <data name="relatórioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatório</value>
+  </data>
+  <data name="geradorDeSenhasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Gerador de senhas</value>
+  </data>
+  <data name="verificadorDeSenhasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Verificador de senhas</value>
+  </data>
+  <data name="ferramentasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ferramentas</value>
+  </data>
+  <data name="verificarAtualizaçõesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Verificar atualizações</value>
+  </data>
+  <data name="sobreToolStripMenuItem2.Text" xml:space="preserve">
     <value>Sobre</value>
+  </data>
+  <data name="sobreToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="ajudaToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Ajuda</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>248, 0</value>
@@ -2821,6 +2908,9 @@
   </data>
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
+  </data>
+  <data name="openFileDialogImportar.Title" xml:space="preserve">
+    <value>Importar Registros</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

@@ -1,11 +1,6 @@
-True|kkk|@gmai.com|Operação|w|1|q
-True|Paulo Cesár Miranda|paulinho@gmail.com|Administração|Paulo|12345|Pitágoras
-True|Geraldo Magela Luiz Ferreira|geraldomagela@gmail.com|Operação|Geraldo|4pDt/5-!g22s4|Construção
-True|Antônio José da Silva|toninholula@gmail.com|Operação|Toninho|4f8=`?5"|Elétrica
-True|Italo Samuel Ferreira|italosamuelferreirea23@gmail.com|Supervisão|Italo|89254339|Rebelde
-True|Lorena Regina Ferreira|lorenareginaferreira@gmail.com|Cordenação|Lorena|40028922|Crepúsculo
-True|Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmail.com|Gerencia|Nicolas|jj9](_Z>|Homem-Aranha
-True|Margarethe|margarethe@gmail.com|Supervisão|Margo|12|
-True|ddas|fff|Cordenação|ffwe|ew|
-True|André Luiz Mendes|andrezinho@gmail.com|Operação|André|40028922|Cruzeiro
-True|Rosana Nunes|rosana@gmai.com|Operação|Rosana|12|R
+True|Ingride|margarethereginaferreira@gmail.com|Operação|Margarethe|1234||20/01/2023 16:53:42
+True|Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmail.com|Gerencia|Nicolas|33900643|Spider-Man|22/01/2023 13:13:36
+True|Lorena Regina Ferreira|lorenareginaferreira@gmail.com|Cordenação|Lorena|40028922|Lana Del Rei|22/01/2023 13:17:29
+True|Italo Samuel Ferreira|italosamuelferreirea@gmail.com|Supervisão|Italo|89254339|Rebelde|22/01/2023 13:18:08
+False|Geraldo Magela Luiz Ferreira|geraldomagelaluiz@gmail.com|Operação|Geraldo|1234||20/01/2023 16:53:42
+True|Margarethe Regina Da Silva Ferreira|margarethereginaferreira@gmail.com|Operação|Margarethe|1234||20/01/2023 16:53:42

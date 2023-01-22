@@ -1,45 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Safe_Login
 {
     public partial class TelaConfig : Form
-    {        
-        public TelaConfig()
+    {
+        Stack<Conta> pilha;
+        Login login;
+
+        public TelaConfig(Login obj)
         {
-            InitializeComponent();            
+            InitializeComponent();
+            login = obj;
         }
 
         private void TelaConfig_Load(object sender, EventArgs e)
         {
-         
+            labelTitulo.Text = "Olá Admin";
         }
 
-        private void AbrirFormulario(object form)
+        private void AbrirFormulario(Form form)
         {
-            if (panelContentor.Controls.Count>0)          
+            if (panelContentor.Controls.Count > 0)
                 panelContentor.Controls.RemoveAt(0);
-
-                Form fh = form as Form;
-                fh.TopLevel = false;
-                fh.Dock = DockStyle.Fill;
-                panelContentor.Controls.Add(fh);
-                panelContentor.Tag = fh;
-                fh.Show();
-            
-        }
-        public void NomeTitulo(string nomeTitulo)
-        {
-            labelTitulo.Text = "Olá, " + nomeTitulo;
-        }
-
+                        
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;            
+            panelContentor.Controls.Add(form);
+            panelContentor.Tag = form;
+            form.Show();
+        }        
+        
         private void iconButtonGeral_MouseHover(object sender, EventArgs e)
         {
             iconButtonGeral.BackColor = Color.FromArgb(254, 121, 14);
@@ -52,7 +45,8 @@ namespace Safe_Login
 
         private void iconButtonGeral_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new TelaGeral());
+            TelaGeral telaGeral = new TelaGeral();
+            AbrirFormulario(telaGeral);
         }
 
         private void iconButtonSobre_MouseHover(object sender, EventArgs e)
@@ -75,6 +69,12 @@ namespace Safe_Login
             iconButtonUsuarios.BackColor = Color.FromArgb(0, 0, 21);
         }
 
+        private void iconButtonUsuarios_Click(object sender, EventArgs e)
+        {
+            TelaRegistroUsuarios telaRegistros = new TelaRegistroUsuarios(login);            
+            AbrirFormulario(telaRegistros);
+        }
+
         private void iconButtonEstatisticas_MouseHover(object sender, EventArgs e)
         {
             iconButtonEstatisticas.BackColor = Color.FromArgb(254, 121, 14);
@@ -95,9 +95,28 @@ namespace Safe_Login
             iconButtonAparencia.BackColor = Color.FromArgb(0, 0, 21);
         }
 
-        private void iconButtonUsuarios_Click(object sender, EventArgs e)
+        private void importarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new TelaRegistroUsuarios());
+            if (openFileDialogImportar.ShowDialog() == DialogResult.OK)
+            {
+                login.ImportaCadastro(openFileDialogImportar.FileName);
+            }
+        }
+
+        private void cadastrarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaCadastro telaCadastro = new TelaCadastro(login);
+            telaCadastro.Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panelContentor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

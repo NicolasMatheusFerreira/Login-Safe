@@ -11,7 +11,9 @@ C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-wind
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaCadastro.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaConfig.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaEsqueciSenha.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaGeral.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaLogin.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaRegistroUsuarios.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaCadastro.pt-BR.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaConfig.pt-BR.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaEsqueciSenha.pt-BR.resources
@@ -28,6 +30,3 @@ C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-wind
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.pdb
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe-Login.genruntimeconfig.cache
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\ref\Safe-Login.dll
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaGeral.resources
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.Form1.resources
-C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaRegistroUsuarios.resources
