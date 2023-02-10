@@ -2810,6 +2810,9 @@
         lpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaW1nZUUfT/A4aNiTogIWsbAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBoxLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="pictureBoxLogo.Size" type="System.Drawing.Size, System.Drawing">
     <value>440, 522</value>
   </data>
@@ -2834,6 +2837,12 @@
   <data name="salvarToolStripMenuItem.Text" xml:space="preserve">
     <value>Salvar</value>
   </data>
+  <data name="txtToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="txtToolStripMenuItem.Text" xml:space="preserve">
+    <value>.txt</value>
+  </data>
   <data name="exportarRegistrosToolStripMenuItem.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
@@ -2848,6 +2857,9 @@
   </data>
   <data name="inícioToolStripMenuItem.Text" xml:space="preserve">
     <value>Arquivo</value>
+  </data>
+  <data name="cadastrarUsuárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
   </data>
   <data name="cadastrarUsuárioToolStripMenuItem.Text" xml:space="preserve">
     <value>Cadastrar usuário</value>
@@ -2900,13 +2912,10 @@
   <data name="ajudaToolStripMenuItem1.Text" xml:space="preserve">
     <value>Ajuda</value>
   </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 0</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>817, 24</value>
   </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
+  <data name="menuStrip.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
   <data name="openFileDialogImportar.Title" xml:space="preserve">

@@ -1,6 +1,7 @@
-True|Ingride|margarethereginaferreira@gmail.com|Operação|Margarethe|1234||20/01/2023 16:53:42
-True|Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmail.com|Gerencia|Nicolas|33900643|Spider-Man|22/01/2023 13:13:36
-True|Lorena Regina Ferreira|lorenareginaferreira@gmail.com|Cordenação|Lorena|40028922|Lana Del Rei|22/01/2023 13:17:29
-True|Italo Samuel Ferreira|italosamuelferreirea@gmail.com|Supervisão|Italo|89254339|Rebelde|22/01/2023 13:18:08
-False|Geraldo Magela Luiz Ferreira|geraldomagelaluiz@gmail.com|Operação|Geraldo|1234||20/01/2023 16:53:42
-True|Margarethe Regina Da Silva Ferreira|margarethereginaferreira@gmail.com|Operação|Margarethe|1234||20/01/2023 16:53:42
+True|João Gustavo Medeiros Pontes|joaozinho@gmail.com|Supervisão|João|Z7\\>66q\|Minecraft|06/02/2023 22:12:43
+True|André Luiz Mendes Silva|andrezinho@gmail.com|Operação|André|.8NA4)Q48\|Cruzeiro Esporte Clube|06/02/2023 17:12:00
+True|Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmai.com|Gerencia|Nicolas|33900643|Spider-Man|22/01/2023 13:41:15
+True|Italo Samuel Ferreira|italosamuelferreirea23@gmail.com|Operação|Italo|U7M4o<,vy2|Rebelde Méxicano|22/01/2023 21:27:53
+False|Lorena Regina Ferreira|lorenareginaferreira@gmail.com|Cordenação|Lorena|U7M4o<,vy2|Lana Del Rei|16/01/2023 17:00:53
+True|Margarethe Regina Da Silva Ferreira|margarethereginaferreira@gmail.com|Gerencia|Margarethe|U7M4o<,vy2|Meus filhos|11/01/2015 10:00:00
+True|Pedro Siqueira Pereira Bitarães|pedrin@gmail.com|Cordenação|pedrosiqueirapb|123|pc|06/02/2023 21:07:27

@@ -118,5 +118,22 @@ namespace Safe_Login
         {
 
         }
+
+        private void iconButtonAparencia_Click(object sender, EventArgs e)
+        {
+            TelaAparencia telaAparencia = new TelaAparencia();
+            AbrirFormulario(telaAparencia);
+        }
+
+        private void sobreToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaEditar telaEditar = new TelaEditar();
+            telaEditar.Show();
+        }
     }
 }

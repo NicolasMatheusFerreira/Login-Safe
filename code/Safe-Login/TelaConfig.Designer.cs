@@ -42,16 +42,17 @@
             this.iconButtonGeral = new FontAwesome.Sharp.IconButton();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelContentor = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importarToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarRegistrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarUsuárioToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.temaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarRelatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelContentor.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -143,6 +144,7 @@
             this.iconButtonAparencia.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonAparencia.Name = "iconButtonAparencia";
             this.iconButtonAparencia.UseVisualStyleBackColor = false;
+            this.iconButtonAparencia.Click += new System.EventHandler(this.iconButtonAparencia_Click);
             this.iconButtonAparencia.MouseLeave += new System.EventHandler(this.iconButtonAparencia_MouseLeave);
             this.iconButtonAparencia.MouseHover += new System.EventHandler(this.iconButtonAparencia_MouseHover);
             // 
@@ -216,11 +218,11 @@
             this.panelContentor.Name = "panelContentor";
             this.panelContentor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContentor_Paint);
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            resources.ApplyResources(this.menuStrip, "menuStrip");
+            this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inícioToolStripMenuItem,
             this.ajudaToolStripMenuItem,
             this.sobreToolStripMenuItem,
@@ -229,7 +231,7 @@
             this.ferramentasToolStripMenuItem,
             this.sobreToolStripMenuItem1,
             this.ajudaToolStripMenuItem1});
-            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip.Name = "menuStrip";
             // 
             // inícioToolStripMenuItem
             // 
@@ -245,6 +247,10 @@
             // importarToolStripMenuItem
             // 
             resources.ApplyResources(this.importarToolStripMenuItem, "importarToolStripMenuItem");
+            this.importarToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.File;
+            this.importarToolStripMenuItem.IconColor = System.Drawing.Color.Silver;
+            this.importarToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.importarToolStripMenuItem.IconSize = 50;
             this.importarToolStripMenuItem.Name = "importarToolStripMenuItem";
             this.importarToolStripMenuItem.Click += new System.EventHandler(this.importarToolStripMenuItem_Click);
             // 
@@ -256,7 +262,14 @@
             // exportarRegistrosToolStripMenuItem
             // 
             resources.ApplyResources(this.exportarRegistrosToolStripMenuItem, "exportarRegistrosToolStripMenuItem");
+            this.exportarRegistrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.txtToolStripMenuItem});
             this.exportarRegistrosToolStripMenuItem.Name = "exportarRegistrosToolStripMenuItem";
+            // 
+            // txtToolStripMenuItem
+            // 
+            resources.ApplyResources(this.txtToolStripMenuItem, "txtToolStripMenuItem");
+            this.txtToolStripMenuItem.Name = "txtToolStripMenuItem";
             // 
             // sairToolStripMenuItem
             // 
@@ -289,7 +302,12 @@
             // editarUsuárioToolStripMenuItem
             // 
             resources.ApplyResources(this.editarUsuárioToolStripMenuItem, "editarUsuárioToolStripMenuItem");
+            this.editarUsuárioToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.editarUsuárioToolStripMenuItem.IconColor = System.Drawing.Color.Silver;
+            this.editarUsuárioToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.editarUsuárioToolStripMenuItem.IconSize = 50;
             this.editarUsuárioToolStripMenuItem.Name = "editarUsuárioToolStripMenuItem";
+            this.editarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.editarUsuárioToolStripMenuItem_Click);
             // 
             // temaToolStripMenuItem
             // 
@@ -337,6 +355,7 @@
             this.sobreToolStripMenuItem2});
             this.sobreToolStripMenuItem1.ForeColor = System.Drawing.Color.Silver;
             this.sobreToolStripMenuItem1.Name = "sobreToolStripMenuItem1";
+            this.sobreToolStripMenuItem1.Click += new System.EventHandler(this.sobreToolStripMenuItem1_Click);
             // 
             // verificarAtualizaçõesToolStripMenuItem
             // 
@@ -365,10 +384,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(9)))));
             this.Controls.Add(this.panelContentor);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.panel2);
             this.HelpButton = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "TelaConfig";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaConfig_Load);
@@ -378,8 +397,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelContentor.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,19 +416,17 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconButton iconButtonSobre;
         private System.Windows.Forms.Panel panelContentor;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem inícioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBoxNotificacao;
         private System.Windows.Forms.ToolStripMenuItem temaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem importarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportarRegistrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarUsuárioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editarUsuárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatórioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportarRelatórioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem;
@@ -420,5 +437,8 @@
         private System.Windows.Forms.OpenFileDialog openFileDialogImportar;
         private System.Windows.Forms.ToolStripMenuItem geradorDeSenhasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verificadorDeSenhasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem txtToolStripMenuItem;
+        private FontAwesome.Sharp.IconMenuItem importarToolStripMenuItem;
+        private FontAwesome.Sharp.IconMenuItem editarUsuárioToolStripMenuItem;
     }
 }

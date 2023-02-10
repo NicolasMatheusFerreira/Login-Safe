@@ -97,30 +97,6 @@
   <data name="labelSenha.Text" xml:space="preserve">
     <value>Dados do usuário</value>
   </data>
-  <data name="textBoxNome.AccessibleDescription" xml:space="preserve">
-    <value>Informe seu nome completo</value>
-  </data>
-  <data name="textBoxNome.AccessibleName" xml:space="preserve">
-    <value>Caixa de nome</value>
-  </data>
-  <data name="textBoxNome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="textBoxNome.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="textBoxNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 226</value>
-  </data>
-  <data name="textBoxNome.PlaceholderText" xml:space="preserve">
-    <value>Nome Completo</value>
-  </data>
-  <data name="textBoxNome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 29</value>
-  </data>
-  <data name="textBoxNome.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="textBoxUsuario.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
   </data>
@@ -144,30 +120,6 @@
   </data>
   <data name="textBoxUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="textBoxSenha.AccessibleDescription" xml:space="preserve">
-    <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
-  </data>
-  <data name="textBoxSenha.AccessibleName" xml:space="preserve">
-    <value>Caixa de usuário</value>
-  </data>
-  <data name="textBoxSenha.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="textBoxSenha.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="textBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 345</value>
-  </data>
-  <data name="textBoxSenha.PlaceholderText" xml:space="preserve">
-    <value>Senha</value>
-  </data>
-  <data name="textBoxSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 29</value>
-  </data>
-  <data name="textBoxSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="textBoxConfirmeSenha.AccessibleDescription" xml:space="preserve">
     <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
@@ -495,6 +447,54 @@
   </data>
   <data name="textBoxPalavraPasse.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="textBoxSenha.AccessibleDescription" xml:space="preserve">
+    <value>Informe seu nome de usuário neste campo para poder acessar o sistema</value>
+  </data>
+  <data name="textBoxSenha.AccessibleName" xml:space="preserve">
+    <value>Caixa de usuário</value>
+  </data>
+  <data name="textBoxSenha.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxSenha.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 345</value>
+  </data>
+  <data name="textBoxSenha.PlaceholderText" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="textBoxSenha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 29</value>
+  </data>
+  <data name="textBoxSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="textBoxNome.AccessibleDescription" xml:space="preserve">
+    <value>Informe seu nome completo</value>
+  </data>
+  <data name="textBoxNome.AccessibleName" xml:space="preserve">
+    <value>Caixa de nome</value>
+  </data>
+  <data name="textBoxNome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxNome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxNome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 226</value>
+  </data>
+  <data name="textBoxNome.PlaceholderText" xml:space="preserve">
+    <value>Nome Completo</value>
+  </data>
+  <data name="textBoxNome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 29</value>
+  </data>
+  <data name="textBoxNome.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>734, 631</value>
