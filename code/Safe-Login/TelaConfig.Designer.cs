@@ -153,6 +153,7 @@
             resources.ApplyResources(this.labelTitulo, "labelTitulo");
             this.labelTitulo.ForeColor = System.Drawing.Color.White;
             this.labelTitulo.Name = "labelTitulo";
+            this.labelTitulo.Click += new System.EventHandler(this.labelTitulo_Click);
             // 
             // iconButtonEstatisticas
             // 

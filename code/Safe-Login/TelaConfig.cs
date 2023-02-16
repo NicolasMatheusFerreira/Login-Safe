@@ -18,7 +18,7 @@ namespace Safe_Login
 
         private void TelaConfig_Load(object sender, EventArgs e)
         {
-            labelTitulo.Text = "Olá Admin";
+            labelTitulo.Text = "Olá "+TelaLogin.textBoxu;
         }
 
         private void AbrirFormulario(Form form)
@@ -134,6 +134,11 @@ namespace Safe_Login
         {
             TelaEditar telaEditar = new TelaEditar();
             telaEditar.Show();
+        }
+
+        private void labelTitulo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
