@@ -5,13 +5,15 @@ using System.Windows.Forms;
 namespace Safe_Login
 {
     public partial class TelaLogin : Form
-    {
+    {        
         Login login = new Login();
-        global::Config config = new global::Config();
+        Admin admin = new Admin();
+        Config config;
 
         public TelaLogin()
         {
             InitializeComponent();
+            config = new Config(login, admin);
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -34,7 +36,7 @@ namespace Safe_Login
             }
             textBoxUsuario.AutoCompleteCustomSource = dadosTextBoxUsuario;
         }
-              
+
         private void textBoxUsuario_TextChanged_1(object sender, EventArgs e)
         {
             string texto = textBoxUsuario.Text;
@@ -89,7 +91,7 @@ namespace Safe_Login
         {
             var cor = Color.FromArgb(0, 0, 21);
             buttonEntrar.BackColor = cor;
-        }        
+        }
 
         private void buttonEntrar_MouseDown(object sender, MouseEventArgs e)
         {
@@ -99,12 +101,11 @@ namespace Safe_Login
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
-            if (config.Admin(textBoxUsuario.Text, textBoxSenha.Text))
+            if (admin.EntraAdmin(textBoxUsuario.Text, textBoxSenha.Text))
             {
-                TelaConfig telaConfig = new TelaConfig(login);
-
+                TelaConfig telaConfig = new TelaConfig(login, admin, config);
                 MessageBox.Show("Bem-vindo administrador");
-                telaConfig.Show();                
+                telaConfig.Show();
             }
             else if (login.Entra(textBoxUsuario.Text, textBoxSenha.Text, Convert.ToString(comboBoxCargo.SelectedItem)))
             {
@@ -128,11 +129,11 @@ namespace Safe_Login
             if (checkBoxSenha.Checked == true)
                 textBoxSenha.UseSystemPasswordChar = false;
             else textBoxSenha.UseSystemPasswordChar = true;
-        }        
+        }
 
         private void labelCadastra_Click(object sender, EventArgs e)
         {
-            TelaCadastro cadastro = new TelaCadastro(login);
+            TelaCadastro cadastro = new TelaCadastro(login, admin, config);
             cadastro.Show();
         }
 
@@ -154,6 +155,6 @@ namespace Safe_Login
         private void labelEsqueciSenha_MouseLeave(object sender, EventArgs e)
         {
             labelEsqueciSenha.ForeColor = Color.White;
-        }                        
+        }
     }
 }

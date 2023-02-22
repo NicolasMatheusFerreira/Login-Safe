@@ -6,26 +6,33 @@ using System.Windows.Forms;
 namespace Safe_Login
 {
     public partial class TelaRegistroUsuarios : Form
-    {        
-        private Login login;
+    {
+        Login login;
+        Admin admin;
+        Config config;
+
+        
+        
         private DataTable dt = new DataTable();
 
-        public TelaRegistroUsuarios(Login obj)
+        public TelaRegistroUsuarios(Login login, Admin admin, Config config)
         {
             InitializeComponent();
-            login = obj;            
+            this.login = login;
+            this.admin = admin;
+            this.config = config;
         }
-                
+
         private void TelaRegistroUsuarios_Load(object sender, EventArgs e)
         {
             ConfigurarTabela();
             AtualizaTabela();
-        }        
+        }
 
         private void AtualizaTabela()
         {
             Queue<Conta> fila = login.GetListar();
-            foreach(Conta i in fila)
+            foreach (Conta i in fila)
             {
                 AdicionarLinha(i);
             }
@@ -67,7 +74,7 @@ namespace Safe_Login
 
         private void iconToolStripButtonAdicionar_Click(object sender, EventArgs e)
         {
-            TelaCadastro telaCadastro = new TelaCadastro(login);
+            TelaCadastro telaCadastro = new TelaCadastro(login, admin, config);
             telaCadastro.Show();
         }
 

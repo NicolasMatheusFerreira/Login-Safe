@@ -4,34 +4,37 @@ namespace Safe_Login
 {
     public partial class TelaGeral : Form
     {
-        public TelaGeral()
+        Login login;
+        Admin admin;
+        Config config;
+
+        public TelaGeral(Login login, Admin admin, Config config)
         {
             InitializeComponent();
-        }
-
-        private void textBoxSenha_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel2_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
+            this.login = login;
+            this.admin = admin;
+            this.config = config;           
+        }               
 
         private void TelaGeral_Load(object sender, System.EventArgs e)
         {
+            textBoxUsuarioAdmin.Text = admin.UsuarioAdmin;
+            textBoxSenhaAdmin.Text = admin.SenhaAdmin;
+        }    
 
+        private void checkBoxSenha_Click(object sender, System.EventArgs e)
+        {
+            if (checkBoxSenha.Checked == true)
+                textBoxSenhaAdmin.UseSystemPasswordChar = false;
+            else textBoxSenhaAdmin.UseSystemPasswordChar = true;
+        }
+
+        private void ButtonRegistrar_Click(object sender, System.EventArgs e)
+        {
+            admin.UsuarioAdmin = textBoxUsuarioAdmin.Text;
+            admin.SenhaAdmin = textBoxUsuarioAdmin.Text;
+
+            config.ExportaConfiguracoes();            
         }
     }
 }

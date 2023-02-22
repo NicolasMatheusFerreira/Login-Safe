@@ -4,7 +4,6 @@ using System.Linq;
 
 public class Conta
 {
-
     private Boolean status;
     private string nomeCompleto;
     private string email;
@@ -17,7 +16,6 @@ public class Conta
 
     public Conta()
     {
-
         this.status = true;
         this.nomeCompleto = "N/A";
         this.email = "N/A";

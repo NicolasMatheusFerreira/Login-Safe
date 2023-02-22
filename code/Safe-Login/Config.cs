@@ -1,30 +1,32 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
+using System.Collections.Generic;
 
-class Config
+public class Config
 {
-
+    Login login;
+    Admin admin;
+    
     public List<string> cargo = new List<string>();
-    public List<string> nomesUsuario = new List<string>();
-
-    private string usuarioAdministrador;
-    private string senhaAdministrador;
-    private string senhaAdministradorCadastro;
+    public List<string> nomesUsuario = new List<string>();   
 
     private string caminhoAcessosSystemLogs;
 
-    public Config()
+    public Config(Login login, Admin admin)
     {
+        this.login = login;
+        this.admin = admin;
 
         ImportaCargo("cargos.txt");
         ImportaSugestoesUsuario("sugestoesNomesUsuarios.txt");
 
-        this.usuarioAdministrador = "Admin123";
-        this.senhaAdministrador = "Admin123";
-        this.senhaAdministradorCadastro = "Admin";
 
-        this.caminhoAcessosSystemLogs = "acessosSystem.log";
+        this.caminhoAcessosSystemLogs = "acessosSystem.log";         
+    }
+   
+    public void ExportaConfiguracoes()
+    {
+        admin.ExportaAdmin();
     }
 
     public void SetAcessosSystemLogs(string x)
@@ -44,32 +46,6 @@ class Config
             sw.WriteLine(DateTime.Now + "----- [" + x + "]");
             sw.Close();
         }
-    }
-    public bool Admin(string usuario, string senha)
-    {
-        if (usuario.Equals(this.usuarioAdministrador) && senha.Equals(this.senhaAdministrador))
-            return true;
-        return false;
-    }
-    public string UsuarioAdministrador
-    {
-        get { return this.usuarioAdministrador; }
-        set { this.usuarioAdministrador = value; }
-    }
-    public string SenhaAdminstrador
-    {
-        get { return this.senhaAdministrador; }
-        set { this.senhaAdministrador = value; }
-    }
-
-    public bool AdminCadastro(string i)
-    {
-        return this.senhaAdministradorCadastro.Equals(i) ? true : false;
-    }
-    public string SenhaAdministradorCadastro
-    {
-        get { return this.senhaAdministradorCadastro; }
-        set { this.senhaAdministradorCadastro = value; }
     }
 
     public void ImportaSugestoesUsuario(string caminhoSugestoesUsuario)

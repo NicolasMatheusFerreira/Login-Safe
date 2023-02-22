@@ -8,31 +8,37 @@ namespace Safe_Login
     public partial class TelaConfig : Form
     {
         Stack<Conta> pilha;
-        Login login;
 
-        public TelaConfig(Login obj)
+        Login login;
+        Admin admin;
+        Config config;
+
+        public TelaConfig(Login login, Admin admin, Config config)
         {
             InitializeComponent();
-            login = obj;
+            this.login = login;
+            this.admin = admin;
+            this.config = config;
         }
 
         private void TelaConfig_Load(object sender, EventArgs e)
         {
-            labelTitulo.Text = "Olá "+TelaLogin.textBoxu;
+            TelaLogin telaLogin = new TelaLogin();
+            labelTitulo.Text = "Olá Admin";
         }
 
         private void AbrirFormulario(Form form)
         {
             if (panelContentor.Controls.Count > 0)
                 panelContentor.Controls.RemoveAt(0);
-                        
+
             form.TopLevel = false;
-            form.Dock = DockStyle.Fill;            
+            form.Dock = DockStyle.Fill;
             panelContentor.Controls.Add(form);
             panelContentor.Tag = form;
             form.Show();
-        }        
-        
+        }
+
         private void iconButtonGeral_MouseHover(object sender, EventArgs e)
         {
             iconButtonGeral.BackColor = Color.FromArgb(254, 121, 14);
@@ -45,7 +51,7 @@ namespace Safe_Login
 
         private void iconButtonGeral_Click(object sender, EventArgs e)
         {
-            TelaGeral telaGeral = new TelaGeral();
+            TelaGeral telaGeral = new TelaGeral(login, admin, config);
             AbrirFormulario(telaGeral);
         }
 
@@ -71,7 +77,7 @@ namespace Safe_Login
 
         private void iconButtonUsuarios_Click(object sender, EventArgs e)
         {
-            TelaRegistroUsuarios telaRegistros = new TelaRegistroUsuarios(login);            
+            TelaRegistroUsuarios telaRegistros = new TelaRegistroUsuarios(login, admin, config);
             AbrirFormulario(telaRegistros);
         }
 
@@ -105,7 +111,7 @@ namespace Safe_Login
 
         private void cadastrarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaCadastro telaCadastro = new TelaCadastro(login);
+            TelaCadastro telaCadastro = new TelaCadastro(login, admin, config);
             telaCadastro.Show();
         }
 

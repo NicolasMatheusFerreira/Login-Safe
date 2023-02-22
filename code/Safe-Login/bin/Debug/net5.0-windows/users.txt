@@ -1,3 +1,4 @@
+True|Pablo Vitar dos Santos|pablinha@gmail.com|Operação|Pablo|12|Cantar|22/02/2023 00:23:01
 True|João Gustavo Medeiros Pontes|joaozinho@gmail.com|Supervisão|João|Z7\\>66q\|Minecraft|06/02/2023 22:12:43
 True|André Luiz Mendes Silva|andrezinho@gmail.com|Operação|André|.8NA4)Q48\|Cruzeiro Esporte Clube|06/02/2023 17:12:00
 True|Nicolas Matheus Ferreira|nicolasmatheusferreira13@gmai.com|Gerencia|Nicolas|33900643|Spider-Man|22/01/2023 13:41:15
@@ -5,3 +6,4 @@ True|Italo Samuel Ferreira|italosamuelferreirea23@gmail.com|Operação|Italo|U7M
 False|Lorena Regina Ferreira|lorenareginaferreira@gmail.com|Cordenação|Lorena|U7M4o<,vy2|Lana Del Rei|16/01/2023 17:00:53
 True|Margarethe Regina Da Silva Ferreira|margarethereginaferreira@gmail.com|Gerencia|Margarethe|U7M4o<,vy2|Meus filhos|11/01/2015 10:00:00
 True|Pedro Siqueira Pereira Bitarães|pedrin@gmail.com|Cordenação|pedrosiqueirapb|123|pc|06/02/2023 21:07:27
+True|Evly Lavinia|evly@gmail.com|Gerencia Regional|Evly|1/>\c;!Lv|Italo Amorzinho|21/02/2023 14:11:25

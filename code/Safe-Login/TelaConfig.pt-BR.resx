@@ -2813,8 +2813,11 @@
   <data name="pictureBoxLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="pictureBoxLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 65</value>
+  </data>
   <data name="pictureBoxLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 522</value>
+    <value>636, 581</value>
   </data>
   <data name="panelContentor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

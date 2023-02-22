@@ -7,12 +7,16 @@ namespace Safe_Login
     public partial class TelaCadastro : Form
     {
         Login login;
-        global::Config config = new global::Config();
+        Admin admin;
+        Config config;        
 
-        public TelaCadastro(Login obj)
+        public TelaCadastro(Login login, Admin admin, Config config)
         {
             InitializeComponent();
-            login = obj;
+
+            this.login = login;
+            this.admin = admin;
+            this.config = config;
         }
 
         private void Cadastro_Load(object sender, EventArgs e)
@@ -22,7 +26,7 @@ namespace Safe_Login
 
         private void CarregaDados()
         {
-            comboBoxCargo.Items.Clear();         
+            comboBoxCargo.Items.Clear();
             foreach (string aux in config.cargo)
             {
                 comboBoxCargo.Items.Add(aux);
@@ -39,7 +43,7 @@ namespace Safe_Login
         private void LimparCampos()
         {
             textBoxNome.Clear();
-            textBoxEmail.Clear();            
+            textBoxEmail.Clear();
             textBoxUsuario.Clear();
             textBoxSenha.Clear();
             textBoxConfirmeSenha.Clear();
@@ -62,7 +66,6 @@ namespace Safe_Login
             conta.Senha = textBoxSenha.Text;
             aux = textBoxConfirmeSenha.Text;
             conta.PalavraPasse = textBoxPalavraPasse.Text;
-            senhaAdm = textBoxSenhaAdm.Text;
             conta.AcessosSystem = DateTime.Now.ToString();
 
             if (!VerificaCampos(conta))
@@ -71,9 +74,9 @@ namespace Safe_Login
             {
                 if (login.ValidaSenha(conta.Senha, aux))
                 {
-                    if (senhaAdm.Length > 0)
+                    if (textBoxSenhaAdm.Text.Length > 0)
                     {
-                        if (config.AdminCadastro(senhaAdm))
+                        if (admin.EntraAdmin(admin.UsuarioAdmin, textBoxSenhaAdm.Text))
                         {
                             if (!login.RegistrosDuplicados(conta))
                             {

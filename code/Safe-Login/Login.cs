@@ -1,12 +1,13 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
+using System.Collections.Generic;
 
 public class Login
 {
     Celula inicio;
-    private string caminho = "users.txt";
     private Conta sessao;
+    private string caminho = "users.txt";
+    
 
     public Login()
     {
@@ -18,14 +19,14 @@ public class Login
     {
         get { return this.sessao; }
         set { this.sessao = value; }
-    }    
+    }
 
     public Queue<Conta> GetListar()
     {
         Celula aux = inicio;
         Queue<Conta> obj = new Queue<Conta>();
 
-        while(aux!=null)
+        while (aux != null)
         {
             obj.Enqueue(aux.atual);
             aux = aux.prox;
@@ -157,21 +158,9 @@ public class Login
         }
         return false;
     }
-    public bool RegistrosDuplicados(Conta obj)
-    {
-        Celula aux = inicio;
-        while (aux != null)
-        {
-            if (obj.NomeUsuario.Equals(aux.atual.NomeUsuario))
-                return true;
-            aux = aux.prox;
-        }
-        return false;
-    }
 
     public Conta Pop(string nomeUsuario)
     {
-
         Celula aux = inicio;
         Conta j = new Conta();
         if (inicio != null)
@@ -209,9 +198,9 @@ public class Login
         ExportaCadastro(caminho, false);
         return aux;
     }
+
     public Conta FormatoLeitura(string conteudo)
     {
-
         Conta aux = new Conta();
         string[] formatoLeitura = new string[8];
         int j = 0;
@@ -233,9 +222,9 @@ public class Login
 
         return aux;
     }
+
     public void ImportaCadastro(string caminhoPath)
     {
-
         if (!File.Exists(caminhoPath))
         {
             Console.WriteLine("Erro! Diretorio inexistente!");
@@ -256,14 +245,15 @@ public class Login
                 ExportaCadastro(caminho, false);
         }
     }
+
     public void FormatoCadastro(Celula aux, StreamWriter sw)
     {
 
         sw.WriteLine(aux.atual.Status + "|" + aux.atual.NomeCompleto + "|" + aux.atual.Email + "|" + aux.atual.Cargo + "|" + aux.atual.NomeUsuario + "|" + aux.atual.Senha + "|" + aux.atual.PalavraPasse + "|" + aux.atual.AcessosSystem);
     }
+
     public void ExportaCadastro(string caminho, bool permissao)
     {
-
         StreamWriter sw = new StreamWriter(caminho, permissao);
         if (inicio != null)
         {
@@ -276,12 +266,26 @@ public class Login
             sw.Close();
         }
     }
+
+    public bool RegistrosDuplicados(Conta obj)
+    {
+        Celula aux = inicio;
+        while (aux != null)
+        {
+            if (obj.NomeUsuario.Equals(aux.atual.NomeUsuario))
+                return true;
+            aux = aux.prox;
+        }
+        return false;
+    }
+
     public bool ValidaSenha(string x, string aux)
     {
         if (x.Equals(aux))
             return true;
         return false;
     }
+
     public void Push(Conta obj)
     {
         if (inicio == null)
@@ -300,7 +304,6 @@ public class Login
     }
     public bool Cadastra(Conta conta)
     {
-
         Push(conta);
         ExportaCadastro(caminho, false);
         return true;
