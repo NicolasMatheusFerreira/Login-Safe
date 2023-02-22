@@ -58,228 +58,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="textBoxSenhaAdmin.AccessibleDescription" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBoxSenhaAdmin.AccessibleName" xml:space="preserve">
-    <value />
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textBoxSenhaAdmin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="textBoxSenhaAdmin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="textBoxSenhaAdmin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 289</value>
-  </data>
-  <data name="textBoxSenhaAdmin.PlaceholderText" xml:space="preserve">
-    <value>Senha Administrador</value>
-  </data>
-  <data name="textBoxSenhaAdmin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>401, 29</value>
-  </data>
-  <data name="textBoxSenhaAdmin.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 12pt, style=Bold</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 252</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 21</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Senha</value>
-  </data>
-  <data name="textBoxUsuarioAdmin.AccessibleDescription" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBoxUsuarioAdmin.AccessibleName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBoxUsuarioAdmin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="textBoxUsuarioAdmin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="textBoxUsuarioAdmin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 187</value>
-  </data>
-  <data name="textBoxUsuarioAdmin.PlaceholderText" xml:space="preserve">
-    <value>Usuário Administrador</value>
-  </data>
-  <data name="textBoxUsuarioAdmin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>401, 29</value>
-  </data>
-  <data name="textBoxUsuarioAdmin.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="labelSenha.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelSenha.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 12pt, style=Bold</value>
-  </data>
-  <data name="labelSenha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 148</value>
-  </data>
-  <data name="labelSenha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="labelSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 21</value>
-  </data>
-  <data name="labelSenha.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="labelSenha.Text" xml:space="preserve">
-    <value>Dados do usuário</value>
-  </data>
-  <data name="iconPictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconPictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 151</value>
-  </data>
-  <data name="iconPictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
-  </data>
-  <data name="iconPictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconPictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 255</value>
-  </data>
-  <data name="iconPictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
-  </data>
-  <data name="iconPictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 20.25pt, style=Bold</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 68</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>395, 37</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Credenciais do administrador</value>
-  </data>
-  <data name="iconButton2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="iconButton2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt, style=Bold</value>
-  </data>
-  <data name="iconButton2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="iconButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 600</value>
-  </data>
-  <data name="iconButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="iconButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 54</value>
-  </data>
-  <data name="iconButton2.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="ButtonRegistrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="ButtonRegistrar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt, style=Bold</value>
-  </data>
-  <data name="ButtonRegistrar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="ButtonRegistrar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ButtonRegistrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 600</value>
-  </data>
-  <data name="ButtonRegistrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="ButtonRegistrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 54</value>
-  </data>
-  <data name="ButtonRegistrar.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="ButtonRegistrar.Text" xml:space="preserve">
-    <value>Atualizar</value>
-  </data>
-  <data name="checkBoxSenha.AccessibleDescription" xml:space="preserve">
-    <value>Deseja exibir sua senha?</value>
-  </data>
-  <data name="checkBoxSenha.AccessibleName" xml:space="preserve">
-    <value>Mostrar senha</value>
-  </data>
-  <data name="checkBoxSenha.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxSenha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="checkBoxSenha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 323</value>
-  </data>
-  <data name="checkBoxSenha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 19</value>
-  </data>
-  <data name="checkBoxSenha.Text" xml:space="preserve">
-    <value>Mostrar Senha</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1002, 688</value>
-  </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -289,9 +67,11 @@
   <data name="textBox1.AccessibleName" xml:space="preserve">
     <value>Caixa de senha</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
@@ -310,6 +90,7 @@
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
@@ -397,7 +178,286 @@
   <data name="iconPictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1, 22</value>
   </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 412</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 30</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Redefinir as credenciais de acesso administrador, para as configurações</value>
+  </data>
+  <data name="iconButtonReset.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="iconButtonReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="iconButtonReset.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="iconButtonReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="iconButtonReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 452</value>
+  </data>
+  <data name="iconButtonReset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="iconButtonReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 53</value>
+  </data>
+  <data name="iconButtonReset.Text" xml:space="preserve">
+    <value>Resetar</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 168</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 15</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>label5ss</value>
+  </data>
+  <data name="iconPictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="iconPictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 241</value>
+  </data>
+  <data name="iconPictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 26</value>
+  </data>
+  <data name="labelSenha.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSenha.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="labelSenha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelSenha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 238</value>
+  </data>
+  <data name="labelSenha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelSenha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 21</value>
+  </data>
+  <data name="labelSenha.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="labelSenha.Text" xml:space="preserve">
+    <value>Usuário administrador</value>
+  </data>
+  <data name="textBoxUsuarioAdmin.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxUsuarioAdmin.AccessibleName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxUsuarioAdmin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxUsuarioAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxUsuarioAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 276</value>
+  </data>
+  <data name="textBoxUsuarioAdmin.PlaceholderText" xml:space="preserve">
+    <value>Usuário Administrador</value>
+  </data>
+  <data name="textBoxUsuarioAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 29</value>
+  </data>
+  <data name="textBoxUsuarioAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 310</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 21</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Senha administrador</value>
+  </data>
+  <data name="iconPictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="iconPictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 313</value>
+  </data>
+  <data name="iconPictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 24</value>
+  </data>
+  <data name="iconPictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="textBoxSenhaAdmin.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxSenhaAdmin.AccessibleName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxSenhaAdmin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxSenhaAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="textBoxSenhaAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 343</value>
+  </data>
+  <data name="textBoxSenhaAdmin.PlaceholderText" xml:space="preserve">
+    <value>Senha Administrador</value>
+  </data>
+  <data name="textBoxSenhaAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 29</value>
+  </data>
+  <data name="textBoxSenhaAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="checkBoxCredenciais.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBoxCredenciais.AccessibleName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBoxCredenciais.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxCredenciais.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxCredenciais.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 380</value>
+  </data>
+  <data name="checkBoxCredenciais.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 19</value>
+  </data>
+  <data name="checkBoxCredenciais.Text" xml:space="preserve">
+    <value>Mostrar Credenciais</value>
+  </data>
+  <data name="ButtonRegistrar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ButtonRegistrar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="ButtonRegistrar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ButtonRegistrar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ButtonRegistrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 700</value>
+  </data>
+  <data name="ButtonRegistrar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ButtonRegistrar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 54</value>
+  </data>
+  <data name="ButtonRegistrar.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="ButtonRegistrar.Text" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20.25pt, style=Bold</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 77</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 74</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Credenciais do administrador</value>
+  </data>
+  <data name="tableLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20.25pt, style=Bold</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 536</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 74</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Credenciais do administrador</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1002, 788</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1002, 688</value>
+    <value>1002, 788</value>
   </data>
 </root>

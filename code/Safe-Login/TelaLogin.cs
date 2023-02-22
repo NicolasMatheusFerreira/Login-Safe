@@ -5,14 +5,16 @@ using System.Windows.Forms;
 namespace Safe_Login
 {
     public partial class TelaLogin : Form
-    {        
-        Login login = new Login();
-        Admin admin = new Admin();
+    {
+        Login login;
+        Admin admin;
         Config config;
 
         public TelaLogin()
         {
             InitializeComponent();
+            login = new Login();
+            admin = new Admin();
             config = new Config(login, admin);
         }
 
@@ -22,19 +24,18 @@ namespace Safe_Login
         }
 
         private void CarregaDados()
-        {
-            comboBoxCargo.Items.Clear();
-            foreach (string aux in config.cargo)
+        {            
+            foreach (string aux in config.getCargos())
             {
                 comboBoxCargo.Items.Add(aux);
             }
-
+            /*
             AutoCompleteStringCollection dadosTextBoxUsuario = new AutoCompleteStringCollection();
             foreach (string aux in config.nomesUsuario)
             {
                 dadosTextBoxUsuario.Add(aux);
             }
-            textBoxUsuario.AutoCompleteCustomSource = dadosTextBoxUsuario;
+            textBoxUsuario.AutoCompleteCustomSource = dadosTextBoxUsuario;*/
         }
 
         private void textBoxUsuario_TextChanged_1(object sender, EventArgs e)
@@ -82,23 +83,28 @@ namespace Safe_Login
             }
         }
 
+        private void checkBoxSenha_Click(object sender, EventArgs e)
+        {
+            if (checkBoxSenha.Checked == true)
+                textBoxSenha.UseSystemPasswordChar = false;
+            else textBoxSenha.UseSystemPasswordChar = true;
+        }
+
+        // Botão entrar
         private void buttonEntrar_MouseEnter(object sender, EventArgs e)
         {
             buttonEntrar.BackColor = Color.Black;
         }
-
         private void buttonEntrar_MouseLeave(object sender, EventArgs e)
         {
             var cor = Color.FromArgb(0, 0, 21);
             buttonEntrar.BackColor = cor;
         }
-
         private void buttonEntrar_MouseDown(object sender, MouseEventArgs e)
         {
             var cor = Color.FromArgb(140, 19, 67);
             buttonEntrar.BackColor = cor;
         }
-
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
             if (admin.EntraAdmin(textBoxUsuario.Text, textBoxSenha.Text))
@@ -108,9 +114,9 @@ namespace Safe_Login
                 telaConfig.Show();
             }
             else if (login.Entra(textBoxUsuario.Text, textBoxSenha.Text, Convert.ToString(comboBoxCargo.SelectedItem)))
-            {
+            {/*
                 config.SetAcessosSystemLogs(login.Sessao.NomeCompleto + ";" + login.Sessao.NomeUsuario);
-
+                */
                 MessageBox.Show($"Bem-vindo {textBoxUsuario.Text}");
                 this.Dispose();
             }
@@ -122,26 +128,17 @@ namespace Safe_Login
                 labelSaida.Text = "Nome de usuário ou senha incorretos.\n\nTente novamente!";
                 textBoxUsuario.Focus();
             }
-        }
-
-        private void checkBoxSenha_Click(object sender, EventArgs e)
-        {
-            if (checkBoxSenha.Checked == true)
-                textBoxSenha.UseSystemPasswordChar = false;
-            else textBoxSenha.UseSystemPasswordChar = true;
-        }
+        }              
 
         private void labelCadastra_Click(object sender, EventArgs e)
         {
             TelaCadastro cadastro = new TelaCadastro(login, admin, config);
             cadastro.Show();
         }
-
         private void labelCadastra_MouseHover(object sender, EventArgs e)
         {
             labelCadastra.ForeColor = Color.FromArgb(234, 0, 152);
         }
-
         private void labelCadastra_MouseLeave(object sender, EventArgs e)
         {
             labelCadastra.ForeColor = Color.White;
@@ -151,7 +148,6 @@ namespace Safe_Login
         {
             labelEsqueciSenha.ForeColor = Color.FromArgb(234, 0, 152);
         }
-
         private void labelEsqueciSenha_MouseLeave(object sender, EventArgs e)
         {
             labelEsqueciSenha.ForeColor = Color.White;

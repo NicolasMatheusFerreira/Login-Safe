@@ -33,3 +33,4 @@ C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-wind
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaAparencia.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaEditar.resources
 C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaGeral.pt-BR.resources
+C:\Users\nicol\Documents\GitHub\Safe-Login\code\Safe-Login\obj\Debug\net5.0-windows\Safe_Login.TelaEstatistica.resources

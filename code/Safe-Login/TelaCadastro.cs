@@ -25,12 +25,13 @@ namespace Safe_Login
         }
 
         private void CarregaDados()
-        {
+        {/*
             comboBoxCargo.Items.Clear();
             foreach (string aux in config.cargo)
             {
                 comboBoxCargo.Items.Add(aux);
             }
+            */
         }
 
         private bool VerificaCampos(Conta obj)

@@ -208,7 +208,7 @@
     <value>Segoe UI Semibold, 11pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 650</value>
+    <value>0, 729</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>226, 20</value>
@@ -253,7 +253,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 670</value>
+    <value>248, 749</value>
   </data>
   <data name="pictureBoxLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2826,7 +2826,7 @@
     <value>248, 24</value>
   </data>
   <data name="panelContentor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 646</value>
+    <value>817, 725</value>
   </data>
   <data name="importarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
@@ -2855,10 +2855,7 @@
   <data name="sairToolStripMenuItem.Text" xml:space="preserve">
     <value>Sair</value>
   </data>
-  <data name="inícioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
-  </data>
-  <data name="inícioToolStripMenuItem.Text" xml:space="preserve">
+  <data name="ToolStripMenuItemArquivo.Text" xml:space="preserve">
     <value>Arquivo</value>
   </data>
   <data name="cadastrarUsuárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -2928,7 +2925,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1065, 670</value>
+    <value>1065, 749</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

@@ -18,15 +18,14 @@ namespace Safe_Login
             InitializeComponent();
             this.login = login;
             this.admin = admin;
-            this.config = config;
+            this.config = config;            
         }
 
         private void TelaConfig_Load(object sender, EventArgs e)
-        {
-            TelaLogin telaLogin = new TelaLogin();
-            labelTitulo.Text = "Olá Admin";
+        {            
+            labelTitulo.Text = "Olá, "+admin.UsuarioAdmin;            
         }
-
+        
         private void AbrirFormulario(Form form)
         {
             if (panelContentor.Controls.Count > 0)
@@ -39,68 +38,95 @@ namespace Safe_Login
             form.Show();
         }
 
+
+        // --- Painel lateral ---
+        // Botão de geral
         private void iconButtonGeral_MouseHover(object sender, EventArgs e)
         {
             iconButtonGeral.BackColor = Color.FromArgb(254, 121, 14);
         }
-
         private void iconButtonGeral_MouseLeave(object sender, EventArgs e)
         {
             iconButtonGeral.BackColor = Color.FromArgb(0, 0, 21);
         }
-
         private void iconButtonGeral_Click(object sender, EventArgs e)
         {
             TelaGeral telaGeral = new TelaGeral(login, admin, config);
             AbrirFormulario(telaGeral);
         }
 
-        private void iconButtonSobre_MouseHover(object sender, EventArgs e)
-        {
-            iconButtonSobre.BackColor = Color.FromArgb(254, 121, 14);
-        }
-
-        private void iconButtonSobre_MouseLeave(object sender, EventArgs e)
-        {
-            iconButtonSobre.BackColor = Color.FromArgb(0, 0, 21);
-        }
-
+        // Botão de usuários
         private void iconButtonUsuarios_MouseHover(object sender, EventArgs e)
         {
             iconButtonUsuarios.BackColor = Color.FromArgb(254, 121, 14);
         }
-
         private void iconButtonUsuarios_MouseLeave(object sender, EventArgs e)
         {
             iconButtonUsuarios.BackColor = Color.FromArgb(0, 0, 21);
         }
-
         private void iconButtonUsuarios_Click(object sender, EventArgs e)
         {
             TelaRegistroUsuarios telaRegistros = new TelaRegistroUsuarios(login, admin, config);
             AbrirFormulario(telaRegistros);
         }
 
+        // Botão de estátisticas
         private void iconButtonEstatisticas_MouseHover(object sender, EventArgs e)
         {
             iconButtonEstatisticas.BackColor = Color.FromArgb(254, 121, 14);
         }
-
         private void iconButtonEstatisticas_MouseLeave(object sender, EventArgs e)
         {
             iconButtonEstatisticas.BackColor = Color.FromArgb(0, 0, 21);
         }
+        private void iconButtonEstatisticas_Click(object sender, EventArgs e)
+        {
+            TelaEstatistica telaEstatistica = new TelaEstatistica(login, admin, config);
+            AbrirFormulario(telaEstatistica);
+        }
 
+        // Botão de aparência
         private void iconButtonAparencia_MouseHover(object sender, EventArgs e)
         {
             iconButtonAparencia.BackColor = Color.FromArgb(254, 121, 14);
         }
-
         private void iconButtonAparencia_MouseLeave(object sender, EventArgs e)
         {
             iconButtonAparencia.BackColor = Color.FromArgb(0, 0, 21);
         }
+        private void iconButtonAparencia_Click(object sender, EventArgs e)
+        {
+            TelaAparencia telaAparencia = new TelaAparencia(login, admin, config);
+            AbrirFormulario(telaAparencia);
+        }
 
+        // Botão de sobre
+        private void iconButtonSobre_MouseHover(object sender, EventArgs e)
+        {
+            iconButtonSobre.BackColor = Color.FromArgb(254, 121, 14);
+        }
+        private void iconButtonSobre_MouseLeave(object sender, EventArgs e)
+        {
+            iconButtonSobre.BackColor = Color.FromArgb(0, 0, 21);
+        }
+        private void iconButtonSobre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // --- Barra de ferramentas ---
+
+        // 1. Arquivo
+        private void ToolStripMenuItemArquivo_MouseHover(object sender, EventArgs e)
+        {            
+            ToolStripMenuItemArquivo.ForeColor = Color.White;
+
+        }
+        private void ToolStripMenuItemArquivo_MouseLeave(object sender, EventArgs e)
+        {
+            ToolStripMenuItemArquivo.ForeColor = Color.Silver;
+        }
+        // 1. Arquivo -> 1.1 Importar       
         private void importarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (openFileDialogImportar.ShowDialog() == DialogResult.OK)
@@ -108,43 +134,39 @@ namespace Safe_Login
                 login.ImportaCadastro(openFileDialogImportar.FileName);
             }
         }
+        // 1. Arquivo ->  1.2 Salvar
+        
+        // 1. Arquivo ->  1.3 Exportar        
 
-        private void cadastrarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TelaCadastro telaCadastro = new TelaCadastro(login, admin, config);
-            telaCadastro.Show();
-        }
-
+        // 1. Arquivo ->  1.4 Sair
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void panelContentor_Paint(object sender, PaintEventArgs e)
+        // 2. Novo -> 2.1 Cadastrar usuário        
+        private void cadastrarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            TelaCadastro telaCadastro = new TelaCadastro(login, admin, config);
+            telaCadastro.Show();
         }
-
-        private void iconButtonAparencia_Click(object sender, EventArgs e)
-        {
-            TelaAparencia telaAparencia = new TelaAparencia();
-            AbrirFormulario(telaAparencia);
-        }
-
-        private void sobreToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // 3. Editar -> 3.1 Edita usuário
         private void editarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaEditar telaEditar = new TelaEditar();
             telaEditar.Show();
-        }
+        }        
 
-        private void labelTitulo_Click(object sender, EventArgs e)
-        {
 
-        }
+
+        // 4. Tema ->
+
+        // 5. Relatório ->
+
+        // 6. Ferramentas ->
+
+        // 7. Sobre ->
+
+        // 8. Ajuda ->               
     }
 }

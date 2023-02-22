@@ -43,7 +43,7 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelContentor = new System.Windows.Forms.Panel();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemArquivo = new System.Windows.Forms.ToolStripMenuItem();
             this.importarToolStripMenuItem = new FontAwesome.Sharp.IconMenuItem();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarRegistrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,6 +119,7 @@
             this.iconButtonSobre.IconSize = 42;
             this.iconButtonSobre.Name = "iconButtonSobre";
             this.iconButtonSobre.UseVisualStyleBackColor = false;
+            this.iconButtonSobre.Click += new System.EventHandler(this.iconButtonSobre_Click);
             this.iconButtonSobre.MouseLeave += new System.EventHandler(this.iconButtonSobre_MouseLeave);
             this.iconButtonSobre.MouseHover += new System.EventHandler(this.iconButtonSobre_MouseHover);
             // 
@@ -153,7 +154,6 @@
             resources.ApplyResources(this.labelTitulo, "labelTitulo");
             this.labelTitulo.ForeColor = System.Drawing.Color.White;
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Click += new System.EventHandler(this.labelTitulo_Click);
             // 
             // iconButtonEstatisticas
             // 
@@ -166,6 +166,7 @@
             this.iconButtonEstatisticas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonEstatisticas.Name = "iconButtonEstatisticas";
             this.iconButtonEstatisticas.UseVisualStyleBackColor = false;
+            this.iconButtonEstatisticas.Click += new System.EventHandler(this.iconButtonEstatisticas_Click);
             this.iconButtonEstatisticas.MouseLeave += new System.EventHandler(this.iconButtonEstatisticas_MouseLeave);
             this.iconButtonEstatisticas.MouseHover += new System.EventHandler(this.iconButtonEstatisticas_MouseHover);
             // 
@@ -217,14 +218,14 @@
             this.panelContentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.panelContentor.Controls.Add(this.pictureBoxLogo);
             this.panelContentor.Name = "panelContentor";
-            this.panelContentor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContentor_Paint);
             // 
             // menuStrip
             // 
             resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(0);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inícioToolStripMenuItem,
+            this.ToolStripMenuItemArquivo,
             this.ajudaToolStripMenuItem,
             this.sobreToolStripMenuItem,
             this.temaToolStripMenuItem,
@@ -233,21 +234,25 @@
             this.sobreToolStripMenuItem1,
             this.ajudaToolStripMenuItem1});
             this.menuStrip.Name = "menuStrip";
+            this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip.TabStop = true;
             // 
-            // inícioToolStripMenuItem
+            // ToolStripMenuItemArquivo
             // 
-            resources.ApplyResources(this.inícioToolStripMenuItem, "inícioToolStripMenuItem");
-            this.inícioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            resources.ApplyResources(this.ToolStripMenuItemArquivo, "ToolStripMenuItemArquivo");
+            this.ToolStripMenuItemArquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importarToolStripMenuItem,
             this.salvarToolStripMenuItem,
             this.exportarRegistrosToolStripMenuItem,
             this.sairToolStripMenuItem});
-            this.inícioToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
-            this.inícioToolStripMenuItem.Name = "inícioToolStripMenuItem";
+            this.ToolStripMenuItemArquivo.ForeColor = System.Drawing.Color.Silver;
+            this.ToolStripMenuItemArquivo.Name = "ToolStripMenuItemArquivo";
             // 
             // importarToolStripMenuItem
             // 
             resources.ApplyResources(this.importarToolStripMenuItem, "importarToolStripMenuItem");
+            this.importarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.importarToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.importarToolStripMenuItem.IconChar = FontAwesome.Sharp.IconChar.File;
             this.importarToolStripMenuItem.IconColor = System.Drawing.Color.Silver;
             this.importarToolStripMenuItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -258,13 +263,17 @@
             // salvarToolStripMenuItem
             // 
             resources.ApplyResources(this.salvarToolStripMenuItem, "salvarToolStripMenuItem");
+            this.salvarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.salvarToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
             // 
             // exportarRegistrosToolStripMenuItem
             // 
             resources.ApplyResources(this.exportarRegistrosToolStripMenuItem, "exportarRegistrosToolStripMenuItem");
+            this.exportarRegistrosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.exportarRegistrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.txtToolStripMenuItem});
+            this.exportarRegistrosToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.exportarRegistrosToolStripMenuItem.Name = "exportarRegistrosToolStripMenuItem";
             // 
             // txtToolStripMenuItem
@@ -275,6 +284,8 @@
             // sairToolStripMenuItem
             // 
             resources.ApplyResources(this.sairToolStripMenuItem, "sairToolStripMenuItem");
+            this.sairToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
+            this.sairToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -356,7 +367,6 @@
             this.sobreToolStripMenuItem2});
             this.sobreToolStripMenuItem1.ForeColor = System.Drawing.Color.Silver;
             this.sobreToolStripMenuItem1.Name = "sobreToolStripMenuItem1";
-            this.sobreToolStripMenuItem1.Click += new System.EventHandler(this.sobreToolStripMenuItem1_Click);
             // 
             // verificarAtualizaçõesToolStripMenuItem
             // 
@@ -418,7 +428,7 @@
         private FontAwesome.Sharp.IconButton iconButtonSobre;
         private System.Windows.Forms.Panel panelContentor;
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem inícioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemArquivo;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.Label label2;

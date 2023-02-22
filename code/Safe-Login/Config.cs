@@ -6,68 +6,51 @@ public class Config
 {
     Login login;
     Admin admin;
-    
-    public List<string> cargo = new List<string>();
-    public List<string> nomesUsuario = new List<string>();   
-
-    private string caminhoAcessosSystemLogs;
+    List<string> cargos;
 
     public Config(Login login, Admin admin)
     {
         this.login = login;
         this.admin = admin;
+        this.cargos = new List<string>();
 
-        ImportaCargo("cargos.txt");
-        ImportaSugestoesUsuario("sugestoesNomesUsuarios.txt");
-
-
-        this.caminhoAcessosSystemLogs = "acessosSystem.log";         
+        ImportaConfiguracoes();
     }
-   
+    public void ImportaConfiguracoes()
+    {
+        ImportaCargo("cargos.txt");
+    }
     public void ExportaConfiguracoes()
     {
         admin.ExportaAdmin();
     }
 
-    public void SetAcessosSystemLogs(string x)
+    public List<string> getCargos()
     {
-        if (!File.Exists(x))
+        return this.cargos;
+    }
+    public void setCargos(string x)
+    {
+        this.cargos.Add(x);
+    }
+    public void ImportaCargo(string caminhoSugestoesCargos)
+    {
+        if (!File.Exists(caminhoSugestoesCargos))
         {
-            StreamWriter sw = new StreamWriter(caminhoAcessosSystemLogs, true);
-            sw.WriteLine("# Software: Safe-Login");
-            sw.WriteLine("# Versão: 0.0.1");
-            sw.WriteLine("# Propriedade: \n");
-            sw.WriteLine(DateTime.Now + "----- [" + x + "]");
+            StreamWriter sw = new StreamWriter(caminhoSugestoesCargos);
+            //sw.WriteLine();
             sw.Close();
         }
         else
         {
-            StreamWriter sw = new StreamWriter(caminhoAcessosSystemLogs, true);
-            sw.WriteLine(DateTime.Now + "----- [" + x + "]");
-            sw.Close();
+            StreamReader sr = new StreamReader(caminhoSugestoesCargos);
+            string linha = sr.ReadLine();
+            while (linha != null)
+            {
+                this.cargos.Add(linha);
+                linha = sr.ReadLine();
+            }
+            sr.Close();
         }
-    }
-
-    public void ImportaSugestoesUsuario(string caminhoSugestoesUsuario)
-    {
-        StreamReader sr = new StreamReader(caminhoSugestoesUsuario);
-        string linha = sr.ReadLine();
-        while (linha != null)
-        {
-            nomesUsuario.Add(linha);
-            linha = sr.ReadLine();
-        }
-        sr.Close();
-    }
-    public void ImportaCargo(string caminhoSugestoesCargos)
-    {
-        StreamReader sr = new StreamReader(caminhoSugestoesCargos);
-        string linha = sr.ReadLine();
-        while (linha != null)
-        {
-            cargo.Add(linha);
-            linha = sr.ReadLine();
-        }
-        sr.Close();
-    }
+    }    
 }
